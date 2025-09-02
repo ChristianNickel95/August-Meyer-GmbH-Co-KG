@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "hygienepapiere",
+    "title": "Hygienepapiere",
+    "intro": "Professionelle Hygienepapiere für gewerbliche und industrielle Anwendungen",
+    "heroImage": "/images/hygienepapiere-hero.jpg"
+  },
+  {
+    "slug": "vliestuecher",
+    "title": "Vliestücher",
+    "intro": "Hochwertige Vliestücher für verschiedene Reinigungsanforderungen",
+    "heroImage": "/images/vliestuecher-hero.jpg"
+  },
+  {
+    "slug": "putzwolle",
+    "title": "Putzwolle",
+    "intro": "Spezialisierte Putzwolle für anspruchsvolle Reinigungsaufgaben",
+    "heroImage": "/images/putzwolle-hero.jpg"
+  },
+  {
+    "slug": "sonstiges",
+    "title": "Sonstiges",
+    "intro": "Weitere Reinigungsprodukte und Zubehör für den professionellen Einsatz",
+    "heroImage": "/images/sonstiges-hero.jpg"
+  }
+]

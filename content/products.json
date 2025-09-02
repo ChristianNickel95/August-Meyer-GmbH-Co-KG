@@ -1,0 +1,293 @@
+[
+  {
+    "slug": "papierhandtuecher",
+    "title": "Papierhandtücher Premium",
+    "category": "hygienepapiere",
+    "shortIntro": "Hochwertige Papierhandtücher für den gewerblichen Einsatz",
+    "features": [
+      "Hochsaugfähig und reißfest",
+      "Fusselfrei und hygienisch",
+      "Für alle Handtuchspender geeignet"
+    ],
+    "usage": [
+      "Gastronomie und Hotellerie",
+      "Büros und öffentliche Einrichtungen"
+    ],
+    "materials": ["100% Zellstoff"],
+    "variants": [
+      {
+        "name": "2-lagig, 200 Blatt",
+        "sku": "AM-PHT-200",
+        "ve": "1",
+        "masse": "200",
+        "einheit": "Blatt"
+      },
+      {
+        "name": "2-lagig, 400 Blatt",
+        "sku": "AM-PHT-400",
+        "ve": "1",
+        "masse": "400",
+        "einheit": "Blatt"
+      }
+    ],
+    "downloads": [
+      {
+        "title": "Produktdatenblatt",
+        "href": "/downloads/papierhandtuecher-datenblatt.pdf"
+      },
+      {
+        "title": "Sicherheitsdatenblatt",
+        "href": "/downloads/papierhandtuecher-sdb.pdf"
+      }
+    ],
+    "images": ["/products/papierhandtuecher-1.jpg", "/products/papierhandtuecher-2.jpg"],
+    "seo": {
+      "title": "Papierhandtücher Premium - August Meyer",
+      "description": "Professionelle Papierhandtücher für Gastronomie, Hotellerie und gewerbliche Nutzung"
+    }
+  },
+  {
+    "slug": "toilettenpapier",
+    "title": "Toilettenpapier 3-lagig",
+    "category": "hygienepapiere",
+    "shortIntro": "Sanftes und saugstarkes Toilettenpapier für höchste Ansprüche",
+    "features": [
+      "3-lagig für optimalen Komfort",
+      "Hochsaugfähig und reißfest",
+      "Für alle Standard-Halterungen"
+    ],
+    "usage": [
+      "Hotels und Restaurants",
+      "Büros und öffentliche Gebäude"
+    ],
+    "materials": ["100% Zellstoff"],
+    "variants": [
+      {
+        "name": "3-lagig, 200 Blatt",
+        "sku": "AM-TP-200",
+        "ve": "1",
+        "masse": "200",
+        "einheit": "Blatt"
+      }
+    ],
+    "downloads": [
+      {
+        "title": "Produktdatenblatt",
+        "href": "/downloads/toilettenpapier-datenblatt.pdf"
+      }
+    ],
+    "images": ["/products/toilettenpapier-1.jpg"],
+    "seo": {
+      "title": "Toilettenpapier 3-lagig - August Meyer",
+      "description": "Hochwertiges 3-lagiges Toilettenpapier für gewerbliche Anwendungen"
+    }
+  },
+  {
+    "slug": "industrie-vlies",
+    "title": "Industrie-Vliestücher",
+    "category": "vliestuecher",
+    "shortIntro": "Professionelle Vliestücher für den industriellen Reinigungseinsatz",
+    "features": [
+      "Hochsaugfähig und langlebig",
+      "Für aggressive Reinigungsmittel geeignet",
+      "Fusselfrei und reißfest"
+    ],
+    "usage": [
+      "Industrielle Reinigung",
+      "Maschinenbau und Fertigung"
+    ],
+    "materials": ["Vliesstoff"],
+    "variants": [
+      {
+        "name": "40x40 cm",
+        "sku": "AM-IV-40",
+        "ve": "1",
+        "masse": "40x40",
+        "einheit": "cm"
+      },
+      {
+        "name": "50x50 cm",
+        "sku": "AM-IV-50",
+        "ve": "1",
+        "masse": "50x50",
+        "einheit": "cm"
+      }
+    ],
+    "downloads": [
+      {
+        "title": "Produktdatenblatt",
+        "href": "/downloads/industrie-vlies-datenblatt.pdf"
+      }
+    ],
+    "images": ["/products/industrie-vlies-1.jpg"],
+    "seo": {
+      "title": "Industrie-Vliestücher - August Meyer",
+      "description": "Professionelle Vliestücher für industrielle Reinigungsanforderungen"
+    }
+  },
+  {
+    "slug": "putzwolle-weiss",
+    "title": "Putzwolle Weiß Premium",
+    "category": "putzwolle",
+    "shortIntro": "Hochwertige weiße Putzwolle für empfindliche Oberflächen",
+    "features": [
+      "Sanft zu empfindlichen Oberflächen",
+      "Hochsaugfähig und langlebig",
+      "Für Polierarbeiten geeignet"
+    ],
+    "usage": [
+      "Automobilindustrie",
+      "Metallverarbeitung"
+    ],
+    "materials": ["100% Baumwolle"],
+    "variants": [
+      {
+        "name": "500g Rolle",
+        "sku": "AM-PW-500",
+        "ve": "1",
+        "masse": "500",
+        "einheit": "g"
+      },
+      {
+        "name": "1kg Rolle",
+        "sku": "AM-PW-1000",
+        "ve": "1",
+        "masse": "1000",
+        "einheit": "g"
+      }
+    ],
+    "downloads": [
+      {
+        "title": "Produktdatenblatt",
+        "href": "/downloads/putzwolle-weiss-datenblatt.pdf"
+      }
+    ],
+    "images": ["/products/putzwolle-weiss-1.jpg"],
+    "seo": {
+      "title": "Putzwolle Weiß Premium - August Meyer",
+      "description": "Hochwertige weiße Putzwolle für empfindliche Oberflächen und Polierarbeiten"
+    }
+  },
+  {
+    "slug": "putzwolle-hellbunt",
+    "title": "Putzwolle Hellbunt",
+    "category": "putzwolle",
+    "shortIntro": "Vielseitige hellbunte Putzwolle für verschiedene Reinigungsaufgaben",
+    "features": [
+      "Vielseitig einsetzbar",
+      "Gute Saugfähigkeit",
+      "Für mittlere Verschmutzungen"
+    ],
+    "usage": [
+      "Allgemeine Reinigung",
+      "Werkstätten und Handwerk"
+    ],
+    "materials": ["100% Baumwolle"],
+    "variants": [
+      {
+        "name": "500g Rolle",
+        "sku": "AM-PHB-500",
+        "ve": "1",
+        "masse": "500",
+        "einheit": "g"
+      }
+    ],
+    "downloads": [
+      {
+        "title": "Produktdatenblatt",
+        "href": "/downloads/putzwolle-hellbunt-datenblatt.pdf"
+      }
+    ],
+    "images": ["/products/putzwolle-hellbunt-1.jpg"],
+    "seo": {
+      "title": "Putzwolle Hellbunt - August Meyer",
+      "description": "Vielseitige hellbunte Putzwolle für verschiedene Reinigungsanforderungen"
+    }
+  },
+  {
+    "slug": "muellsack",
+    "title": "Müllsäcke 120 Liter",
+    "category": "sonstiges",
+    "shortIntro": "Stabile Müllsäcke für gewerbliche und industrielle Abfallentsorgung",
+    "features": [
+      "Hohe ReißFestigkeit",
+      "Für 120 Liter Behälter",
+      "Umweltfreundlich hergestellt"
+    ],
+    "usage": [
+      "Büros und Verwaltungen",
+      "Produktionsstätten"
+    ],
+    "materials": ["HDPE"],
+    "variants": [
+      {
+        "name": "120 Liter, 50 Stück",
+        "sku": "AM-MS-120-50",
+        "ve": "1",
+        "masse": "50",
+        "einheit": "Stück"
+      },
+      {
+        "name": "120 Liter, 100 Stück",
+        "sku": "AM-MS-120-100",
+        "ve": "1",
+        "masse": "100",
+        "einheit": "Stück"
+      }
+    ],
+    "downloads": [
+      {
+        "title": "Produktdatenblatt",
+        "href": "/downloads/muellsack-datenblatt.pdf"
+      }
+    ],
+    "images": ["/products/muellsack-1.jpg"],
+    "seo": {
+      "title": "Müllsäcke 120 Liter - August Meyer",
+      "description": "Stabile Müllsäcke für gewerbliche und industrielle Abfallentsorgung"
+    }
+  },
+  {
+    "slug": "reinigungstuecher",
+    "title": "Reinigungstücher Mikrofaser",
+    "category": "sonstiges",
+    "shortIntro": "Professionelle Mikrofasertücher für gründliche Reinigung",
+    "features": [
+      "Mikrofaser-Technologie",
+      "Für trockene und feuchte Reinigung",
+      "Langlebig und waschbar"
+    ],
+    "usage": [
+      "Glas- und Spiegelreinigung",
+      "Oberflächenpflege"
+    ],
+    "materials": ["80% Polyester, 20% Polyamid"],
+    "variants": [
+      {
+        "name": "30x30 cm",
+        "sku": "AM-RT-30",
+        "ve": "1",
+        "masse": "30x30",
+        "einheit": "cm"
+      },
+      {
+        "name": "40x40 cm",
+        "sku": "AM-RT-40",
+        "ve": "1",
+        "masse": "40x40",
+        "einheit": "cm"
+      }
+    ],
+    "downloads": [
+      {
+        "title": "Produktdatenblatt",
+        "href": "/downloads/reinigungstuecher-datenblatt.pdf"
+      }
+    ],
+    "images": ["/products/reinigungstuecher-1.jpg"],
+    "seo": {
+      "title": "Reinigungstücher Mikrofaser - August Meyer",
+      "description": "Professionelle Mikrofasertücher für gründliche Reinigung und Oberflächenpflege"
+    }
+  }
+]
