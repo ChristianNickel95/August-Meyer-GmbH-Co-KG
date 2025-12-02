@@ -25,7 +25,7 @@ export function Navbar(): JSX.Element {
           <Link href="/" className="flex items-center space-x-4 md:space-x-5" onClick={closeMenu}>
             <Logo variant="light" />
             <div className="flex flex-col">
-              <span className="text-xl md:text-2xl lg:text-3xl font-bold text-sky-600 leading-tight tracking-tight">August Meyer</span>
+              <span className="text-2xl md:text-3xl lg:text-4xl font-bold text-sky-600 leading-tight tracking-tight">August Meyer</span>
               <span className="text-sm md:text-base text-sky-500 leading-tight font-medium">GmbH & Co. KG</span>
             </div>
           </Link>

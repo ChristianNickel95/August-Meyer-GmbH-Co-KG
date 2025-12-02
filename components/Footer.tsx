@@ -11,7 +11,7 @@ export function Footer(): JSX.Element {
             <div className="flex items-center space-x-4 mb-6">
               <Logo variant="dark" />
               <div className="flex flex-col">
-                <span className="text-xl md:text-2xl font-bold text-sky-400 leading-tight tracking-tight">August Meyer</span>
+                <span className="text-2xl md:text-3xl font-bold text-sky-400 leading-tight tracking-tight">August Meyer</span>
                 <span className="text-sm md:text-base text-sky-300 leading-tight font-medium">GmbH & Co. KG</span>
               </div>
             </div>
