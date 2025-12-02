@@ -1,0 +1,669 @@
+[
+  {
+    "id": "trikotputzlappen-bunt",
+    "name": "Trikotputzlappen bunt",
+    "category": "putzlappen",
+    "categoryName": "Putzlappen",
+    "subcategory": "trikotputzlappen",
+    "subcategoryName": "Trikotputzlappen",
+    "description": "Bearbeitet nach DIN 61650. Meistbestellter Putzlappen aus Baumwolle in T-Shirt, Sweatshirt und Unterhemdenqualität, sehr saugfähiges Material. Sehr gut geeignet für die Aufnahme von Fett und Öl.",
+    "shortDescription": "Meistbestellter Putzlappen aus Baumwolle in T-Shirt, Sweatshirt und Unterhemdenqualität",
+    "benefits": [
+      "Sehr saugfähiges Material",
+      "Sehr gut geeignet für die Aufnahme von Fett und Öl",
+      "Bearbeitet nach DIN 61650",
+      "Aus Baumwolle"
+    ],
+    "variants": [
+      {
+        "id": "trikot-bunt-2222",
+        "name": "Trikotputzlappen bunt",
+        "articleNumber": "2222",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/trikotputzlappen-bunt.jpg",
+    "slug": "trikotputzlappen-bunt",
+    "articleNumber": "2222",
+    "properties": ["Saugfähig", "Gut für Fett und Öl"]
+  },
+  {
+    "id": "trikotputzlappen-extra-hell",
+    "name": "Trikotputzlappen extra hell",
+    "category": "putzlappen",
+    "categoryName": "Putzlappen",
+    "subcategory": "trikotputzlappen",
+    "subcategoryName": "Trikotputzlappen",
+    "description": "Bearbeitet nach DIN 61650. Putzlappen in Pastellfarben aus Baumwolle in T-Shirt, Sweatshirt und Unterhemdenqualität, sehr saugfähiges Material. Sehr gut geeignet für die Aufnahme von Fett und Öl.",
+    "shortDescription": "Putzlappen in Pastellfarben aus Baumwolle",
+    "benefits": [
+      "Sehr saugfähiges Material",
+      "Sehr gut geeignet für die Aufnahme von Fett und Öl",
+      "Bearbeitet nach DIN 61650",
+      "Pastellfarben"
+    ],
+    "variants": [
+      {
+        "id": "trikot-extra-hell-2242",
+        "name": "Trikotputzlappen extra hell",
+        "articleNumber": "2242",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/trikotputzlappen-extra-hell.jpg",
+    "slug": "trikotputzlappen-extra-hell",
+    "articleNumber": "2242",
+    "properties": ["Saugfähig", "Gut für Fett und Öl"]
+  },
+  {
+    "id": "trikotputzlappen-weiss-1",
+    "name": "Trikotputzlappen Weiß 1",
+    "category": "putzlappen",
+    "categoryName": "Putzlappen",
+    "subcategory": "trikotputzlappen",
+    "subcategoryName": "Trikotputzlappen",
+    "description": "Bearbeitet nach DIN 61650. Hergestellt aus sehr saugfähigen Baumwollstoffen wie T-Shirt und Unterhemdenmaterial. Reinweiße Ausführung. Sehr gut geeignet für die Aufnahme von Fett und Öl.",
+    "shortDescription": "Reinweiße Trikotputzlappen aus sehr saugfähigen Baumwollstoffen",
+    "benefits": [
+      "Sehr saugfähiges Material",
+      "Sehr gut geeignet für die Aufnahme von Fett und Öl",
+      "Bearbeitet nach DIN 61650",
+      "Reinweiß"
+    ],
+    "variants": [
+      {
+        "id": "trikot-weiss-1-2292",
+        "name": "Trikotputzlappen Weiß 1 (reinweiß)",
+        "articleNumber": "2292",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/trikotputzlappen-weiss-1.jpg",
+    "slug": "trikotputzlappen-weiss-1",
+    "articleNumber": "2292",
+    "properties": ["Saugfähig", "Gut für Fett und Öl", "Lebensmittelecht"]
+  },
+  {
+    "id": "trikotputzlappen-weiss-2",
+    "name": "Trikotputzlappen Weiß 2",
+    "category": "putzlappen",
+    "categoryName": "Putzlappen",
+    "subcategory": "trikotputzlappen",
+    "subcategoryName": "Trikotputzlappen",
+    "description": "Bearbeitet nach DIN 61650. Hergestellt aus sehr saugfähigen Baumwollstoffen wie T-Shirt und Unterhemdenmaterial. Weiß gründlich mit farblichen Applikationen. Sehr gut geeignet für die Aufnahme von Fett und Öl.",
+    "shortDescription": "Weiße Trikotputzlappen mit farblichen Applikationen",
+    "benefits": [
+      "Sehr saugfähiges Material",
+      "Sehr gut geeignet für die Aufnahme von Fett und Öl",
+      "Bearbeitet nach DIN 61650",
+      "Mit farblichen Applikationen"
+    ],
+    "variants": [
+      {
+        "id": "trikot-weiss-2-2298",
+        "name": "Trikotputzlappen Weiß 2",
+        "articleNumber": "2298",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/trikotputzlappen-weiss-2.jpg",
+    "slug": "trikotputzlappen-weiss-2",
+    "articleNumber": "2298",
+    "properties": ["Saugfähig", "Gut für Fett und Öl", "Lebensmittelecht"]
+  },
+  {
+    "id": "kattunputzlappen-hellbunt",
+    "name": "Kattunputzlappen hellbunt",
+    "category": "putzlappen",
+    "categoryName": "Putzlappen",
+    "subcategory": "kattunputzlappen",
+    "subcategoryName": "Kattunputzlappen",
+    "description": "Putzlappen nach DIN 61650 aus dünner, leichter Baumwollware, wie Hemden,- Blusen,- und Schürzenstoffe. Sehr gut geeignet für leichte Putzarbeiten bei fusselfreiem Einsatz.",
+    "shortDescription": "Leichte Putzlappen aus dünner Baumwollware für fusselfreie Putzarbeiten",
+    "benefits": [
+      "Fusselfrei",
+      "Geeignet für leichte Putzarbeiten",
+      "Bearbeitet nach DIN 61650",
+      "Aus dünner, leichter Baumwollware"
+    ],
+    "variants": [
+      {
+        "id": "kattun-hellbunt-2102",
+        "name": "Kattunputzlappen hellbunt",
+        "articleNumber": "2102",
+        "description": "Ihre gewünschten Mengen in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/kattunputzlappen-hellbunt.jpg",
+    "slug": "kattunputzlappen-hellbunt",
+    "articleNumber": "2102",
+    "properties": ["Für leichte Putzarbeiten", "Fusselfrei"]
+  },
+  {
+    "id": "kattunputzlappen-weiss",
+    "name": "Kattunputzlappen weiß",
+    "category": "putzlappen",
+    "categoryName": "Putzlappen",
+    "subcategory": "kattunputzlappen",
+    "subcategoryName": "Kattunputzlappen",
+    "description": "Weiße Kattunputzlappen nach DIN 61650, hergestellt aus leichten Baumwollstoffen wie Hemden,- Blusen,- und Schürzenmaterial. Sehr gut geeignet für leichte Putzarbeiten bei fusselfreiem Einsatz.",
+    "shortDescription": "Weiße, leichte Putzlappen für fusselfreie Putzarbeiten",
+    "benefits": [
+      "Fusselfrei",
+      "Geeignet für leichte Putzarbeiten",
+      "Bearbeitet nach DIN 61650",
+      "Weiß"
+    ],
+    "variants": [
+      {
+        "id": "kattun-weiss-2180",
+        "name": "Kattunputzlappen weiß",
+        "articleNumber": "2180",
+        "description": "Ihre gewünschten Mengen in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/kattunputzlappen-weiss.jpg",
+    "slug": "kattunputzlappen-weiss",
+    "articleNumber": "2180",
+    "properties": ["Für leichte Putzarbeiten", "Fusselfrei", "Lebensmittelecht"]
+  },
+  {
+    "id": "putzlappen-bettwaesche-bunt",
+    "name": "Putzlappen aus Bettwäsche bunt",
+    "category": "putzlappen",
+    "categoryName": "Putzlappen",
+    "subcategory": "putzlappen-bettwaesche",
+    "subcategoryName": "Putzlappen aus Bettwäsche",
+    "description": "Putzlappen aus recycelter Bettwäsche nach DIN 61650. Hergestellt aus hochwertigen Baumwollstoffen von Bettwäsche. Sehr saugfähig und langlebig.",
+    "shortDescription": "Putzlappen aus recycelter Bettwäsche",
+    "benefits": [
+      "Aus recycelter Bettwäsche",
+      "Sehr saugfähig",
+      "Langlebig",
+      "Bearbeitet nach DIN 61650"
+    ],
+    "variants": [
+      {
+        "id": "bettwaesche-bunt-2222",
+        "name": "Putzlappen aus Bettwäsche bunt",
+        "articleNumber": "2222",
+        "description": "Ihre gewünschten Mengen in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putzlappen-bettwaesche-bunt.jpg",
+    "slug": "putzlappen-aus-bettwaesche-bunt",
+    "articleNumber": "2222",
+    "properties": ["Nahtlos", "Fusselfrei", "Saugfähig"]
+  },
+  {
+    "id": "putzlappen-biberbettwaesche-bunt",
+    "name": "Putzlappen aus Biberbettwäsche bunt",
+    "category": "putzlappen",
+    "categoryName": "Putzlappen",
+    "subcategory": "putzlappen-bettwaesche",
+    "subcategoryName": "Putzlappen aus Bettwäsche",
+    "description": "Putzlappen aus recycelter Biberbettwäsche nach DIN 61650. Hergestellt aus hochwertigen Biberstoffen. Besonders saugfähig und robust.",
+    "shortDescription": "Putzlappen aus recycelter Biberbettwäsche",
+    "benefits": [
+      "Aus recycelter Biberbettwäsche",
+      "Besonders saugfähig",
+      "Robust",
+      "Bearbeitet nach DIN 61650"
+    ],
+    "variants": [
+      {
+        "id": "biberbettwaesche-bunt-2153",
+        "name": "Putzlappen aus Biberbettwäsche bunt",
+        "articleNumber": "2153",
+        "description": "Ihre gewünschten Mengen in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putzlappen-biberbettwaesche-bunt.jpg",
+    "slug": "putzlappen-aus-biberbettwaesche-bunt",
+    "articleNumber": "2153",
+    "properties": ["Nahtlos", "Fusselfrei", "Saugfähig"]
+  },
+  {
+    "id": "putzlappen-bettwaesche-weiss",
+    "name": "Putzlappen aus Bettwäsche weiß",
+    "category": "putzlappen",
+    "categoryName": "Putzlappen",
+    "subcategory": "putzlappen-bettwaesche",
+    "subcategoryName": "Putzlappen aus Bettwäsche",
+    "description": "Weiße Putzlappen aus recycelter Bettwäsche nach DIN 61650. Hergestellt aus hochwertigen Baumwollstoffen von Bettwäsche. Sehr saugfähig und langlebig.",
+    "shortDescription": "Weiße Putzlappen aus recycelter Bettwäsche",
+    "benefits": [
+      "Aus recycelter Bettwäsche",
+      "Sehr saugfähig",
+      "Langlebig",
+      "Weiß",
+      "Bearbeitet nach DIN 61650"
+    ],
+    "variants": [
+      {
+        "id": "bettwaesche-weiss-2180",
+        "name": "Putzlappen aus Bettwäsche weiß",
+        "articleNumber": "2180",
+        "description": "Ihre gewünschten Mengen in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putzlappen-bettwaesche-weiss.jpg",
+    "slug": "putzlappen-aus-bettwaesche-weiss",
+    "articleNumber": "2180",
+    "properties": ["Nahtlos", "Fusselfrei", "Saugfähig", "Lebensmittelecht"]
+  },
+  {
+    "id": "putzlappen-frottee-bunt",
+    "name": "Putzlappen aus Frottee bunt",
+    "category": "putzlappen",
+    "categoryName": "Putzlappen",
+    "subcategory": "putzlappen-frottee",
+    "subcategoryName": "Putzlappen aus Frottee",
+    "description": "Putzlappen aus recyceltem Frotteematerial nach DIN 61650. Besonders saugfähig durch die Frotteestruktur. Ideal für anspruchsvolle Reinigungsaufgaben.",
+    "shortDescription": "Besonders saugfähige Putzlappen aus Frotteematerial",
+    "benefits": [
+      "Aus recyceltem Frottee",
+      "Besonders saugfähig",
+      "Ideal für anspruchsvolle Reinigungsaufgaben",
+      "Bearbeitet nach DIN 61650"
+    ],
+    "variants": [
+      {
+        "id": "frottee-bunt-2302",
+        "name": "Putzlappen aus Frottee bunt",
+        "articleNumber": "2302",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putzlappen-frottee-bunt.jpg",
+    "slug": "putzlappen-aus-frottee-bunt",
+    "articleNumber": "2302",
+    "properties": ["Höchstes Saugvermögen"]
+  },
+  {
+    "id": "putzlappen-frottee-weiss",
+    "name": "Putzlappen aus Frottee weiß",
+    "category": "putzlappen",
+    "categoryName": "Putzlappen",
+    "subcategory": "putzlappen-frottee",
+    "subcategoryName": "Putzlappen aus Frottee",
+    "description": "Weiße Putzlappen aus recyceltem Frotteematerial nach DIN 61650. Besonders saugfähig durch die Frotteestruktur. Ideal für anspruchsvolle Reinigungsaufgaben.",
+    "shortDescription": "Weiße, besonders saugfähige Putzlappen aus Frotteematerial",
+    "benefits": [
+      "Aus recyceltem Frottee",
+      "Besonders saugfähig",
+      "Ideal für anspruchsvolle Reinigungsaufgaben",
+      "Weiß",
+      "Bearbeitet nach DIN 61650"
+    ],
+    "variants": [
+      {
+        "id": "frottee-weiss-xxxx",
+        "name": "Putzlappen aus Frottee weiß",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putzlappen-frottee-weiss.jpg",
+    "slug": "putzlappen-aus-frottee-weiss",
+    "articleNumber": "XXXX",
+    "properties": ["Höchstes Saugvermögen", "Lebensmittelecht"]
+  },
+  {
+    "id": "frotteehandtuecher-bunt",
+    "name": "Frotteehandtücher bunt",
+    "category": "putzlappen",
+    "categoryName": "Putzlappen",
+    "subcategory": "putzlappen-frottee",
+    "subcategoryName": "Putzlappen aus Frottee",
+    "description": "Frotteehandtücher aus recyceltem Frotteematerial. Besonders saugfähig und langlebig. Ideal für den Einsatz in Küchen und Sanitärbereichen.",
+    "shortDescription": "Saugfähige Frotteehandtücher aus recyceltem Material",
+    "benefits": [
+      "Aus recyceltem Frottee",
+      "Besonders saugfähig",
+      "Langlebig",
+      "Ideal für Küchen und Sanitärbereiche"
+    ],
+    "variants": [
+      {
+        "id": "frotteehandtuecher-bunt-xxxx",
+        "name": "Frotteehandtücher bunt",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/frotteehandtuecher-bunt.jpg",
+    "slug": "frotteehandtuecher-bunt",
+    "articleNumber": "XXXX",
+    "properties": ["Höchstes Saugvermögen", "Langlebig"]
+  },
+  {
+    "id": "frotteehandtuecher-weiss",
+    "name": "Frotteehandtücher weiß",
+    "category": "putzlappen",
+    "categoryName": "Putzlappen",
+    "subcategory": "putzlappen-frottee",
+    "subcategoryName": "Putzlappen aus Frottee",
+    "description": "Weiße Frotteehandtücher aus recyceltem Frotteematerial. Besonders saugfähig und langlebig. Ideal für den Einsatz in Küchen und Sanitärbereichen.",
+    "shortDescription": "Weiße, saugfähige Frotteehandtücher aus recyceltem Material",
+    "benefits": [
+      "Aus recyceltem Frottee",
+      "Besonders saugfähig",
+      "Langlebig",
+      "Weiß",
+      "Ideal für Küchen und Sanitärbereiche"
+    ],
+    "variants": [
+      {
+        "id": "frotteehandtuecher-weiss-xxxx",
+        "name": "Frotteehandtücher weiß",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/frotteehandtuecher-weiss.jpg",
+    "slug": "frotteehandtuecher-weiss",
+    "articleNumber": "XXXX",
+    "properties": ["Höchstes Saugvermögen", "Langlebig", "Lebensmittelecht"]
+  },
+  {
+    "id": "putzwolle",
+    "name": "Putzwolle",
+    "category": "putzwolle",
+    "categoryName": "Putzwolle",
+    "description": "Hochwertige Putzwolle für anspruchsvolle Reinigungsaufgaben. Besonders saugfähig und vielseitig einsetzbar.",
+    "shortDescription": "Hochwertige Putzwolle für anspruchsvolle Reinigungsaufgaben",
+    "benefits": [
+      "Besonders saugfähig",
+      "Vielseitig einsetzbar",
+      "Hochwertige Qualität"
+    ],
+    "variants": [
+      {
+        "id": "putzwolle-xxxx",
+        "name": "Putzwolle",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putzwolle.jpg",
+    "slug": "putzwolle",
+    "articleNumber": "XXXX",
+    "properties": ["Sehr saugfähig", "Für Maschinenreinigung", "Für grobe Reinigungsarbeiten", "Fusselfrei"]
+  },
+  {
+    "id": "vliestuecher",
+    "name": "Vliestücher",
+    "category": "vliestuecher",
+    "categoryName": "Vliestücher",
+    "description": "Saugfähige Vliestücher aus textilen Fasermaterialien. Ideal für den industriellen Einsatz.",
+    "shortDescription": "Saugfähige Vliestücher aus textilen Fasermaterialien",
+    "benefits": [
+      "Saugfähig",
+      "Ideal für industriellen Einsatz",
+      "Aus textilen Fasermaterialien"
+    ],
+    "variants": [
+      {
+        "id": "vliestuecher-xxxx",
+        "name": "Vliestücher",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/vliestuecher.jpg",
+    "slug": "vliestuecher",
+    "articleNumber": "XXXX",
+    "properties": ["Hervorragend saugfähig", "Für grobe Verschmutzungen", "Reißfest", "Für Industrie"]
+  },
+  {
+    "id": "putzpapierrollen-recycelt",
+    "name": "Putzpapierrollen recycelt",
+    "category": "putzpapier",
+    "categoryName": "Putzpapier",
+    "subcategory": "putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrollen aus recycelten Rohstoffen. Hohe Saugfähigkeit und Reißfestigkeit für den professionellen Einsatz.",
+    "shortDescription": "Putzpapierrollen aus recycelten Rohstoffen",
+    "benefits": [
+      "Aus recycelten Rohstoffen",
+      "Hohe Saugfähigkeit",
+      "Reißfest",
+      "Professioneller Einsatz"
+    ],
+    "variants": [
+      {
+        "id": "putzpapierrollen-recycelt-xxxx",
+        "name": "Putzpapierrollen recycelt",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putzpapierrollen-recycelt.jpg",
+    "slug": "putzpapierrollen-recycelt",
+    "articleNumber": "XXXX",
+    "properties": ["Hochsaugfähig", "Reißfest", "Fusselfrei", "Recycelt"]
+  },
+  {
+    "id": "putzpapierrollen-zellstoff",
+    "name": "Putzpapierrollen Zellstoff",
+    "category": "putzpapier",
+    "categoryName": "Putzpapier",
+    "subcategory": "putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrollen aus reinem Zellstoff. Maximale Saugfähigkeit und Qualität für anspruchsvolle Anwendungen.",
+    "shortDescription": "Putzpapierrollen aus reinem Zellstoff",
+    "benefits": [
+      "Aus reinem Zellstoff",
+      "Maximale Saugfähigkeit",
+      "Höchste Qualität",
+      "Für anspruchsvolle Anwendungen"
+    ],
+    "variants": [
+      {
+        "id": "putzpapierrollen-zellstoff-xxxx",
+        "name": "Putzpapierrollen Zellstoff",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putzpapierrollen-zellstoff.jpg",
+    "slug": "putzpapierrollen-zellstoff",
+    "articleNumber": "XXXX",
+    "properties": ["Hochsaugfähig", "Reißfest", "Fusselfrei", "Für anspruchsvolle Anwendungen"]
+  },
+  {
+    "id": "putztuch-einzelblatt-recycelt",
+    "name": "Putztuch im Einzelblatt recycelt",
+    "category": "putzpapier",
+    "categoryName": "Putzpapier",
+    "subcategory": "putztuch-einzelblatt",
+    "subcategoryName": "Putztuch im Einzelblatt",
+    "description": "Putzpapier im Einzelblatt aus recycelten Rohstoffen. Praktische und hygienische Entnahme für sparsamen Verbrauch.",
+    "shortDescription": "Putzpapier im Einzelblatt aus recycelten Rohstoffen",
+    "benefits": [
+      "Aus recycelten Rohstoffen",
+      "Hygienische Einzelblattentnahme",
+      "Sparsamer Verbrauch",
+      "Praktisch"
+    ],
+    "variants": [
+      {
+        "id": "putztuch-einzelblatt-recycelt-xxxx",
+        "name": "Putztuch im Einzelblatt recycelt",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuch-einzelblatt-recycelt.jpg",
+    "slug": "putztuch-im-einzelblatt-recycelt",
+    "articleNumber": "XXXX",
+    "properties": ["Hygienisch", "Sparsamer Verbrauch", "Fusselfrei", "Recycelt"]
+  },
+  {
+    "id": "putztuch-einzelblatt-zellstoff",
+    "name": "Putztuch im Einzelblatt Zellstoff",
+    "category": "putzpapier",
+    "categoryName": "Putzpapier",
+    "subcategory": "putztuch-einzelblatt",
+    "subcategoryName": "Putztuch im Einzelblatt",
+    "description": "Putzpapier im Einzelblatt aus reinem Zellstoff. Maximale Qualität und Saugfähigkeit mit hygienischer Einzelblattentnahme.",
+    "shortDescription": "Putzpapier im Einzelblatt aus reinem Zellstoff",
+    "benefits": [
+      "Aus reinem Zellstoff",
+      "Maximale Qualität",
+      "Hygienische Einzelblattentnahme",
+      "Höchste Saugfähigkeit"
+    ],
+    "variants": [
+      {
+        "id": "putztuch-einzelblatt-zellstoff-xxxx",
+        "name": "Putztuch im Einzelblatt Zellstoff",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuch-einzelblatt-zellstoff.jpg",
+    "slug": "putztuch-im-einzelblatt-zellstoff",
+    "articleNumber": "XXXX",
+    "properties": ["Hygienisch", "Hochsaugfähig", "Reißfest", "Für anspruchsvolle Anwendungen"]
+  },
+  {
+    "id": "falthandtuecher",
+    "name": "Falthandtücher",
+    "category": "hygienepapiere",
+    "categoryName": "Hygienepapiere",
+    "subcategory": "papierhandtuecher",
+    "subcategoryName": "Papierhandtücher",
+    "description": "Falthandtücher für sanitäre Einrichtungen. Hochwertige Qualität für professionelle Handtrocknung.",
+    "shortDescription": "Falthandtücher für sanitäre Einrichtungen",
+    "benefits": [
+      "Hochwertige Qualität",
+      "Professionelle Handtrocknung",
+      "Für sanitäre Einrichtungen"
+    ],
+    "variants": [
+      {
+        "id": "falthandtuecher-xxxx",
+        "name": "Falthandtücher",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/falthandtuecher.jpg",
+    "slug": "falthandtuecher",
+    "articleNumber": "XXXX",
+    "properties": ["Für Sanitärbereiche", "Sehr saugstark", "Hygienisch"]
+  },
+  {
+    "id": "papierhandtuecher",
+    "name": "Papierhandtücher",
+    "category": "hygienepapiere",
+    "categoryName": "Hygienepapiere",
+    "subcategory": "papierhandtuecher",
+    "subcategoryName": "Papierhandtücher",
+    "description": "Papierhandtücher für sanitäre Einrichtungen. Saugfähig und hygienisch.",
+    "shortDescription": "Papierhandtücher für sanitäre Einrichtungen",
+    "benefits": [
+      "Saugfähig",
+      "Hygienisch",
+      "Für sanitäre Einrichtungen"
+    ],
+    "variants": [
+      {
+        "id": "papierhandtuecher-xxxx",
+        "name": "Papierhandtücher",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/papierhandtuecher.jpg",
+    "slug": "papierhandtuecher",
+    "articleNumber": "XXXX",
+    "properties": ["Für Sanitärbereiche", "Sehr saugstark", "Hygienisch"]
+  },
+  {
+    "id": "toilettenpapier",
+    "name": "Toilettenpapier",
+    "category": "hygienepapiere",
+    "categoryName": "Hygienepapiere",
+    "subcategory": "toilettenpapier",
+    "subcategoryName": "Toilettenpapier",
+    "description": "Toilettenpapier in verschiedenen Lagen für sanitäre Einrichtungen. Hochwertige Qualität und Komfort.",
+    "shortDescription": "Toilettenpapier in verschiedenen Lagen",
+    "benefits": [
+      "Verschiedene Lagen",
+      "Hochwertige Qualität",
+      "Komfortabel",
+      "Für sanitäre Einrichtungen"
+    ],
+    "variants": [
+      {
+        "id": "toilettenpapier-xxxx",
+        "name": "Toilettenpapier",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/toilettenpapier.jpg",
+    "slug": "toilettenpapier",
+    "articleNumber": "XXXX",
+    "properties": ["Für Sanitärbereiche", "Sehr saugstark", "Hygienisch"]
+  },
+  {
+    "id": "handtuchrollen",
+    "name": "Handtuchrollen",
+    "category": "hygienepapiere",
+    "categoryName": "Hygienepapiere",
+    "subcategory": "handtuchrollen",
+    "subcategoryName": "Handtuchrollen",
+    "description": "Handtuchrollen für Spendersysteme. Perfekt für den professionellen Einsatz in sanitären Einrichtungen. Hochwertige Qualität und optimale Passform für verschiedene Spendersysteme.",
+    "shortDescription": "Handtuchrollen für Spendersysteme",
+    "benefits": [
+      "Für Spendersysteme",
+      "Professioneller Einsatz",
+      "Hochwertige Qualität",
+      "Optimale Passform"
+    ],
+    "variants": [
+      {
+        "id": "handtuchrollen-xxxx",
+        "name": "Handtuchrollen",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/handtuchrollen.jpg",
+    "slug": "handtuchrollen",
+    "articleNumber": "XXXX",
+    "properties": ["Für Sanitärbereiche", "Für Spendersysteme", "Sehr saugstark", "Hygienisch"]
+  },
+  {
+    "id": "spendersysteme",
+    "name": "Spendersysteme",
+    "category": "hygienepapiere",
+    "categoryName": "Hygienepapiere",
+    "subcategory": "spendersysteme",
+    "subcategoryName": "Spendersysteme",
+    "description": "Spendersysteme für Putzpapierrollen, Toilettenpapier und Falthandtücher. Robust, hygienisch und benutzerfreundlich. Ideal für den professionellen Einsatz in Industrie und Gewerbe.",
+    "shortDescription": "Spendersysteme für Putzpapierrollen, Toilettenpapier und Falthandtücher",
+    "benefits": [
+      "Robust und langlebig",
+      "Hygienisch",
+      "Benutzerfreundlich",
+      "Für professionellen Einsatz"
+    ],
+    "variants": [
+      {
+        "id": "spendersysteme-xxxx",
+        "name": "Spendersysteme",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Anzahl bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/spendersysteme.jpg",
+    "slug": "spendersysteme",
+    "articleNumber": "XXXX",
+    "properties": ["Für Sanitärbereiche", "Hygienisch", "Robust", "Für Spendersysteme", "Für hohe Hygieneanforderungen"]
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "putzlappen",
+    "name": "Putzlappen",
+    "description": "Manuell gefertigte Putzlappen aus recycelten Alttextilien",
+    "image": "/images/categories/putzlappen.jpg",
+    "slug": "putzlappen",
+    "defaultValue": "360",
+    "unit": "kg",
+    "productCount": 0,
+    "subcategories": [
+      {
+        "id": "trikotputzlappen",
+        "name": "Trikotputzlappen",
+        "slug": "trikotputzlappen",
+        "description": "Bearbeitet nach DIN 61650. Meistbestellter Putzlappen aus reiner Baumwolle"
+      },
+      {
+        "id": "kattunputzlappen",
+        "name": "Kattunputzlappen",
+        "slug": "kattunputzlappen",
+        "description": "Putzlappen nach DIN 61650 aus dünner, leichter Baumwollware"
+      },
+      {
+        "id": "putzlappen-bettwaesche",
+        "name": "Putzlappen aus Bettwäsche",
+        "slug": "putzlappen-aus-bettwaesche",
+        "description": "Putzlappen aus recycelter Bettwäsche"
+      },
+      {
+        "id": "putzlappen-frottee",
+        "name": "Putzlappen aus Frottee",
+        "slug": "putzlappen-aus-frottee",
+        "description": "Saugfähige Putzlappen aus Frotteematerial"
+      }
+    ]
+  },
+  {
+    "id": "putztuchreinigung",
+    "name": "Putztuchreinigung",
+    "description": "Mehrwegsystem Putztuchreinigung - sauber und umweltfreundlich",
+    "image": "/images/categories/putztuchreinigung.jpg",
+    "slug": "putztuchreinigung",
+    "defaultValue": null,
+    "unit": null,
+    "productCount": 0,
+    "subcategories": []
+  },
+  {
+    "id": "putzwolle",
+    "name": "Putzwolle",
+    "description": "Hochwertige Putzwolle für anspruchsvolle Reinigungsaufgaben",
+    "image": "/images/categories/putzwolle.jpg",
+    "slug": "putzwolle",
+    "defaultValue": "250",
+    "unit": "kg",
+    "productCount": 0,
+    "subcategories": []
+  },
+  {
+    "id": "vliestuecher",
+    "name": "Vliestücher",
+    "description": "Saugfähige Vliestücher aus textilen Fasermaterialien",
+    "image": "/images/categories/vliestuecher.jpg",
+    "slug": "vliestuecher",
+    "defaultValue": "300",
+    "unit": "kg",
+    "productCount": 0,
+    "subcategories": []
+  },
+  {
+    "id": "putzpapier",
+    "name": "Putzpapier",
+    "description": "Putzpapiere aus recycelten Rohstoffen oder reinen Zellstoffprodukten",
+    "image": "/images/categories/putzpapier.jpg",
+    "slug": "putzpapier",
+    "defaultValue": "12",
+    "unit": "Rollen",
+    "productCount": 0,
+    "subcategories": [
+      {
+        "id": "putzpapierrollen",
+        "name": "Putzpapierrollen",
+        "slug": "putzpapierrollen",
+        "description": "Putzpapier in Rollenform",
+        "defaultValue": "12",
+        "unit": "Rollen"
+      },
+      {
+        "id": "putztuch-einzelblatt",
+        "name": "Putztuch im Einzelblatt",
+        "slug": "putztuch-im-einzelblatt",
+        "description": "Putzpapier in Einzelblattform",
+        "defaultValue": "12",
+        "unit": "Kartons"
+      }
+    ]
+  },
+  {
+    "id": "hygienepapiere",
+    "name": "Hygienepapiere",
+    "description": "Hygienepapiere für Industrie und Gewerbe",
+    "image": "/images/categories/hygienepapiere.jpg",
+    "slug": "hygienepapiere",
+    "defaultValue": "12",
+    "unit": "Kartons",
+    "productCount": 0,
+    "subcategories": [
+      {
+        "id": "papierhandtuecher",
+        "name": "Papierhandtücher",
+        "slug": "papierhandtuecher",
+        "description": "Falthandtücher und Papierhandtücher für sanitäre Einrichtungen"
+      },
+      {
+        "id": "toilettenpapier",
+        "name": "Toilettenpapier",
+        "slug": "toilettenpapier",
+        "description": "Toilettenpapier in verschiedenen Lagen"
+      },
+      {
+        "id": "handtuchrollen",
+        "name": "Handtuchrollen",
+        "slug": "handtuchrollen",
+        "description": "Handtuchrollen für Spendersysteme"
+      },
+      {
+        "id": "spendersysteme",
+        "name": "Spendersysteme",
+        "slug": "spendersysteme",
+        "description": "Spendersysteme für Putzpapierrollen, Toilettenpapier und Falthandtücher"
+      }
+    ]
+  },
+  {
+    "id": "sonstiges",
+    "name": "Sonstiges",
+    "description": "Weitere Produkte für Industrie und Gewerbe",
+    "image": "/images/categories/sonstiges.jpg",
+    "slug": "sonstiges",
+    "defaultValue": null,
+    "unit": null,
+    "productCount": 0,
+    "subcategories": []
+  }
+]
