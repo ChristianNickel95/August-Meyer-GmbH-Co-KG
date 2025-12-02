@@ -55,7 +55,7 @@ export function AddProductToCartButton({
       <DialogTrigger asChild>
         <Button variant="default" size="sm" className="w-full font-semibold text-sm">
           <ShoppingCart className="w-4 h-4 mr-2" />
-          {existingItem ? 'Menge ändern' : 'Zum Warenkorb'}
+          {existingItem ? 'Menge ändern' : 'Anfragen'}
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[500px]">

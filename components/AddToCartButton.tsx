@@ -49,7 +49,7 @@ export function AddToCartButton({
       <DialogTrigger asChild>
         <Button variant="default" className="w-full font-semibold">
           <ShoppingCart className="w-4 h-4 mr-2" />
-          {existingItem ? 'Menge ändern' : 'Zum Warenkorb'}
+          {existingItem ? 'Menge ändern' : 'Anfragen'}
         </Button>
       </DialogTrigger>
       <DialogContent>

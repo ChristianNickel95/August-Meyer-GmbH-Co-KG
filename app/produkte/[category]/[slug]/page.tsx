@@ -249,7 +249,7 @@ export default function ProductPage({ params }: ProductPageProps): JSX.Element {
               <div className="sticky top-8 space-y-4">
                 <Card>
                   <CardHeader>
-                    <CardTitle>Zum Warenkorb hinzufügen</CardTitle>
+                    <CardTitle>Anfrage stellen</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <AddProductToCartButton
