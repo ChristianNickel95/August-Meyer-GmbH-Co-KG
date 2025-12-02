@@ -137,9 +137,9 @@ export default function ProductPage({ params }: ProductPageProps): JSX.Element {
               {/* Product Variants */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Verfügbare Varianten</CardTitle>
+                  <CardTitle>Verfügbare Artikel</CardTitle>
                   <CardDescription>
-                    Alle verfügbaren Varianten dieses Produkts. Die Varianten unterscheiden sich in Farbe, Materialqualität oder spezifischen Eigenschaften.
+                    Alle verfügbaren Artikel dieses Produkts. Die Artikel unterscheiden sich in Farbe, Materialqualität oder spezifischen Eigenschaften.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -203,7 +203,7 @@ export default function ProductPage({ params }: ProductPageProps): JSX.Element {
                   {product.variants.length > 1 && (
                     <div className="mt-4 pt-4 border-t border-neutral-200">
                       <p className="text-sm text-neutral-600">
-                        <strong>Hinweis:</strong> Die Varianten unterscheiden sich je nach Produkt in Farbe (bunt, weiß, pastell), Materialqualität oder spezifischen Eigenschaften (z.B. fusselfrei, höchste Saugfähigkeit). Wählen Sie die passende Variante für Ihre Anforderungen aus.
+                        <strong>Hinweis:</strong> Die Artikel unterscheiden sich je nach Produkt in Farbe (bunt, weiß, pastell), Materialqualität oder spezifischen Eigenschaften (z.B. fusselfrei, höchste Saugfähigkeit). Wählen Sie den passenden Artikel für Ihre Anforderungen aus.
                       </p>
                     </div>
                   )}

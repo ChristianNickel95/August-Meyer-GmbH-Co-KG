@@ -35,9 +35,6 @@ export function Navbar(): JSX.Element {
             <Link href="/" className="text-neutral-700 hover:text-neutral-900 font-medium transition-colors duration-300 text-sm lg:text-base">
               Startseite
             </Link>
-            <Link href="/leistungen" className="text-neutral-700 hover:text-neutral-900 font-medium transition-colors duration-300 text-sm lg:text-base">
-              Leistungen
-            </Link>
             <Link href="/produkte" className="text-neutral-700 hover:text-neutral-900 font-medium transition-colors duration-300 text-sm lg:text-base">
               Sortiment
             </Link>
@@ -77,13 +74,6 @@ export function Navbar(): JSX.Element {
                 onClick={closeMenu}
               >
                 Startseite
-              </Link>
-              <Link
-                href="/leistungen"
-                className="block px-4 py-3 text-neutral-700 hover:text-neutral-900 hover:bg-neutral-50 rounded-md font-medium transition-colors duration-200"
-                onClick={closeMenu}
-              >
-                Leistungen
               </Link>
               <Link
                 href="/produkte"

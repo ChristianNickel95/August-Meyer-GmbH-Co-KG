@@ -36,13 +36,13 @@
     ]
   },
   {
-    "id": "putztuchreinigung",
-    "name": "Putztuchreinigung",
-    "description": "Mehrwegsystem Putztuchreinigung - sauber und umweltfreundlich",
-    "image": "/images/categories/putztuchreinigung.jpg",
-    "slug": "putztuchreinigung",
-    "defaultValue": null,
-    "unit": null,
+    "id": "vliestuecher",
+    "name": "Vliestücher",
+    "description": "Saugfähige Vliestücher aus textilen Fasermaterialien",
+    "image": "/images/categories/vliestuecher.jpg",
+    "slug": "vliestuecher",
+    "defaultValue": "300",
+    "unit": "kg",
     "productCount": 0,
     "subcategories": []
   },
@@ -53,17 +53,6 @@
     "image": "/images/categories/putzwolle.jpg",
     "slug": "putzwolle",
     "defaultValue": "250",
-    "unit": "kg",
-    "productCount": 0,
-    "subcategories": []
-  },
-  {
-    "id": "vliestuecher",
-    "name": "Vliestücher",
-    "description": "Saugfähige Vliestücher aus textilen Fasermaterialien",
-    "image": "/images/categories/vliestuecher.jpg",
-    "slug": "vliestuecher",
-    "defaultValue": "300",
     "unit": "kg",
     "productCount": 0,
     "subcategories": []
@@ -131,6 +120,17 @@
         "description": "Spendersysteme für Putzpapierrollen, Toilettenpapier und Falthandtücher"
       }
     ]
+  },
+  {
+    "id": "putztuchreinigung",
+    "name": "Putztuchreinigung",
+    "description": "Mehrwegsystem Putztuchreinigung - sauber und umweltfreundlich",
+    "image": "/images/categories/putztuchreinigung.jpg",
+    "slug": "putztuchreinigung",
+    "defaultValue": null,
+    "unit": null,
+    "productCount": 0,
+    "subcategories": []
   },
   {
     "id": "sonstiges",

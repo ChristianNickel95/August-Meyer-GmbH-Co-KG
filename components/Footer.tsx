@@ -43,11 +43,6 @@ export function Footer(): JSX.Element {
                 </Link>
               </li>
               <li>
-                <Link href="/leistungen" className="text-neutral-300 hover:text-white transition-colors duration-200 text-base md:text-lg">
-                  Leistungen
-                </Link>
-              </li>
-              <li>
                 <Link href="/produkte" className="text-neutral-300 hover:text-white transition-colors duration-200 text-base md:text-lg">
                   Sortiment
                 </Link>
