@@ -8,19 +8,20 @@ interface LogoProps {
 }
 
 export function Logo({ variant = 'light', className = '' }: LogoProps): JSX.Element {
-  // CSS-Filter für dickere Linien und Farbanpassung
+  // CSS-Filter für dickere Linien und Farbanpassung zu Himmelblau
   // contrast() erhöht die Linienstärke visuell
-  // Für light: neutral-700/800 (dunkel auf hellem Hintergrund) - RGB(51, 65, 85)
-  // Für dark: weiß (auf dunklem Hintergrund)
+  // Für light: Himmelblau (sky-500/600) - RGB etwa (14, 165, 233) oder (2, 132, 199)
+  // Für dark: Helles Himmelblau (auf dunklem Hintergrund)
   
-  // Light: Konvertiert zu neutral-700 (51, 65, 85) mit erhöhtem Kontrast für dickere Linien
-  const lightFilter = 'brightness(0) saturate(100%) invert(20%) sepia(8%) saturate(1200%) hue-rotate(180deg) brightness(0.85) contrast(1.4)';
+  // Light: Konvertiert zu Himmelblau (sky-500) mit erhöhtem Kontrast für dickere Linien
+  // sky-500: RGB(14, 165, 233) - helles, freundliches Himmelblau
+  const lightFilter = 'brightness(0) saturate(100%) invert(55%) sepia(95%) saturate(2000%) hue-rotate(180deg) brightness(0.9) contrast(1.3)';
   
-  // Dark: Weiß mit leicht erhöhtem Kontrast
-  const darkFilter = 'brightness(0) invert(1) contrast(1.1)';
+  // Dark: Helles Himmelblau für dunklen Hintergrund
+  const darkFilter = 'brightness(0) saturate(100%) invert(70%) sepia(95%) saturate(2000%) hue-rotate(180deg) brightness(1.1) contrast(1.1)';
   
   return (
-    <div className={`relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0 ${className}`}>
+    <div className={`relative w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 flex-shrink-0 ${className}`}>
       <Image
         src="/logo.svg"
         alt="August Meyer Logo"

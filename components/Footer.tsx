@@ -8,11 +8,11 @@ export function Footer(): JSX.Element {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 lg:gap-20">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
+            <div className="flex items-center space-x-4 mb-6">
               <Logo variant="dark" />
               <div className="flex flex-col">
-                <span className="text-lg font-semibold text-white leading-tight">August Meyer</span>
-                <span className="text-xs text-neutral-400 leading-tight">GmbH & Co. KG</span>
+                <span className="text-xl md:text-2xl font-bold text-sky-400 leading-tight tracking-tight">August Meyer</span>
+                <span className="text-sm md:text-base text-sky-300 leading-tight font-medium">GmbH & Co. KG</span>
               </div>
             </div>
             <p className="text-neutral-300 mb-6 max-w-md leading-relaxed text-base md:text-lg">

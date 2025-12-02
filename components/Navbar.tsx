@@ -20,13 +20,13 @@ export function Navbar(): JSX.Element {
   return (
     <nav className="bg-white border-b-2 border-neutral-200" role="navigation" aria-label="Hauptnavigation">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24 md:h-28">
+        <div className="flex justify-between items-center h-24 md:h-28 lg:h-32">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3" onClick={closeMenu}>
+          <Link href="/" className="flex items-center space-x-4 md:space-x-5" onClick={closeMenu}>
             <Logo variant="light" />
             <div className="flex flex-col">
-              <span className="text-lg font-semibold text-neutral-900 leading-tight">August Meyer</span>
-              <span className="text-xs text-neutral-500 leading-tight">GmbH & Co. KG</span>
+              <span className="text-xl md:text-2xl lg:text-3xl font-bold text-sky-600 leading-tight tracking-tight">August Meyer</span>
+              <span className="text-sm md:text-base text-sky-500 leading-tight font-medium">GmbH & Co. KG</span>
             </div>
           </Link>
 
