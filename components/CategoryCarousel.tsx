@@ -43,8 +43,8 @@ const categoryMapping: Record<string, { name: string; id: string; slug: string; 
   },
   'putzpapier-karton': {
     name: 'Putzpapier im Karton',
-    id: 'putztuch-einzelblatt',
-    slug: 'putztuch-im-einzelblatt',
+    id: 'putzpapier-karton',
+    slug: 'putzpapier-im-karton',
     description: 'Putzpapier in Einzelblattform',
     defaultValue: '12',
     unit: 'Kartons'
@@ -68,7 +68,7 @@ const categoryMapping: Record<string, { name: string; id: string; slug: string; 
   'maschinenputztuecher': {
     name: 'Maschinenputztücher',
     id: 'putztuchreinigung',
-    slug: 'putztuchreinigung',
+    slug: 'maschinenputztuecher-reinigung',
     description: 'Mehrwegsystem Putztuchreinigung - sauber und umweltfreundlich',
     defaultValue: null,
     unit: null

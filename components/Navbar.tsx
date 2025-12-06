@@ -1,13 +1,19 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
+import { Menu, X, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import { Logo } from '@/components/Logo';
 
 export function Navbar(): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
@@ -16,6 +22,26 @@ export function Navbar(): JSX.Element {
   const closeMenu = (): void => {
     setIsMenuOpen(false);
   };
+
+  const handleSearch = (e: React.FormEvent): void => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      if (pathname === '/produkte') {
+        // Auf Produktseite: Event für Filter auslösen
+        window.dispatchEvent(new CustomEvent('search', { detail: searchQuery }));
+      } else {
+        // Auf anderen Seiten: Zur Produktseite mit Suchparameter
+        router.push(`/produkte?suche=${encodeURIComponent(searchQuery.trim())}`);
+      }
+      setIsSearchOpen(false);
+    }
+  };
+
+  // Suche schließen, wenn Route wechselt
+  useEffect(() => {
+    setIsSearchOpen(false);
+    setSearchQuery('');
+  }, [pathname]);
 
   return (
     <nav className="bg-white border-b-2 border-neutral-200" role="navigation" aria-label="Hauptnavigation">
@@ -31,7 +57,7 @@ export function Navbar(): JSX.Element {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             <Link href="/" className="text-neutral-700 hover:text-neutral-900 font-medium transition-colors duration-300 text-sm lg:text-base">
               Startseite
             </Link>
@@ -44,6 +70,20 @@ export function Navbar(): JSX.Element {
             <Link href="/impressum" className="text-neutral-500 hover:text-neutral-700 font-medium transition-colors duration-300 text-sm lg:text-base">
               Impressum
             </Link>
+            
+            {/* Desktop Search */}
+            <form onSubmit={handleSearch} className="relative">
+              <div className="relative">
+                <Input
+                  type="text"
+                  placeholder="Produkte suchen..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-48 lg:w-64 pl-10 pr-4 py-2 text-sm border-neutral-300 focus:border-sky-500 focus:ring-sky-500"
+                />
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-neutral-400" />
+              </div>
+            </form>
           </div>
 
           {/* CTA Button */}
@@ -68,6 +108,20 @@ export function Navbar(): JSX.Element {
         {isMenuOpen && (
           <div className="md:hidden border-t border-neutral-200">
             <div className="px-4 pt-6 pb-8 space-y-2 bg-white">
+              {/* Mobile Search */}
+              <form onSubmit={handleSearch} className="mb-4">
+                <div className="relative">
+                  <Input
+                    type="text"
+                    placeholder="Produkte suchen..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full pl-10 pr-4 py-2 text-sm border-neutral-300 focus:border-sky-500 focus:ring-sky-500"
+                  />
+                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-neutral-400" />
+                </div>
+              </form>
+              
               <Link
                 href="/"
                 className="block px-4 py-3 text-neutral-700 hover:text-neutral-900 hover:bg-neutral-50 rounded-md font-medium transition-colors duration-200"

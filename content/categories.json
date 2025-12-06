@@ -1,10 +1,10 @@
 [
   {
     "id": "putzlappen",
-    "name": "Putzlappen",
-    "description": "Manuell gefertigte Putzlappen aus recycelten Alttextilien",
+    "name": "Industrieputzlappen",
+    "description": "Unsere manuell gefertigten Putzlappen bestehen aus nicht mehr tragfähigen Alttextilien, die per Hand auf speziellen Putzlappenschneidemaschinen in handliche Stücke ca. 45 x 45 cm gefertigt werden. Der hohe Baumwollanteil der Putzlappen garantiert enorme Saugfähigkeit und effiziente Reinigung. Knöpfe, Reißverschlüsse und andere nicht zugehörige Teile werden entfernt, um ein schonendes Reinigen zu ermöglichen. Obige Bearbeitungskriterien entsprechen der DIN 61650.",
     "image": "/images/categories/putzlappen.jpg",
-    "slug": "putzlappen",
+    "slug": "industrieputzlappen",
     "defaultValue": "360",
     "unit": "kg",
     "productCount": 0,
@@ -13,32 +13,32 @@
         "id": "trikotputzlappen",
         "name": "Trikotputzlappen",
         "slug": "trikotputzlappen",
-        "description": "Bearbeitet nach DIN 61650. Meistbestellter Putzlappen aus reiner Baumwolle"
+        "description": "Bearbeitet nach DIN 61650. Meistbestellter Putzlappen aus Baumwolle in T-Shirt, Sweatshirt und Unterhemdenqualität."
       },
       {
         "id": "kattunputzlappen",
         "name": "Kattunputzlappen",
         "slug": "kattunputzlappen",
-        "description": "Putzlappen nach DIN 61650 aus dünner, leichter Baumwollware"
+        "description": "Putzlappen nach DIN 61650 aus dünner, leichter Baumwollware."
       },
       {
         "id": "putzlappen-bettwaesche",
         "name": "Putzlappen aus Bettwäsche",
         "slug": "putzlappen-aus-bettwaesche",
-        "description": "Putzlappen aus recycelter Bettwäsche"
+        "description": "Putzlappen aus recycelter Bettwäsche."
       },
       {
         "id": "putzlappen-frottee",
         "name": "Putzlappen aus Frottee",
         "slug": "putzlappen-aus-frottee",
-        "description": "Saugfähige Putzlappen aus Frotteematerial"
+        "description": "Putzlappen aus Frottee nach DIN 61650. Hergestellt aus Handtüchern, Badelaken und Bademänteln. Höchstes Saugvermögen im Sortiment."
       }
     ]
   },
   {
     "id": "vliestuecher",
     "name": "Vliestücher",
-    "description": "Saugfähige Vliestücher aus textilen Fasermaterialien",
+    "description": "Unsere Vliestücher bestehen aus textilem, gerissenem Fasermaterial, welches durch mechanisches Bearbeiten zu einem Putztuch zusammengesetzt ist. Sie sind sehr saugfähig, homogen und eignen sich gut für grobe Putzarbeiten.",
     "image": "/images/categories/vliestuecher.jpg",
     "slug": "vliestuecher",
     "defaultValue": "300",
@@ -49,7 +49,7 @@
   {
     "id": "putzwolle",
     "name": "Putzwolle",
-    "description": "Hochwertige Putzwolle für anspruchsvolle Reinigungsaufgaben",
+    "description": "Unsere Putzwolle besteht aus weichem, saugfähigem Fädenmaterial (Abfallprodukte aus Spinnerei und Weberei). Überwiegend Baumwolle. Sehr hohe Öl- und Fettaufnahme.",
     "image": "/images/categories/putzwolle.jpg",
     "slug": "putzwolle",
     "defaultValue": "250",
@@ -58,75 +58,81 @@
     "subcategories": []
   },
   {
-    "id": "putzpapier",
-    "name": "Putzpapier",
-    "description": "Putzpapiere aus recycelten Rohstoffen oder reinen Zellstoffprodukten",
-    "image": "/images/categories/putzpapier.jpg",
-    "slug": "putzpapier",
+    "id": "putzpapierrollen",
+    "name": "Putzpapierrollen",
+    "description": "Wir bieten eine Vielzahl von Putzpapieren aus recycelten Rohstoffen oder aus reinen Zellstoffprodukten an.",
+    "image": "/images/categories/putzpapierrollen.jpg",
+    "slug": "putzpapierrollen",
     "defaultValue": "12",
     "unit": "Rollen",
     "productCount": 0,
-    "subcategories": [
-      {
-        "id": "putzpapierrollen",
-        "name": "Putzpapierrollen",
-        "slug": "putzpapierrollen",
-        "description": "Putzpapier in Rollenform",
-        "defaultValue": "12",
-        "unit": "Rollen"
-      },
-      {
-        "id": "putztuch-einzelblatt",
-        "name": "Putztuch im Einzelblatt",
-        "slug": "putztuch-im-einzelblatt",
-        "description": "Putzpapier in Einzelblattform",
-        "defaultValue": "12",
-        "unit": "Kartons"
-      }
-    ]
+    "subcategories": []
   },
   {
-    "id": "hygienepapiere",
-    "name": "Hygienepapiere",
-    "description": "Hygienepapiere für Industrie und Gewerbe",
-    "image": "/images/categories/hygienepapiere.jpg",
-    "slug": "hygienepapiere",
+    "id": "putzpapier-karton",
+    "name": "Putzpapier im Karton",
+    "description": "Hochwertige Putztücher im Karton für effiziente Reinigung. Ideal für den professionellen Einsatz in Industrie und Gewerbe.",
+    "image": "/images/categories/putzpapier-karton.jpg",
+    "slug": "putzpapier-im-karton",
+    "defaultValue": "12",
+    "unit": "Kartons",
+    "productCount": 0,
+    "subcategories": []
+  },
+  {
+    "id": "falthandtuecher-handtuchrollen",
+    "name": "Falthandtücher und Handtuchrollen",
+    "description": "Umfassendes Sortiment an Falthandtüchern und Handtuchrollen für höchste Hygieneansprüche in Sanitärbereichen.",
+    "image": "/images/categories/falthandtuecher-handtuchrollen.jpg",
+    "slug": "falthandtuecher-handtuchrollen",
     "defaultValue": "12",
     "unit": "Kartons",
     "productCount": 0,
     "subcategories": [
       {
-        "id": "papierhandtuecher",
-        "name": "Papierhandtücher",
-        "slug": "papierhandtuecher",
-        "description": "Falthandtücher und Papierhandtücher für sanitäre Einrichtungen"
-      },
-      {
-        "id": "toilettenpapier",
-        "name": "Toilettenpapier",
-        "slug": "toilettenpapier",
-        "description": "Toilettenpapier in verschiedenen Lagen"
+        "id": "falthandtuecher",
+        "name": "Falthandtücher",
+        "slug": "falthandtuecher",
+        "description": "Falthandtücher in verschiedenen Ausführungen für optimale Hygiene."
       },
       {
         "id": "handtuchrollen",
         "name": "Handtuchrollen",
         "slug": "handtuchrollen",
-        "description": "Handtuchrollen für Spendersysteme"
+        "description": "Handtuchrollen für Spendersysteme, ideal für den professionellen Einsatz."
+      }
+    ]
+  },
+  {
+    "id": "toilettenpapier-kuechenrollen",
+    "name": "Toilettenpapier und Küchenrollen",
+    "description": "Hochwertiges Toilettenpapier und praktische Küchenrollen für den täglichen Bedarf in Industrie und Gewerbe.",
+    "image": "/images/categories/toilettenpapier-kuechenrollen.jpg",
+    "slug": "toilettenpapier-kuechenrollen",
+    "defaultValue": "12",
+    "unit": "Kartons",
+    "productCount": 0,
+    "subcategories": [
+      {
+        "id": "toilettenpapier",
+        "name": "Toilettenpapier",
+        "slug": "toilettenpapier",
+        "description": "Toilettenpapier in verschiedenen Lagen und Ausführungen."
       },
       {
-        "id": "spendersysteme",
-        "name": "Spendersysteme",
-        "slug": "spendersysteme",
-        "description": "Spendersysteme für Putzpapierrollen, Toilettenpapier und Falthandtücher"
+        "id": "kuechenrollen",
+        "name": "Küchenrollen",
+        "slug": "kuechenrollen",
+        "description": "Robuste Küchenrollen für vielseitige Reinigungsaufgaben."
       }
     ]
   },
   {
     "id": "putztuchreinigung",
-    "name": "Putztuchreinigung",
-    "description": "Mehrwegsystem Putztuchreinigung - sauber und umweltfreundlich",
-    "image": "/images/categories/putztuchreinigung.jpg",
-    "slug": "putztuchreinigung",
+    "name": "Maschinenputztücher",
+    "description": "Das Mehrwegsystem Putztuchreinigung ist eine saubere und umweltfreundliche Sache. Sie haben keine Lager-, Abfall- und Transportkosten, was eine spürbare Entlastung bedeutet. Es werden Putztücher aus 100 % Baumwolle in ca. 40 × 40 cm gewebt, damit ein einheitliches Material zum Einsatz kommt.",
+    "image": "/images/categories/maschinenputztuecher-reinigung.jpg",
+    "slug": "maschinenputztuecher-reinigung",
     "defaultValue": null,
     "unit": null,
     "productCount": 0,
@@ -135,7 +141,7 @@
   {
     "id": "sonstiges",
     "name": "Sonstiges",
-    "description": "Weitere Produkte für Industrie und Gewerbe",
+    "description": "Weitere Produkte für Industrie und Gewerbe, die Ihre Betriebshygiene optimal ergänzen.",
     "image": "/images/categories/sonstiges.jpg",
     "slug": "sonstiges",
     "defaultValue": null,

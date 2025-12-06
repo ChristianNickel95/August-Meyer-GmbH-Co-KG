@@ -28,7 +28,23 @@ export function AddToCartButton({
   const existingItem = items.find(item => item.categoryId === categoryId);
 
   const handleAddToCart = (): void => {
-    if (quantity && quantity !== '0') {
+    // Wenn keine defaultValue vorhanden ist (z.B. bei Services), erlaube auch leere Menge
+    if (defaultQuantity === null || defaultQuantity === undefined || defaultQuantity === '') {
+      // Für Services: Menge ist optional
+      addItem({
+        categoryId,
+        categoryName,
+        quantity: quantity || '1',
+        unit,
+      });
+      setIsAdded(true);
+      setTimeout(() => {
+        setIsOpen(false);
+        setIsAdded(false);
+        setQuantity('');
+      }, 1000);
+    } else if (quantity && quantity !== '0') {
+      // Für normale Produkte: Menge ist erforderlich
       addItem({
         categoryId,
         categoryName,
@@ -70,21 +86,23 @@ export function AddToCartButton({
           )}
           <div>
             <label htmlFor="quantity" className="block text-sm font-medium text-neutral-700 mb-2">
-              Menge {unit && `(${unit})`}
+              {defaultQuantity === null || defaultQuantity === undefined || defaultQuantity === '' 
+                ? 'Anzahl (optional)' 
+                : `Menge ${unit ? `(${unit})` : ''}`}
             </label>
             <Input
               id="quantity"
               type="text"
               value={quantity}
               onChange={(e) => setQuantity(e.target.value)}
-              placeholder={defaultQuantity || '0'}
+              placeholder={defaultQuantity || (defaultQuantity === null || defaultQuantity === undefined || defaultQuantity === '' ? '1' : '0')}
               className="text-lg"
             />
           </div>
           <div className="flex gap-3">
             <Button
               onClick={handleAddToCart}
-              disabled={!quantity || quantity === '0' || isAdded}
+              disabled={isAdded || (defaultQuantity !== null && defaultQuantity !== undefined && defaultQuantity !== '' && (!quantity || quantity === '0'))}
               className="flex-1"
             >
               {isAdded ? (

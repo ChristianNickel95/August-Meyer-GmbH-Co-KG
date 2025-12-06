@@ -34,27 +34,34 @@ export function AddProductToCartButton({
   const existingItem = items.find(item => item.categoryId === itemId);
 
   const handleAddToCart = (): void => {
-    if (quantity && quantity !== '0' && selectedVariant) {
-      addItem({
-        categoryId: itemId,
-        categoryName: `${product.name} - ${selectedVariant.name} (Art.-Nr.: ${selectedVariant.articleNumber})`,
-        quantity,
-        unit,
-      });
-      setIsAdded(true);
-      setTimeout(() => {
-        setIsOpen(false);
-        setIsAdded(false);
-        setQuantity(defaultQuantity);
-      }, 1000);
+    if (selectedVariant) {
+      // Wenn keine defaultValue vorhanden ist (z.B. bei Services), erlaube auch leere Menge
+      const finalQuantity = (defaultQuantity === null || defaultQuantity === undefined || defaultQuantity === '') 
+        ? (quantity || '1') 
+        : quantity;
+      
+      if (finalQuantity && finalQuantity !== '0') {
+        addItem({
+          categoryId: itemId,
+          categoryName: `${product.name} - ${selectedVariant.name} (Art.-Nr.: ${selectedVariant.articleNumber})`,
+          quantity: finalQuantity,
+          unit,
+        });
+        setIsAdded(true);
+        setTimeout(() => {
+          setIsOpen(false);
+          setIsAdded(false);
+          setQuantity(defaultQuantity || '');
+        }, 1000);
+      }
     }
   };
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button variant="default" size="sm" className="w-full font-semibold text-sm">
-          <ShoppingCart className="w-4 h-4 mr-2" />
+        <Button variant="default" size="sm" className="w-full font-semibold text-xs md:text-sm py-1.5 h-auto">
+          <ShoppingCart className="w-3 h-3 md:w-4 md:h-4 mr-1.5" />
           {existingItem ? 'Menge ändern' : 'Anfragen'}
         </Button>
       </DialogTrigger>
@@ -115,14 +122,16 @@ export function AddProductToCartButton({
           {/* Mengen-Eingabe */}
           <div>
             <Label htmlFor="quantity" className="block text-sm font-medium text-neutral-700 mb-2">
-              Menge {unit && `(${unit})`}
+              {defaultQuantity === null || defaultQuantity === undefined || defaultQuantity === '' 
+                ? 'Anzahl (optional)' 
+                : `Menge ${unit ? `(${unit})` : ''}`}
             </Label>
             <Input
               id="quantity"
               type="text"
               value={quantity}
               onChange={(e) => setQuantity(e.target.value)}
-              placeholder={defaultQuantity || '0'}
+              placeholder={defaultQuantity || (defaultQuantity === null || defaultQuantity === undefined || defaultQuantity === '' ? '1' : '0')}
               className="text-lg"
             />
             {product.variants[0]?.description && (
@@ -133,7 +142,7 @@ export function AddProductToCartButton({
           <div className="flex gap-3">
             <Button
               onClick={handleAddToCart}
-              disabled={!quantity || quantity === '0' || isAdded || !selectedVariant}
+              disabled={isAdded || !selectedVariant || (defaultQuantity !== null && defaultQuantity !== undefined && defaultQuantity !== '' && (!quantity || quantity === '0'))}
               className="flex-1"
             >
               {isAdded ? (

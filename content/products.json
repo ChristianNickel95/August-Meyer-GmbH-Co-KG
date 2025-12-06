@@ -25,27 +25,35 @@
     "image": "/images/products/trikotputzlappen-bunt.jpg",
     "slug": "trikotputzlappen-bunt",
     "articleNumber": "2222",
-    "properties": ["Saugfähig", "Gut für Fett und Öl"]
+    "properties": [
+      "Saugfähig",
+      "Gut für Fett und Öl"
+    ],
+    "useCases": [
+      "oel_fett_entfernen",
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen"
+    ]
   },
   {
     "id": "trikotputzlappen-extra-hell",
-    "name": "Trikotputzlappen extra hell",
+    "name": "Trikotputzlappen extra hell (Pastell)",
     "category": "putzlappen",
     "categoryName": "Putzlappen",
     "subcategory": "trikotputzlappen",
     "subcategoryName": "Trikotputzlappen",
-    "description": "Bearbeitet nach DIN 61650. Putzlappen in Pastellfarben aus Baumwolle in T-Shirt, Sweatshirt und Unterhemdenqualität, sehr saugfähiges Material. Sehr gut geeignet für die Aufnahme von Fett und Öl.",
+    "description": "Bearbeitet nach DIN 61650. Putzlappen in Pastellfarben aus Baumwolle in T-Shirt, Sweatshirt und Unterhemdenqualität. Sehr saugfähiges Material, ideal für die Aufnahme von Fett und Öl. Die hellen Pastelltöne ermöglichen eine bessere Kontrolle der Reinigungsqualität.",
     "shortDescription": "Putzlappen in Pastellfarben aus Baumwolle",
     "benefits": [
       "Sehr saugfähiges Material",
       "Sehr gut geeignet für die Aufnahme von Fett und Öl",
       "Bearbeitet nach DIN 61650",
-      "Pastellfarben"
+      "Pastellfarben für bessere Kontrolle"
     ],
     "variants": [
       {
         "id": "trikot-extra-hell-2242",
-        "name": "Trikotputzlappen extra hell",
+        "name": "Trikotputzlappen extra hell (Pastell)",
         "articleNumber": "2242",
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
@@ -53,27 +61,35 @@
     "image": "/images/products/trikotputzlappen-extra-hell.jpg",
     "slug": "trikotputzlappen-extra-hell",
     "articleNumber": "2242",
-    "properties": ["Saugfähig", "Gut für Fett und Öl"]
+    "properties": [
+      "Saugfähig",
+      "Gut für Fett und Öl"
+    ],
+    "useCases": [
+      "oel_fett_entfernen",
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen"
+    ]
   },
   {
     "id": "trikotputzlappen-weiss-1",
-    "name": "Trikotputzlappen Weiß 1",
+    "name": "Trikotputzlappen weiß 1 (reinweiß)",
     "category": "putzlappen",
     "categoryName": "Putzlappen",
     "subcategory": "trikotputzlappen",
     "subcategoryName": "Trikotputzlappen",
-    "description": "Bearbeitet nach DIN 61650. Hergestellt aus sehr saugfähigen Baumwollstoffen wie T-Shirt und Unterhemdenmaterial. Reinweiße Ausführung. Sehr gut geeignet für die Aufnahme von Fett und Öl.",
+    "description": "Bearbeitet nach DIN 61650. Hergestellt aus sehr saugfähigen Baumwollstoffen wie T-Shirt und Unterhemdenmaterial. Reinweiße Ausführung. Sehr gut geeignet für die Aufnahme von Fett und Öl. Ideal für sensible Bereiche und Lebensmittelindustrie.",
     "shortDescription": "Reinweiße Trikotputzlappen aus sehr saugfähigen Baumwollstoffen",
     "benefits": [
       "Sehr saugfähiges Material",
       "Sehr gut geeignet für die Aufnahme von Fett und Öl",
       "Bearbeitet nach DIN 61650",
-      "Reinweiß"
+      "Reinweiß für sensible Bereiche"
     ],
     "variants": [
       {
         "id": "trikot-weiss-1-2292",
-        "name": "Trikotputzlappen Weiß 1 (reinweiß)",
+        "name": "Trikotputzlappen weiß 1 (reinweiß)",
         "articleNumber": "2292",
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
@@ -81,27 +97,37 @@
     "image": "/images/products/trikotputzlappen-weiss-1.jpg",
     "slug": "trikotputzlappen-weiss-1",
     "articleNumber": "2292",
-    "properties": ["Saugfähig", "Gut für Fett und Öl", "Lebensmittelecht"]
+    "properties": [
+      "Saugfähig",
+      "Gut für Fett und Öl",
+      "Lebensmittelecht",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "oel_fett_entfernen",
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen"
+    ]
   },
   {
     "id": "trikotputzlappen-weiss-2",
-    "name": "Trikotputzlappen Weiß 2",
+    "name": "Trikotputzlappen weiß 2 (weiß gründlich mit farblichen Applikationen)",
     "category": "putzlappen",
     "categoryName": "Putzlappen",
     "subcategory": "trikotputzlappen",
     "subcategoryName": "Trikotputzlappen",
-    "description": "Bearbeitet nach DIN 61650. Hergestellt aus sehr saugfähigen Baumwollstoffen wie T-Shirt und Unterhemdenmaterial. Weiß gründlich mit farblichen Applikationen. Sehr gut geeignet für die Aufnahme von Fett und Öl.",
+    "description": "Bearbeitet nach DIN 61650. Hergestellt aus sehr saugfähigen Baumwollstoffen wie T-Shirt und Unterhemdenmaterial. Weiß gründlich mit farblichen Applikationen. Sehr gut geeignet für die Aufnahme von Fett und Öl. Die farblichen Applikationen ermöglichen eine bessere Unterscheidung bei verschiedenen Anwendungen.",
     "shortDescription": "Weiße Trikotputzlappen mit farblichen Applikationen",
     "benefits": [
       "Sehr saugfähiges Material",
       "Sehr gut geeignet für die Aufnahme von Fett und Öl",
       "Bearbeitet nach DIN 61650",
-      "Mit farblichen Applikationen"
+      "Farbliche Applikationen zur Unterscheidung"
     ],
     "variants": [
       {
         "id": "trikot-weiss-2-2298",
-        "name": "Trikotputzlappen Weiß 2",
+        "name": "Trikotputzlappen weiß 2 (weiß gründlich mit farblichen Applikationen)",
         "articleNumber": "2298",
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
@@ -109,7 +135,16 @@
     "image": "/images/products/trikotputzlappen-weiss-2.jpg",
     "slug": "trikotputzlappen-weiss-2",
     "articleNumber": "2298",
-    "properties": ["Saugfähig", "Gut für Fett und Öl", "Lebensmittelecht"]
+    "properties": [
+      "Saugfähig",
+      "Gut für Fett und Öl",
+      "Lebensmittelecht"
+    ],
+    "useCases": [
+      "oel_fett_entfernen",
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen"
+    ]
   },
   {
     "id": "kattunputzlappen-hellbunt",
@@ -118,7 +153,7 @@
     "categoryName": "Putzlappen",
     "subcategory": "kattunputzlappen",
     "subcategoryName": "Kattunputzlappen",
-    "description": "Putzlappen nach DIN 61650 aus dünner, leichter Baumwollware, wie Hemden,- Blusen,- und Schürzenstoffe. Sehr gut geeignet für leichte Putzarbeiten bei fusselfreiem Einsatz.",
+    "description": "Putzlappen nach DIN 61650 aus dünner, leichter Baumwollware, wie Hemden, Blusen und Schürzenstoffe. Sehr gut geeignet für leichte Putzarbeiten bei fusselfreiem Einsatz. Ideal für empfindliche Oberflächen und feine Reinigungsarbeiten.",
     "shortDescription": "Leichte Putzlappen aus dünner Baumwollware für fusselfreie Putzarbeiten",
     "benefits": [
       "Fusselfrei",
@@ -131,13 +166,22 @@
         "id": "kattun-hellbunt-2102",
         "name": "Kattunputzlappen hellbunt",
         "articleNumber": "2102",
-        "description": "Ihre gewünschten Mengen in Kilogramm bitte in untenstehendes Feld eingeben."
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
     "image": "/images/products/kattunputzlappen-hellbunt.jpg",
     "slug": "kattunputzlappen-hellbunt",
     "articleNumber": "2102",
-    "properties": ["Für leichte Putzarbeiten", "Fusselfrei"]
+    "properties": [
+      "Für leichte Putzarbeiten",
+      "Fusselfrei",
+      "Für sensible Oberflächen"
+    ],
+    "useCases": [
+      "fusselfrei_reinigen",
+      "schlierenfrei_reinigen",
+      "grobe_verschmutzungen"
+    ]
   },
   {
     "id": "kattunputzlappen-weiss",
@@ -146,26 +190,36 @@
     "categoryName": "Putzlappen",
     "subcategory": "kattunputzlappen",
     "subcategoryName": "Kattunputzlappen",
-    "description": "Weiße Kattunputzlappen nach DIN 61650, hergestellt aus leichten Baumwollstoffen wie Hemden,- Blusen,- und Schürzenmaterial. Sehr gut geeignet für leichte Putzarbeiten bei fusselfreiem Einsatz.",
+    "description": "Weiße Kattunputzlappen nach DIN 61650, hergestellt aus leichten Baumwollstoffen wie Hemden, Blusen und Schürzenmaterial. Sehr gut geeignet für leichte Putzarbeiten bei fusselfreiem Einsatz. Ideal für empfindliche Oberflächen und hygienische Anforderungen.",
     "shortDescription": "Weiße, leichte Putzlappen für fusselfreie Putzarbeiten",
     "benefits": [
       "Fusselfrei",
       "Geeignet für leichte Putzarbeiten",
       "Bearbeitet nach DIN 61650",
-      "Weiß"
+      "Weiß für hygienische Anforderungen"
     ],
     "variants": [
       {
-        "id": "kattun-weiss-2180",
+        "id": "kattun-weiss-2190",
         "name": "Kattunputzlappen weiß",
-        "articleNumber": "2180",
-        "description": "Ihre gewünschten Mengen in Kilogramm bitte in untenstehendes Feld eingeben."
+        "articleNumber": "2190",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
     "image": "/images/products/kattunputzlappen-weiss.jpg",
     "slug": "kattunputzlappen-weiss",
-    "articleNumber": "2180",
-    "properties": ["Für leichte Putzarbeiten", "Fusselfrei", "Lebensmittelecht"]
+    "articleNumber": "2190",
+    "properties": [
+      "Für leichte Putzarbeiten",
+      "Fusselfrei",
+      "Lebensmittelecht",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "fusselfrei_reinigen",
+      "schlierenfrei_reinigen",
+      "grobe_verschmutzungen"
+    ]
   },
   {
     "id": "putzlappen-bettwaesche-bunt",
@@ -174,26 +228,35 @@
     "categoryName": "Putzlappen",
     "subcategory": "putzlappen-bettwaesche",
     "subcategoryName": "Putzlappen aus Bettwäsche",
-    "description": "Putzlappen aus recycelter Bettwäsche nach DIN 61650. Hergestellt aus hochwertigen Baumwollstoffen von Bettwäsche. Sehr saugfähig und langlebig.",
+    "description": "Bunte Putzlappen aus Bettwäsche nach DIN 61650. Hergestellt aus reinen Baumwollstoffen wie Bettlaken, Bezüge usw. Nahtlos, fusselfrei und sehr saugfähig. Ideal für mittlere bis schwere Reinigungsaufgaben.",
     "shortDescription": "Putzlappen aus recycelter Bettwäsche",
     "benefits": [
       "Aus recycelter Bettwäsche",
       "Sehr saugfähig",
-      "Langlebig",
+      "Nahtlos und fusselfrei",
       "Bearbeitet nach DIN 61650"
     ],
     "variants": [
       {
-        "id": "bettwaesche-bunt-2222",
+        "id": "bettwaesche-bunt-2153",
         "name": "Putzlappen aus Bettwäsche bunt",
-        "articleNumber": "2222",
-        "description": "Ihre gewünschten Mengen in Kilogramm bitte in untenstehendes Feld eingeben."
+        "articleNumber": "2153",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
     "image": "/images/products/putzlappen-bettwaesche-bunt.jpg",
     "slug": "putzlappen-aus-bettwaesche-bunt",
-    "articleNumber": "2222",
-    "properties": ["Nahtlos", "Fusselfrei", "Saugfähig"]
+    "articleNumber": "2153",
+    "properties": [
+      "Nahtlos",
+      "Fusselfrei",
+      "Saugfähig"
+    ],
+    "useCases": [
+      "fusselfrei_reinigen",
+      "schlierenfrei_reinigen",
+      "fluessigkeiten_aufnehmen"
+    ]
   },
   {
     "id": "putzlappen-biberbettwaesche-bunt",
@@ -202,26 +265,36 @@
     "categoryName": "Putzlappen",
     "subcategory": "putzlappen-bettwaesche",
     "subcategoryName": "Putzlappen aus Bettwäsche",
-    "description": "Putzlappen aus recycelter Biberbettwäsche nach DIN 61650. Hergestellt aus hochwertigen Biberstoffen. Besonders saugfähig und robust.",
-    "shortDescription": "Putzlappen aus recycelter Biberbettwäsche",
+    "description": "Bunte Putzlappen aus Biberbettwäsche hergestellt nach DIN 61650. Nahtfrei, sehr weich, gut saugfähig und ideal für Polierarbeiten. Die weiche Struktur schont empfindliche Oberflächen und eignet sich besonders für hochwertige Polierarbeiten.",
+    "shortDescription": "Weiche Putzlappen aus Biberbettwäsche für Polierarbeiten",
     "benefits": [
-      "Aus recycelter Biberbettwäsche",
-      "Besonders saugfähig",
-      "Robust",
-      "Bearbeitet nach DIN 61650"
+      "Sehr weich",
+      "Gut saugfähig",
+      "Ideal für Polierarbeiten",
+      "Nahtfrei"
     ],
     "variants": [
       {
-        "id": "biberbettwaesche-bunt-2153",
+        "id": "biberbettwaesche-bunt-2150",
         "name": "Putzlappen aus Biberbettwäsche bunt",
-        "articleNumber": "2153",
-        "description": "Ihre gewünschten Mengen in Kilogramm bitte in untenstehendes Feld eingeben."
+        "articleNumber": "2150",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
     "image": "/images/products/putzlappen-biberbettwaesche-bunt.jpg",
     "slug": "putzlappen-aus-biberbettwaesche-bunt",
-    "articleNumber": "2153",
-    "properties": ["Nahtlos", "Fusselfrei", "Saugfähig"]
+    "articleNumber": "2150",
+    "properties": [
+      "Sehr weich",
+      "Für Polierarbeiten",
+      "Schonend",
+      "Saugfähig"
+    ],
+    "useCases": [
+      "polieren",
+      "schlierenfrei_reinigen",
+      "fluessigkeiten_aufnehmen"
+    ]
   },
   {
     "id": "putzlappen-bettwaesche-weiss",
@@ -230,27 +303,36 @@
     "categoryName": "Putzlappen",
     "subcategory": "putzlappen-bettwaesche",
     "subcategoryName": "Putzlappen aus Bettwäsche",
-    "description": "Weiße Putzlappen aus recycelter Bettwäsche nach DIN 61650. Hergestellt aus hochwertigen Baumwollstoffen von Bettwäsche. Sehr saugfähig und langlebig.",
+    "description": "Weiße Putzlappen aus Bettwäsche nach DIN 61650. Sehr saugfähig, fusselarm und nahtfrei. Ideal für mittlere bis schwere Reinigungsaufgaben mit hohen hygienischen Anforderungen.",
     "shortDescription": "Weiße Putzlappen aus recycelter Bettwäsche",
     "benefits": [
-      "Aus recycelter Bettwäsche",
       "Sehr saugfähig",
-      "Langlebig",
-      "Weiß",
-      "Bearbeitet nach DIN 61650"
+      "Fusselarm",
+      "Nahtfrei",
+      "Weiß für hygienische Anforderungen"
     ],
     "variants": [
       {
         "id": "bettwaesche-weiss-2180",
         "name": "Putzlappen aus Bettwäsche weiß",
         "articleNumber": "2180",
-        "description": "Ihre gewünschten Mengen in Kilogramm bitte in untenstehendes Feld eingeben."
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
     "image": "/images/products/putzlappen-bettwaesche-weiss.jpg",
     "slug": "putzlappen-aus-bettwaesche-weiss",
     "articleNumber": "2180",
-    "properties": ["Nahtlos", "Fusselfrei", "Saugfähig", "Lebensmittelecht"]
+    "properties": [
+      "Nahtlos",
+      "Fusselfrei",
+      "Saugfähig",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "fusselfrei_reinigen",
+      "schlierenfrei_reinigen",
+      "fluessigkeiten_aufnehmen"
+    ]
   },
   {
     "id": "putzlappen-frottee-bunt",
@@ -259,13 +341,13 @@
     "categoryName": "Putzlappen",
     "subcategory": "putzlappen-frottee",
     "subcategoryName": "Putzlappen aus Frottee",
-    "description": "Putzlappen aus recyceltem Frotteematerial nach DIN 61650. Besonders saugfähig durch die Frotteestruktur. Ideal für anspruchsvolle Reinigungsaufgaben.",
-    "shortDescription": "Besonders saugfähige Putzlappen aus Frotteematerial",
+    "description": "Putzlappen aus Frottee nach DIN 61650. Hergestellt aus Handtüchern, Badelaken und Bademänteln. Höchstes Saugvermögen im Sortiment. Ideal für starke Verschmutzungen und hohe Saugfähigkeitsanforderungen.",
+    "shortDescription": "Putzlappen aus Frottee mit höchstem Saugvermögen",
     "benefits": [
-      "Aus recyceltem Frottee",
-      "Besonders saugfähig",
-      "Ideal für anspruchsvolle Reinigungsaufgaben",
-      "Bearbeitet nach DIN 61650"
+      "Höchstes Saugvermögen",
+      "Aus Frotteematerial",
+      "Bearbeitet nach DIN 61650",
+      "Ideal für starke Verschmutzungen"
     ],
     "variants": [
       {
@@ -278,7 +360,16 @@
     "image": "/images/products/putzlappen-frottee-bunt.jpg",
     "slug": "putzlappen-aus-frottee-bunt",
     "articleNumber": "2302",
-    "properties": ["Höchstes Saugvermögen"]
+    "properties": [
+      "Sehr saugfähig",
+      "Für starke Verschmutzungen",
+      "Höchste Saugfähigkeit"
+    ],
+    "useCases": [
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen",
+      "oel_fett_entfernen"
+    ]
   },
   {
     "id": "putzlappen-frottee-weiss",
@@ -287,14 +378,13 @@
     "categoryName": "Putzlappen",
     "subcategory": "putzlappen-frottee",
     "subcategoryName": "Putzlappen aus Frottee",
-    "description": "Weiße Putzlappen aus recyceltem Frotteematerial nach DIN 61650. Besonders saugfähig durch die Frotteestruktur. Ideal für anspruchsvolle Reinigungsaufgaben.",
-    "shortDescription": "Weiße, besonders saugfähige Putzlappen aus Frotteematerial",
+    "description": "Weiße Putzlappen aus Frottee nach DIN 61650. Hergestellt aus Handtüchern, Badelaken und Bademänteln. Höchstes Saugvermögen im Sortiment. Ideal für starke Verschmutzungen mit hohen hygienischen Anforderungen.",
+    "shortDescription": "Weiße Putzlappen aus Frottee mit höchstem Saugvermögen",
     "benefits": [
-      "Aus recyceltem Frottee",
-      "Besonders saugfähig",
-      "Ideal für anspruchsvolle Reinigungsaufgaben",
-      "Weiß",
-      "Bearbeitet nach DIN 61650"
+      "Höchstes Saugvermögen",
+      "Aus Frotteematerial",
+      "Bearbeitet nach DIN 61650",
+      "Weiß für hygienische Anforderungen"
     ],
     "variants": [
       {
@@ -307,363 +397,1864 @@
     "image": "/images/products/putzlappen-frottee-weiss.jpg",
     "slug": "putzlappen-aus-frottee-weiss",
     "articleNumber": "XXXX",
-    "properties": ["Höchstes Saugvermögen", "Lebensmittelecht"]
+    "properties": [
+      "Sehr saugfähig",
+      "Für starke Verschmutzungen",
+      "Höchste Saugfähigkeit",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen",
+      "oel_fett_entfernen"
+    ]
   },
   {
-    "id": "frotteehandtuecher-bunt",
-    "name": "Frotteehandtücher bunt",
+    "id": "putzlappen-frotteehandtuecher-bunt",
+    "name": "Putzlappen aus Frotteehandtücher bunt",
     "category": "putzlappen",
     "categoryName": "Putzlappen",
     "subcategory": "putzlappen-frottee",
     "subcategoryName": "Putzlappen aus Frottee",
-    "description": "Frotteehandtücher aus recyceltem Frotteematerial. Besonders saugfähig und langlebig. Ideal für den Einsatz in Küchen und Sanitärbereichen.",
-    "shortDescription": "Saugfähige Frotteehandtücher aus recyceltem Material",
+    "description": "Putzlappen aus Frotteehandtüchern nach DIN 61650. Sortiert und mittig 1× durchgeschnitten. Höchstes Saugvermögen im Sortiment. Ideal für starke Verschmutzungen und hohe Saugfähigkeitsanforderungen.",
+    "shortDescription": "Putzlappen aus sortierten Frotteehandtüchern",
     "benefits": [
-      "Aus recyceltem Frottee",
-      "Besonders saugfähig",
-      "Langlebig",
-      "Ideal für Küchen und Sanitärbereiche"
+      "Höchstes Saugvermögen",
+      "Sortiert und durchgeschnitten",
+      "Bearbeitet nach DIN 61650",
+      "Ideal für starke Verschmutzungen"
     ],
     "variants": [
       {
         "id": "frotteehandtuecher-bunt-xxxx",
-        "name": "Frotteehandtücher bunt",
+        "name": "Putzlappen aus Frotteehandtücher bunt",
         "articleNumber": "XXXX",
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/products/frotteehandtuecher-bunt.jpg",
-    "slug": "frotteehandtuecher-bunt",
+    "image": "/images/products/putzlappen-frotteehandtuecher-bunt.jpg",
+    "slug": "putzlappen-aus-frotteehandtuecher-bunt",
     "articleNumber": "XXXX",
-    "properties": ["Höchstes Saugvermögen", "Langlebig"]
+    "properties": [
+      "Sehr saugfähig",
+      "Für starke Verschmutzungen",
+      "Höchste Saugfähigkeit"
+    ],
+    "useCases": [
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen",
+      "oel_fett_entfernen"
+    ]
   },
   {
-    "id": "frotteehandtuecher-weiss",
-    "name": "Frotteehandtücher weiß",
+    "id": "putzlappen-frotteehandtuecher-weiss",
+    "name": "Putzlappen aus Frotteehandtücher weiß",
     "category": "putzlappen",
     "categoryName": "Putzlappen",
     "subcategory": "putzlappen-frottee",
     "subcategoryName": "Putzlappen aus Frottee",
-    "description": "Weiße Frotteehandtücher aus recyceltem Frotteematerial. Besonders saugfähig und langlebig. Ideal für den Einsatz in Küchen und Sanitärbereichen.",
-    "shortDescription": "Weiße, saugfähige Frotteehandtücher aus recyceltem Material",
+    "description": "Weiße Putzlappen aus Frotteehandtüchern nach DIN 61650. Sortiert und mittig 1× durchgeschnitten. Höchstes Saugvermögen im Sortiment. Ideal für starke Verschmutzungen mit hohen hygienischen Anforderungen.",
+    "shortDescription": "Weiße Putzlappen aus sortierten Frotteehandtüchern",
     "benefits": [
-      "Aus recyceltem Frottee",
-      "Besonders saugfähig",
-      "Langlebig",
-      "Weiß",
-      "Ideal für Küchen und Sanitärbereiche"
+      "Höchstes Saugvermögen",
+      "Sortiert und durchgeschnitten",
+      "Bearbeitet nach DIN 61650",
+      "Weiß für hygienische Anforderungen"
     ],
     "variants": [
       {
         "id": "frotteehandtuecher-weiss-xxxx",
-        "name": "Frotteehandtücher weiß",
+        "name": "Putzlappen aus Frotteehandtücher weiß",
         "articleNumber": "XXXX",
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/products/frotteehandtuecher-weiss.jpg",
-    "slug": "frotteehandtuecher-weiss",
+    "image": "/images/products/putzlappen-frotteehandtuecher-weiss.jpg",
+    "slug": "putzlappen-aus-frotteehandtuecher-weiss",
     "articleNumber": "XXXX",
-    "properties": ["Höchstes Saugvermögen", "Langlebig", "Lebensmittelecht"]
+    "properties": [
+      "Sehr saugfähig",
+      "Für starke Verschmutzungen",
+      "Höchste Saugfähigkeit",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen",
+      "oel_fett_entfernen"
+    ]
   },
   {
-    "id": "putzwolle",
-    "name": "Putzwolle",
-    "category": "putzwolle",
-    "categoryName": "Putzwolle",
-    "description": "Hochwertige Putzwolle für anspruchsvolle Reinigungsaufgaben. Besonders saugfähig und vielseitig einsetzbar.",
-    "shortDescription": "Hochwertige Putzwolle für anspruchsvolle Reinigungsaufgaben",
-    "benefits": [
-      "Besonders saugfähig",
-      "Vielseitig einsetzbar",
-      "Hochwertige Qualität"
-    ],
-    "variants": [
-      {
-        "id": "putzwolle-xxxx",
-        "name": "Putzwolle",
-        "articleNumber": "XXXX",
-        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
-      }
-    ],
-    "image": "/images/products/putzwolle.jpg",
-    "slug": "putzwolle",
-    "articleNumber": "XXXX",
-    "properties": ["Sehr saugfähig", "Für Maschinenreinigung", "Für grobe Reinigungsarbeiten", "Fusselfrei"]
-  },
-  {
-    "id": "vliestuecher",
-    "name": "Vliestücher",
+    "id": "vliestuecher-bunt",
+    "name": "Vliestücher bunt",
     "category": "vliestuecher",
     "categoryName": "Vliestücher",
-    "description": "Saugfähige Vliestücher aus textilen Fasermaterialien. Ideal für den industriellen Einsatz.",
+    "description": "Vliestücher aus textil, gerissenem Fasermaterial, welches durch mechanisches Bearbeiten zu einem Putztuch zusammengesetzt ist. Sehr saugfähig, homogen und eignen sich gut für grobe Putzarbeiten. Ideal für industrielle Anwendungen.",
     "shortDescription": "Saugfähige Vliestücher aus textilen Fasermaterialien",
     "benefits": [
-      "Saugfähig",
-      "Ideal für industriellen Einsatz",
+      "Sehr saugfähig",
+      "Homogen",
+      "Geeignet für grobe Putzarbeiten",
       "Aus textilen Fasermaterialien"
     ],
     "variants": [
       {
-        "id": "vliestuecher-xxxx",
-        "name": "Vliestücher",
-        "articleNumber": "XXXX",
+        "id": "vliestuecher-bunt-3000",
+        "name": "Vliestücher bunt",
+        "articleNumber": "3000",
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/products/vliestuecher.jpg",
-    "slug": "vliestuecher",
-    "articleNumber": "XXXX",
-    "properties": ["Hervorragend saugfähig", "Für grobe Verschmutzungen", "Reißfest", "Für Industrie"]
-  },
-  {
-    "id": "putzpapierrollen-recycelt",
-    "name": "Putzpapierrollen recycelt",
-    "category": "putzpapier",
-    "categoryName": "Putzpapier",
-    "subcategory": "putzpapierrollen",
-    "subcategoryName": "Putzpapierrollen",
-    "description": "Putzpapierrollen aus recycelten Rohstoffen. Hohe Saugfähigkeit und Reißfestigkeit für den professionellen Einsatz.",
-    "shortDescription": "Putzpapierrollen aus recycelten Rohstoffen",
-    "benefits": [
-      "Aus recycelten Rohstoffen",
-      "Hohe Saugfähigkeit",
+    "image": "/images/products/vliestuecher-bunt.jpg",
+    "slug": "vliestuecher-bunt",
+    "articleNumber": "3000",
+    "properties": [
+      "Hervorragend saugfähig",
+      "Für grobe Verschmutzungen",
       "Reißfest",
-      "Professioneller Einsatz"
+      "Für Industrie"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "vliestuecher-hellbunt",
+    "name": "Vliestücher hellbunt",
+    "category": "vliestuecher",
+    "categoryName": "Vliestücher",
+    "description": "Hellbunte Vliestücher aus textil, gerissenem Fasermaterial, welches durch mechanisches Bearbeiten zu einem Putztuch zusammengesetzt ist. Sehr saugfähig, homogen und eignen sich gut für grobe Putzarbeiten. Die hellbunte Färbung ermöglicht eine bessere Kontrolle der Reinigungsqualität.",
+    "shortDescription": "Hellbunte Vliestücher aus textilen Fasermaterialien",
+    "benefits": [
+      "Sehr saugfähig",
+      "Homogen",
+      "Geeignet für grobe Putzarbeiten",
+      "Hellbunte Färbung"
     ],
     "variants": [
       {
-        "id": "putzpapierrollen-recycelt-xxxx",
-        "name": "Putzpapierrollen recycelt",
-        "articleNumber": "XXXX",
-        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+        "id": "vliestuecher-hellbunt-3015",
+        "name": "Vliestücher hellbunt",
+        "articleNumber": "3015",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/products/putzpapierrollen-recycelt.jpg",
-    "slug": "putzpapierrollen-recycelt",
-    "articleNumber": "XXXX",
-    "properties": ["Hochsaugfähig", "Reißfest", "Fusselfrei", "Recycelt"]
+    "image": "/images/products/vliestuecher-hellbunt.jpg",
+    "slug": "vliestuecher-hellbunt",
+    "articleNumber": "3015",
+    "properties": [
+      "Hervorragend saugfähig",
+      "Für grobe Verschmutzungen",
+      "Reißfest",
+      "Für Industrie"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen"
+    ]
   },
   {
-    "id": "putzpapierrollen-zellstoff",
-    "name": "Putzpapierrollen Zellstoff",
-    "category": "putzpapier",
-    "categoryName": "Putzpapier",
-    "subcategory": "putzpapierrollen",
+    "id": "vliestuecher-weiss",
+    "name": "Vliestücher weiß",
+    "category": "vliestuecher",
+    "categoryName": "Vliestücher",
+    "description": "Weiße Vliestücher aus textil, gerissenem Fasermaterial, welches durch mechanisches Bearbeiten zu einem Putztuch zusammengesetzt ist. Sehr saugfähig, homogen und eignen sich gut für grobe Putzarbeiten. Ideal für industrielle Anwendungen mit hohen hygienischen Anforderungen.",
+    "shortDescription": "Weiße Vliestücher aus textilen Fasermaterialien",
+    "benefits": [
+      "Sehr saugfähig",
+      "Homogen",
+      "Geeignet für grobe Putzarbeiten",
+      "Weiß für hygienische Anforderungen"
+    ],
+    "variants": [
+      {
+        "id": "vliestuecher-weiss-3023",
+        "name": "Vliestücher weiß",
+        "articleNumber": "3023",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/vliestuecher-weiss.jpg",
+    "slug": "vliestuecher-weiss",
+    "articleNumber": "3023",
+    "properties": [
+      "Hervorragend saugfähig",
+      "Für grobe Verschmutzungen",
+      "Reißfest",
+      "Für Industrie",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "putzwolle-bunt",
+    "name": "Putzwolle bunt",
+    "category": "putzwolle",
+    "categoryName": "Putzwolle",
+    "description": "Putzwolle besteht aus weichem, saugfähigem Fädenmaterial (Abfallprodukte aus Spinnerei und Weberei). Überwiegend Baumwolle. Langfädig, gekämmt und sehr saugfähig. Sehr hohe Öl- und Fettaufnahme. Ideal für anspruchsvolle Reinigungsaufgaben.",
+    "shortDescription": "Hochwertige Putzwolle für anspruchsvolle Reinigungsaufgaben",
+    "benefits": [
+      "Sehr hohe Öl- und Fettaufnahme",
+      "Langfädig und gekämmt",
+      "Sehr saugfähig",
+      "Überwiegend Baumwolle"
+    ],
+    "variants": [
+      {
+        "id": "putzwolle-bunt-1010",
+        "name": "Putzwolle bunt",
+        "articleNumber": "1010",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putzwolle-bunt.jpg",
+    "slug": "putzwolle-bunt",
+    "articleNumber": "1010",
+    "properties": [
+      "Sehr saugfähig",
+      "Für Maschinenreinigung",
+      "Für grobe Reinigungsarbeiten",
+      "Gut für Fett und Öl"
+    ],
+    "useCases": [
+      "oel_fett_entfernen",
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen"
+    ]
+  },
+  {
+    "id": "putzwolle-weiss",
+    "name": "Putzwolle weiß",
+    "category": "putzwolle",
+    "categoryName": "Putzwolle",
+    "description": "Weiße Putzwolle besteht aus weichem, saugfähigem Fädenmaterial (Abfallprodukte aus Spinnerei und Weberei). Überwiegend Baumwolle. Sehr hohe Öl- und Fettaufnahme. Ideal für anspruchsvolle Reinigungsaufgaben mit hohen hygienischen Anforderungen.",
+    "shortDescription": "Weiße Putzwolle für anspruchsvolle Reinigungsaufgaben",
+    "benefits": [
+      "Sehr hohe Öl- und Fettaufnahme",
+      "Sehr saugfähig",
+      "Überwiegend Baumwolle",
+      "Weiß für hygienische Anforderungen"
+    ],
+    "variants": [
+      {
+        "id": "putzwolle-weiss-1013",
+        "name": "Putzwolle weiß",
+        "articleNumber": "1013",
+        "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putzwolle-weiss.jpg",
+    "slug": "putzwolle-weiss",
+    "articleNumber": "1013",
+    "properties": [
+      "Sehr saugfähig",
+      "Für Maschinenreinigung",
+      "Für grobe Reinigungsarbeiten",
+      "Gut für Fett und Öl",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "oel_fett_entfernen",
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-blau-2-lagig",
+    "name": "Putztuchrolle blau 2-lagig",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
     "subcategoryName": "Putzpapierrollen",
-    "description": "Putzpapierrollen aus reinem Zellstoff. Maximale Saugfähigkeit und Qualität für anspruchsvolle Anwendungen.",
-    "shortDescription": "Putzpapierrollen aus reinem Zellstoff",
+    "description": "Putzpapierrolle blau, 2-lagig, 38 cm breit, 1000 Blatt à 36 cm. Aus recycelten Rohstoffen oder reinen Zellstoffprodukten. Ideal für den täglichen Reinigungsbedarf.",
+    "shortDescription": "Putzpapierrolle blau, 2-lagig, 38 cm breit, 1000 Blatt",
     "benefits": [
-      "Aus reinem Zellstoff",
-      "Maximale Saugfähigkeit",
-      "Höchste Qualität",
-      "Für anspruchsvolle Anwendungen"
+      "2-lagig für gute Saugfähigkeit",
+      "38 cm breit",
+      "1000 Blatt pro Rolle",
+      "Aus recycelten Rohstoffen"
     ],
     "variants": [
       {
-        "id": "putzpapierrollen-zellstoff-xxxx",
-        "name": "Putzpapierrollen Zellstoff",
-        "articleNumber": "XXXX",
+        "id": "putztuchrolle-blau-2-lagig-4127",
+        "name": "Putztuchrolle blau 2-lagig",
+        "articleNumber": "4127",
         "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/products/putzpapierrollen-zellstoff.jpg",
-    "slug": "putzpapierrollen-zellstoff",
-    "articleNumber": "XXXX",
-    "properties": ["Hochsaugfähig", "Reißfest", "Fusselfrei", "Für anspruchsvolle Anwendungen"]
+    "image": "/images/products/putztuchrolle-blau-2-lagig.jpg",
+    "slug": "putztuchrolle-blau-2-lagig",
+    "articleNumber": "4127",
+    "properties": [
+      "Saugfähig",
+      "Für allgemeine Reinigung"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
   },
   {
-    "id": "putztuch-einzelblatt-recycelt",
-    "name": "Putztuch im Einzelblatt recycelt",
-    "category": "putzpapier",
-    "categoryName": "Putzpapier",
-    "subcategory": "putztuch-einzelblatt",
-    "subcategoryName": "Putztuch im Einzelblatt",
-    "description": "Putzpapier im Einzelblatt aus recycelten Rohstoffen. Praktische und hygienische Entnahme für sparsamen Verbrauch.",
-    "shortDescription": "Putzpapier im Einzelblatt aus recycelten Rohstoffen",
+    "id": "putztuchrolle-blau-3-lagig",
+    "name": "Putztuchrolle blau 3-lagig",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrolle blau, 3-lagig, 38 cm breit, 1000 Blatt à 36 cm. Aus recycelten Rohstoffen oder reinen Zellstoffprodukten. Höhere Saugfähigkeit durch 3 Lagen.",
+    "shortDescription": "Putzpapierrolle blau, 3-lagig, 38 cm breit, 1000 Blatt",
     "benefits": [
-      "Aus recycelten Rohstoffen",
-      "Hygienische Einzelblattentnahme",
-      "Sparsamer Verbrauch",
-      "Praktisch"
+      "3-lagig für höhere Saugfähigkeit",
+      "38 cm breit",
+      "1000 Blatt pro Rolle",
+      "Aus recycelten Rohstoffen"
     ],
     "variants": [
       {
-        "id": "putztuch-einzelblatt-recycelt-xxxx",
-        "name": "Putztuch im Einzelblatt recycelt",
-        "articleNumber": "XXXX",
-        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+        "id": "putztuchrolle-blau-3-lagig-4137",
+        "name": "Putztuchrolle blau 3-lagig",
+        "articleNumber": "4137",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/products/putztuch-einzelblatt-recycelt.jpg",
-    "slug": "putztuch-im-einzelblatt-recycelt",
-    "articleNumber": "XXXX",
-    "properties": ["Hygienisch", "Sparsamer Verbrauch", "Fusselfrei", "Recycelt"]
+    "image": "/images/products/putztuchrolle-blau-3-lagig.jpg",
+    "slug": "putztuchrolle-blau-3-lagig",
+    "articleNumber": "4137",
+    "properties": [
+      "Sehr saugfähig",
+      "Für stärkere Verschmutzungen"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
   },
   {
-    "id": "putztuch-einzelblatt-zellstoff",
-    "name": "Putztuch im Einzelblatt Zellstoff",
-    "category": "putzpapier",
-    "categoryName": "Putzpapier",
-    "subcategory": "putztuch-einzelblatt",
-    "subcategoryName": "Putztuch im Einzelblatt",
-    "description": "Putzpapier im Einzelblatt aus reinem Zellstoff. Maximale Qualität und Saugfähigkeit mit hygienischer Einzelblattentnahme.",
-    "shortDescription": "Putzpapier im Einzelblatt aus reinem Zellstoff",
+    "id": "putztuchrolle-blau-2-lagig-klein",
+    "name": "Putztuchrolle blau 2-lagig (klein)",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrolle blau, 2-lagig, 22 cm breit, 1000 Blatt à 36 cm. Kompakte Größe für kleinere Spender und begrenzte Platzverhältnisse.",
+    "shortDescription": "Putzpapierrolle blau, 2-lagig, 22 cm breit, 1000 Blatt",
     "benefits": [
-      "Aus reinem Zellstoff",
-      "Maximale Qualität",
-      "Hygienische Einzelblattentnahme",
-      "Höchste Saugfähigkeit"
+      "2-lagig",
+      "22 cm breit - kompakte Größe",
+      "1000 Blatt pro Rolle",
+      "Ideal für kleine Spender"
     ],
     "variants": [
       {
-        "id": "putztuch-einzelblatt-zellstoff-xxxx",
-        "name": "Putztuch im Einzelblatt Zellstoff",
-        "articleNumber": "XXXX",
-        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+        "id": "putztuchrolle-blau-2-lagig-klein-4122",
+        "name": "Putztuchrolle blau 2-lagig (klein)",
+        "articleNumber": "4122",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/products/putztuch-einzelblatt-zellstoff.jpg",
-    "slug": "putztuch-im-einzelblatt-zellstoff",
-    "articleNumber": "XXXX",
-    "properties": ["Hygienisch", "Hochsaugfähig", "Reißfest", "Für anspruchsvolle Anwendungen"]
+    "image": "/images/products/putztuchrolle-blau-2-lagig-klein.jpg",
+    "slug": "putztuchrolle-blau-2-lagig-klein",
+    "articleNumber": "4122",
+    "properties": [
+      "Saugfähig",
+      "Kompakt"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
   },
   {
-    "id": "falthandtuecher",
-    "name": "Falthandtücher",
-    "category": "hygienepapiere",
-    "categoryName": "Hygienepapiere",
-    "subcategory": "papierhandtuecher",
-    "subcategoryName": "Papierhandtücher",
-    "description": "Falthandtücher für sanitäre Einrichtungen. Hochwertige Qualität für professionelle Handtrocknung.",
-    "shortDescription": "Falthandtücher für sanitäre Einrichtungen",
+    "id": "putztuchrolle-blau-3-lagig-klein",
+    "name": "Putztuchrolle blau 3-lagig (klein)",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrolle blau, 3-lagig, 22 cm breit, 1000 Blatt à 36 cm. Kompakte Größe mit höherer Saugfähigkeit durch 3 Lagen.",
+    "shortDescription": "Putzpapierrolle blau, 3-lagig, 22 cm breit, 1000 Blatt",
     "benefits": [
-      "Hochwertige Qualität",
-      "Professionelle Handtrocknung",
-      "Für sanitäre Einrichtungen"
+      "3-lagig für höhere Saugfähigkeit",
+      "22 cm breit - kompakte Größe",
+      "1000 Blatt pro Rolle",
+      "Ideal für kleine Spender"
     ],
     "variants": [
       {
-        "id": "falthandtuecher-xxxx",
-        "name": "Falthandtücher",
-        "articleNumber": "XXXX",
-        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+        "id": "putztuchrolle-blau-3-lagig-klein-4132",
+        "name": "Putztuchrolle blau 3-lagig (klein)",
+        "articleNumber": "4132",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/products/falthandtuecher.jpg",
-    "slug": "falthandtuecher",
-    "articleNumber": "XXXX",
-    "properties": ["Für Sanitärbereiche", "Sehr saugstark", "Hygienisch"]
+    "image": "/images/products/putztuchrolle-blau-3-lagig-klein.jpg",
+    "slug": "putztuchrolle-blau-3-lagig-klein",
+    "articleNumber": "4132",
+    "properties": [
+      "Sehr saugfähig",
+      "Kompakt"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
   },
   {
-    "id": "papierhandtuecher",
-    "name": "Papierhandtücher",
-    "category": "hygienepapiere",
-    "categoryName": "Hygienepapiere",
-    "subcategory": "papierhandtuecher",
-    "subcategoryName": "Papierhandtücher",
-    "description": "Papierhandtücher für sanitäre Einrichtungen. Saugfähig und hygienisch.",
-    "shortDescription": "Papierhandtücher für sanitäre Einrichtungen",
+    "id": "putztuchrolle-blau-3-lagig-500",
+    "name": "Putztuchrolle blau 3-lagig (500 Blatt)",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrolle blau, 3-lagig, 38 cm breit, 500 Blatt à 36 cm. Kompakte Rolle mit hoher Saugfähigkeit.",
+    "shortDescription": "Putzpapierrolle blau, 3-lagig, 38 cm breit, 500 Blatt",
     "benefits": [
+      "3-lagig für höhere Saugfähigkeit",
+      "38 cm breit",
+      "500 Blatt pro Rolle",
+      "Kompakte Rolle"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-blau-3-lagig-500-4038",
+        "name": "Putztuchrolle blau 3-lagig (500 Blatt)",
+        "articleNumber": "4038",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-blau-3-lagig-500.jpg",
+    "slug": "putztuchrolle-blau-3-lagig-500",
+    "articleNumber": "4038",
+    "properties": [
+      "Sehr saugfähig",
+      "Kompakt"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-blau-2-lagig-500",
+    "name": "Putztuchrolle blau 2-lagig (500 Blatt)",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrolle blau, 2-lagig, 22 cm breit, 500 Blatt à 36 cm. Kompakte Rolle für kleine Spender.",
+    "shortDescription": "Putzpapierrolle blau, 2-lagig, 22 cm breit, 500 Blatt",
+    "benefits": [
+      "2-lagig",
+      "22 cm breit",
+      "500 Blatt pro Rolle",
+      "Kompakte Rolle"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-blau-2-lagig-500-4022",
+        "name": "Putztuchrolle blau 2-lagig (500 Blatt)",
+        "articleNumber": "4022",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-blau-2-lagig-500.jpg",
+    "slug": "putztuchrolle-blau-2-lagig-500",
+    "articleNumber": "4022",
+    "properties": [
+      "Saugfähig",
+      "Kompakt"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-blau-3-lagig-500-klein",
+    "name": "Putztuchrolle blau 3-lagig (500 Blatt, klein)",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrolle blau, 3-lagig, 22 cm breit, 500 Blatt à 36 cm. Kompakte Rolle mit hoher Saugfähigkeit für kleine Spender.",
+    "shortDescription": "Putzpapierrolle blau, 3-lagig, 22 cm breit, 500 Blatt",
+    "benefits": [
+      "3-lagig für höhere Saugfähigkeit",
+      "22 cm breit",
+      "500 Blatt pro Rolle",
+      "Kompakte Rolle"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-blau-3-lagig-500-klein-4032",
+        "name": "Putztuchrolle blau 3-lagig (500 Blatt, klein)",
+        "articleNumber": "4032",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-blau-3-lagig-500-klein.jpg",
+    "slug": "putztuchrolle-blau-3-lagig-500-klein",
+    "articleNumber": "4032",
+    "properties": [
+      "Sehr saugfähig",
+      "Kompakt"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-weiss-2-lagig",
+    "name": "Putztuchrolle weiß 2-lagig",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrolle weiß, 2-lagig, 38 cm breit, 1000 Blatt à 36 cm. Aus recycelten Rohstoffen oder reinen Zellstoffprodukten. Ideal für hygienische Anforderungen.",
+    "shortDescription": "Putzpapierrolle weiß, 2-lagig, 38 cm breit, 1000 Blatt",
+    "benefits": [
+      "2-lagig für gute Saugfähigkeit",
+      "38 cm breit",
+      "1000 Blatt pro Rolle",
+      "Weiß für hygienische Anforderungen"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-weiss-2-lagig-4228",
+        "name": "Putztuchrolle weiß 2-lagig",
+        "articleNumber": "4228",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-weiss-2-lagig.jpg",
+    "slug": "putztuchrolle-weiss-2-lagig",
+    "articleNumber": "4228",
+    "properties": [
       "Saugfähig",
       "Hygienisch",
-      "Für sanitäre Einrichtungen"
+      "Für allgemeine Reinigung"
     ],
-    "variants": [
-      {
-        "id": "papierhandtuecher-xxxx",
-        "name": "Papierhandtücher",
-        "articleNumber": "XXXX",
-        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
-      }
-    ],
-    "image": "/images/products/papierhandtuecher.jpg",
-    "slug": "papierhandtuecher",
-    "articleNumber": "XXXX",
-    "properties": ["Für Sanitärbereiche", "Sehr saugstark", "Hygienisch"]
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
   },
   {
-    "id": "toilettenpapier",
-    "name": "Toilettenpapier",
-    "category": "hygienepapiere",
-    "categoryName": "Hygienepapiere",
-    "subcategory": "toilettenpapier",
-    "subcategoryName": "Toilettenpapier",
-    "description": "Toilettenpapier in verschiedenen Lagen für sanitäre Einrichtungen. Hochwertige Qualität und Komfort.",
-    "shortDescription": "Toilettenpapier in verschiedenen Lagen",
+    "id": "putztuchrolle-weiss-3-lagig",
+    "name": "Putztuchrolle weiß 3-lagig",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrolle weiß, 3-lagig, 38 cm breit, 1000 Blatt à 36 cm. Höhere Saugfähigkeit durch 3 Lagen. Ideal für hygienische Anforderungen.",
+    "shortDescription": "Putzpapierrolle weiß, 3-lagig, 38 cm breit, 1000 Blatt",
     "benefits": [
-      "Verschiedene Lagen",
-      "Hochwertige Qualität",
-      "Komfortabel",
-      "Für sanitäre Einrichtungen"
+      "3-lagig für höhere Saugfähigkeit",
+      "38 cm breit",
+      "1000 Blatt pro Rolle",
+      "Weiß für hygienische Anforderungen"
     ],
     "variants": [
       {
-        "id": "toilettenpapier-xxxx",
-        "name": "Toilettenpapier",
-        "articleNumber": "XXXX",
+        "id": "putztuchrolle-weiss-3-lagig-4238",
+        "name": "Putztuchrolle weiß 3-lagig",
+        "articleNumber": "4238",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-weiss-3-lagig.jpg",
+    "slug": "putztuchrolle-weiss-3-lagig",
+    "articleNumber": "4238",
+    "properties": [
+      "Sehr saugfähig",
+      "Hygienisch",
+      "Für stärkere Verschmutzungen"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-weiss-2-lagig-klein",
+    "name": "Putztuchrolle weiß 2-lagig (klein)",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrolle weiß, 2-lagig, 22 cm breit, 1000 Blatt à 36 cm. Kompakte Größe für kleinere Spender und begrenzte Platzverhältnisse.",
+    "shortDescription": "Putzpapierrolle weiß, 2-lagig, 22 cm breit, 1000 Blatt",
+    "benefits": [
+      "2-lagig",
+      "22 cm breit - kompakte Größe",
+      "1000 Blatt pro Rolle",
+      "Ideal für kleine Spender"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-weiss-2-lagig-klein-4222",
+        "name": "Putztuchrolle weiß 2-lagig (klein)",
+        "articleNumber": "4222",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-weiss-2-lagig-klein.jpg",
+    "slug": "putztuchrolle-weiss-2-lagig-klein",
+    "articleNumber": "4222",
+    "properties": [
+      "Saugfähig",
+      "Kompakt",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-weiss-3-lagig-klein",
+    "name": "Putztuchrolle weiß 3-lagig (klein)",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrolle weiß, 3-lagig, 22 cm breit, 1000 Blatt à 36 cm. Kompakte Größe mit höherer Saugfähigkeit durch 3 Lagen.",
+    "shortDescription": "Putzpapierrolle weiß, 3-lagig, 22 cm breit, 1000 Blatt",
+    "benefits": [
+      "3-lagig für höhere Saugfähigkeit",
+      "22 cm breit - kompakte Größe",
+      "1000 Blatt pro Rolle",
+      "Ideal für kleine Spender"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-weiss-3-lagig-klein-4232",
+        "name": "Putztuchrolle weiß 3-lagig (klein)",
+        "articleNumber": "4232",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-weiss-3-lagig-klein.jpg",
+    "slug": "putztuchrolle-weiss-3-lagig-klein",
+    "articleNumber": "4232",
+    "properties": [
+      "Sehr saugfähig",
+      "Kompakt",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-weiss-2-lagig-1500",
+    "name": "Putztuchrolle weiß 2-lagig (1500 Blatt)",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrolle weiß, 2-lagig, 22 cm breit, 1500 Blatt à 36 cm. Längere Rolle für weniger Wechsel.",
+    "shortDescription": "Putzpapierrolle weiß, 2-lagig, 22 cm breit, 1500 Blatt",
+    "benefits": [
+      "2-lagig",
+      "22 cm breit",
+      "1500 Blatt pro Rolle - längere Laufzeit",
+      "Weniger Wechsel nötig"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-weiss-2-lagig-1500-4202",
+        "name": "Putztuchrolle weiß 2-lagig (1500 Blatt)",
+        "articleNumber": "4202",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-weiss-2-lagig-1500.jpg",
+    "slug": "putztuchrolle-weiss-2-lagig-1500",
+    "articleNumber": "4202",
+    "properties": [
+      "Saugfähig",
+      "Längere Laufzeit"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-weiss-2-lagig-27cm",
+    "name": "Putztuchrolle weiß 2-lagig (27 cm)",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrolle weiß, 2-lagig, 27 cm breit, 1500 Blatt à 36 cm. Mittlere Breite für universelle Anwendung.",
+    "shortDescription": "Putzpapierrolle weiß, 2-lagig, 27 cm breit, 1500 Blatt",
+    "benefits": [
+      "2-lagig",
+      "27 cm breit - mittlere Größe",
+      "1500 Blatt pro Rolle",
+      "Universell einsetzbar"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-weiss-2-lagig-27cm-4203",
+        "name": "Putztuchrolle weiß 2-lagig (27 cm)",
+        "articleNumber": "4203",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-weiss-2-lagig-27cm.jpg",
+    "slug": "putztuchrolle-weiss-2-lagig-27cm",
+    "articleNumber": "4203",
+    "properties": [
+      "Saugfähig",
+      "Universell"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-weiss-2-lagig-2500",
+    "name": "Putztuchrolle weiß 2-lagig (2500 Blatt)",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrolle weiß, 2-lagig, 22 cm breit, 2500 Blatt à 36 cm. Sehr lange Rolle für maximale Laufzeit und weniger Wechsel.",
+    "shortDescription": "Putzpapierrolle weiß, 2-lagig, 22 cm breit, 2500 Blatt",
+    "benefits": [
+      "2-lagig",
+      "22 cm breit",
+      "2500 Blatt pro Rolle - maximale Laufzeit",
+      "Minimale Wechsel nötig"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-weiss-2-lagig-2500-4207",
+        "name": "Putztuchrolle weiß 2-lagig (2500 Blatt)",
+        "articleNumber": "4207",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-weiss-2-lagig-2500.jpg",
+    "slug": "putztuchrolle-weiss-2-lagig-2500",
+    "articleNumber": "4207",
+    "properties": [
+      "Saugfähig",
+      "Maximale Laufzeit"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-weiss-4-lagig",
+    "name": "Putztuchrolle weiß 4-lagig",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Putzpapierrolle weiß, 4-lagig, 37 cm breit, 1000 Blatt à 36 cm. Höchste Saugfähigkeit durch 4 Lagen. Ideal für starke Verschmutzungen.",
+    "shortDescription": "Putzpapierrolle weiß, 4-lagig, 37 cm breit, 1000 Blatt",
+    "benefits": [
+      "4-lagig für höchste Saugfähigkeit",
+      "37 cm breit",
+      "1000 Blatt pro Rolle",
+      "Ideal für starke Verschmutzungen"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-weiss-4-lagig-4247",
+        "name": "Putztuchrolle weiß 4-lagig",
+        "articleNumber": "4247",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-weiss-4-lagig.jpg",
+    "slug": "putztuchrolle-weiss-4-lagig",
+    "articleNumber": "4247",
+    "properties": [
+      "Höchste Saugfähigkeit",
+      "Für starke Verschmutzungen",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-soft-h-weiss",
+    "name": "Putztuchrolle Soft H weiß",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Spezialqualität Putztuchrolle weiß, Soft H, Zellstoff 85 g/m², sehr saugfähig, 30 cm breit, 750 Blatt à 30 cm. Hochwertige Qualität für anspruchsvolle Reinigungsaufgaben.",
+    "shortDescription": "Spezialqualität Putztuchrolle Soft H, sehr saugfähig",
+    "benefits": [
+      "Spezialqualität Soft H",
+      "Zellstoff 85 g/m²",
+      "Sehr saugfähig",
+      "30 cm breit"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-soft-h-weiss-4561",
+        "name": "Putztuchrolle Soft H weiß",
+        "articleNumber": "4561",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-soft-h-weiss.jpg",
+    "slug": "putztuchrolle-soft-h-weiss",
+    "articleNumber": "4561",
+    "properties": [
+      "Sehr saugfähig",
+      "Spezialqualität",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen",
+      "grobe_verschmutzungen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-m-weiss",
+    "name": "Putztuchrolle M weiß",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Spezialqualität Putztuchrolle weiß, Soft M Airlaid geprägt, 70 g/m², 27 cm breit, 500 Blatt à 36 cm. Geprägte Struktur für optimale Saugfähigkeit.",
+    "shortDescription": "Spezialqualität Putztuchrolle Soft M Airlaid geprägt",
+    "benefits": [
+      "Spezialqualität Soft M",
+      "Airlaid geprägt",
+      "70 g/m²",
+      "27 cm breit"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-m-weiss-4570",
+        "name": "Putztuchrolle M weiß",
+        "articleNumber": "4570",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-m-weiss.jpg",
+    "slug": "putztuchrolle-m-weiss",
+    "articleNumber": "4570",
+    "properties": [
+      "Sehr saugfähig",
+      "Spezialqualität",
+      "Geprägt"
+    ],
+    "useCases": [
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen",
+      "schlierenfrei_reinigen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-srm-weiss",
+    "name": "Putztuchrolle SRM weiß",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Spezialqualität Putztuchrolle weiß, Saugtex SCRIM nylonverstärkt, 4-lagig, 30 cm breit, 700 Blatt à 36 cm. Nylonverstärkt für höchste Reißfestigkeit und Saugfähigkeit.",
+    "shortDescription": "Spezialqualität Putztuchrolle Saugtex SCRIM nylonverstärkt",
+    "benefits": [
+      "Spezialqualität Saugtex SCRIM",
+      "Nylonverstärkt",
+      "4-lagig",
+      "Höchste Reißfestigkeit"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-srm-weiss-4601",
+        "name": "Putztuchrolle SRM weiß",
+        "articleNumber": "4601",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-srm-weiss.jpg",
+    "slug": "putztuchrolle-srm-weiss",
+    "articleNumber": "4601",
+    "properties": [
+      "Höchste Reißfestigkeit",
+      "Sehr saugfähig",
+      "Spezialqualität"
+    ],
+    "useCases": [
+      "reissfest_nassfest",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen",
+      "grobe_verschmutzungen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-polytex-blau",
+    "name": "Putztuchrolle Polytex blau",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Spezialqualität Putztuchrolle Polytex blau, 32 cm breit, 500 Blatt à 36 cm. Spezialqualität für anspruchsvolle Reinigungsaufgaben.",
+    "shortDescription": "Spezialqualität Putztuchrolle Polytex blau",
+    "benefits": [
+      "Spezialqualität Polytex",
+      "32 cm breit",
+      "500 Blatt pro Rolle",
+      "Für anspruchsvolle Aufgaben"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-polytex-blau-4700",
+        "name": "Putztuchrolle Polytex blau",
+        "articleNumber": "4700",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-polytex-blau.jpg",
+    "slug": "putztuchrolle-polytex-blau",
+    "articleNumber": "4700",
+    "properties": [
+      "Spezialqualität",
+      "Für anspruchsvolle Aufgaben"
+    ],
+    "useCases": [
+      "reissfest_nassfest",
+      "grobe_verschmutzungen",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-celtex-weiss",
+    "name": "Putztuchrolle Celtex weiß",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Spezialqualität Putztuchrolle weiß, CELTEX Viscosevlies gelocht, 30 cm breit, 500 Blatt à 36 cm. Gelochte Struktur für optimale Saugfähigkeit.",
+    "shortDescription": "Spezialqualität Putztuchrolle CELTEX Viscosevlies gelocht",
+    "benefits": [
+      "Spezialqualität CELTEX",
+      "Viscosevlies gelocht",
+      "30 cm breit",
+      "Optimale Saugfähigkeit"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-celtex-weiss-4710",
+        "name": "Putztuchrolle Celtex weiß",
+        "articleNumber": "4710",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-celtex-weiss.jpg",
+    "slug": "putztuchrolle-celtex-weiss",
+    "articleNumber": "4710",
+    "properties": [
+      "Sehr saugfähig",
+      "Spezialqualität",
+      "Gelocht"
+    ],
+    "useCases": [
+      "fusselfrei_reinigen",
+      "schlierenfrei_reinigen",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "putztuchrolle-celtex-glatt-weiss",
+    "name": "Putztuchrolle Celtex glatt weiß",
+    "category": "putzpapierrollen",
+    "categoryName": "Putzpapierrollen",
+    "subcategoryName": "Putzpapierrollen",
+    "description": "Spezialqualität Putztuchrolle weiß, CELTEX Viscosevlies glatt, 30 cm breit, 500 Blatt à 36 cm. Glatte Struktur für sanfte Reinigung.",
+    "shortDescription": "Spezialqualität Putztuchrolle CELTEX Viscosevlies glatt",
+    "benefits": [
+      "Spezialqualität CELTEX",
+      "Viscosevlies glatt",
+      "30 cm breit",
+      "Sanfte Reinigung"
+    ],
+    "variants": [
+      {
+        "id": "putztuchrolle-celtex-glatt-weiss-4713",
+        "name": "Putztuchrolle Celtex glatt weiß",
+        "articleNumber": "4713",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuchrolle-celtex-glatt-weiss.jpg",
+    "slug": "putztuchrolle-celtex-glatt-weiss",
+    "articleNumber": "4713",
+    "properties": [
+      "Sehr saugfähig",
+      "Spezialqualität",
+      "Schonend",
+      "Für sensible Oberflächen"
+    ],
+    "useCases": [
+      "fusselfrei_reinigen",
+      "schlierenfrei_reinigen",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "putztuch-weiss-soft-h",
+    "name": "Putztuch weiß Soft H",
+    "category": "putzpapier-karton",
+    "categoryName": "Putzpapier im Karton",
+    "subcategoryName": "Putztuch im Einzelblatt",
+    "description": "Putztuch weiß, Soft H, Zellstoff 85 g/m², sehr saugfähig, 30 × 36 cm. 36 Pack à 28 Tücher = 1008 Stück / VE. Hochwertige Qualität für anspruchsvolle Reinigungsaufgaben.",
+    "shortDescription": "Putztuch weiß Soft H, sehr saugfähig, 1008 Stück pro VE",
+    "benefits": [
+      "Spezialqualität Soft H",
+      "Zellstoff 85 g/m²",
+      "Sehr saugfähig",
+      "1008 Stück pro VE"
+    ],
+    "variants": [
+      {
+        "id": "putztuch-weiss-soft-h-5401",
+        "name": "Putztuch weiß Soft H",
+        "articleNumber": "5401",
         "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/products/toilettenpapier.jpg",
-    "slug": "toilettenpapier",
-    "articleNumber": "XXXX",
-    "properties": ["Für Sanitärbereiche", "Sehr saugstark", "Hygienisch"]
+    "image": "/images/products/putztuch-weiss-soft-h.jpg",
+    "slug": "putztuch-weiss-soft-h",
+    "articleNumber": "5401",
+    "properties": [
+      "Sehr saugfähig",
+      "Spezialqualität",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen",
+      "grobe_verschmutzungen"
+    ]
   },
   {
-    "id": "handtuchrollen",
-    "name": "Handtuchrollen",
-    "category": "hygienepapiere",
-    "categoryName": "Hygienepapiere",
+    "id": "putztuch-weiss-airlaid",
+    "name": "Putztuch weiß Airlaid",
+    "category": "putzpapier-karton",
+    "categoryName": "Putzpapier im Karton",
+    "subcategoryName": "Putztuch im Einzelblatt",
+    "description": "Putztuch weiß, Airlaid, Zellstoff 70 g/m², saugfähig, 30 × 38 cm, 500 Tücher / VE. Airlaid-Struktur für optimale Saugfähigkeit.",
+    "shortDescription": "Putztuch weiß Airlaid, saugfähig, 500 Tücher pro VE",
+    "benefits": [
+      "Airlaid-Struktur",
+      "Zellstoff 70 g/m²",
+      "Saugfähig",
+      "500 Tücher pro VE"
+    ],
+    "variants": [
+      {
+        "id": "putztuch-weiss-airlaid-5107",
+        "name": "Putztuch weiß Airlaid",
+        "articleNumber": "5107",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuch-weiss-airlaid.jpg",
+    "slug": "putztuch-weiss-airlaid",
+    "articleNumber": "5107",
+    "properties": [
+      "Saugfähig",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "fluessigkeiten_aufnehmen",
+      "schlierenfrei_reinigen",
+      "grobe_verschmutzungen"
+    ]
+  },
+  {
+    "id": "putztuch-weiss-saugtex",
+    "name": "Putztuch weiß Saugtex",
+    "category": "putzpapier-karton",
+    "categoryName": "Putzpapier im Karton",
+    "subcategoryName": "Putztuch im Einzelblatt",
+    "description": "Putztuch weiß, Saugtex SCRIM nylonverstärkt, 4-lagig, 32 × 38 cm, 700 Tücher. Nylonverstärkt für höchste Reißfestigkeit und Saugfähigkeit.",
+    "shortDescription": "Putztuch weiß Saugtex SCRIM nylonverstärkt, 700 Tücher",
+    "benefits": [
+      "Saugtex SCRIM",
+      "Nylonverstärkt",
+      "4-lagig",
+      "Höchste Reißfestigkeit"
+    ],
+    "variants": [
+      {
+        "id": "putztuch-weiss-saugtex-5510",
+        "name": "Putztuch weiß Saugtex",
+        "articleNumber": "5510",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuch-weiss-saugtex.jpg",
+    "slug": "putztuch-weiss-saugtex",
+    "articleNumber": "5510",
+    "properties": [
+      "Höchste Reißfestigkeit",
+      "Sehr saugfähig",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "reissfest_nassfest",
+      "fluessigkeiten_aufnehmen",
+      "oel_fett_entfernen",
+      "grobe_verschmutzungen"
+    ]
+  },
+  {
+    "id": "putztuch-blau-polytex",
+    "name": "Putztuch blau Polytex",
+    "category": "putzpapier-karton",
+    "categoryName": "Putzpapier im Karton",
+    "subcategoryName": "Putztuch im Einzelblatt",
+    "description": "Putztuch blau, POLYTEX, sehr reißfest, extrem nassfest, 40 × 36 cm. 12 Pack à 35 Stück = 420 Tücher / VE. Ideal für anspruchsvolle Reinigungsaufgaben mit hohen Anforderungen an Reißfestigkeit.",
+    "shortDescription": "Putztuch blau POLYTEX, sehr reißfest und nassfest, 420 Tücher pro VE",
+    "benefits": [
+      "POLYTEX Qualität",
+      "Sehr reißfest",
+      "Extrem nassfest",
+      "420 Tücher pro VE"
+    ],
+    "variants": [
+      {
+        "id": "putztuch-blau-polytex-5500",
+        "name": "Putztuch blau Polytex",
+        "articleNumber": "5500",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuch-blau-polytex.jpg",
+    "slug": "putztuch-blau-polytex",
+    "articleNumber": "5500",
+    "properties": [
+      "Sehr reißfest",
+      "Nassfest",
+      "Für anspruchsvolle Aufgaben"
+    ],
+    "useCases": [
+      "reissfest_nassfest",
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen"
+    ]
+  },
+  {
+    "id": "putztuch-weiss-celtex-netz",
+    "name": "Putztuch weiß Celtex (Netzstruktur)",
+    "category": "putzpapier-karton",
+    "categoryName": "Putzpapier im Karton",
+    "subcategoryName": "Putztuch im Einzelblatt",
+    "description": "Putztuch weiß, CELTEX Netzstruktur aus Viscose, 29 × 38 cm, 500 Tücher / VE. Netzstruktur für optimale Saugfähigkeit und Reinigungswirkung.",
+    "shortDescription": "Putztuch weiß CELTEX Netzstruktur, 500 Tücher pro VE",
+    "benefits": [
+      "CELTEX Netzstruktur",
+      "Aus Viscose",
+      "500 Tücher pro VE",
+      "Optimale Saugfähigkeit"
+    ],
+    "variants": [
+      {
+        "id": "putztuch-weiss-celtex-netz-5120",
+        "name": "Putztuch weiß Celtex (Netzstruktur)",
+        "articleNumber": "5120",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuch-weiss-celtex-netz.jpg",
+    "slug": "putztuch-weiss-celtex-netz",
+    "articleNumber": "5120",
+    "properties": [
+      "Sehr saugfähig",
+      "Netzstruktur",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "fusselfrei_reinigen",
+      "schlierenfrei_reinigen",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "putztuch-weiss-celtex-glatt",
+    "name": "Putztuch weiß Celtex (Glatte Struktur)",
+    "category": "putzpapier-karton",
+    "categoryName": "Putzpapier im Karton",
+    "subcategoryName": "Putztuch im Einzelblatt",
+    "description": "Putztuch weiß, CELTEX glatte Struktur aus Viscose, 29 × 38 cm, 500 Tücher. Glatte Struktur für sanfte Reinigung empfindlicher Oberflächen.",
+    "shortDescription": "Putztuch weiß CELTEX glatte Struktur, 500 Tücher",
+    "benefits": [
+      "CELTEX glatte Struktur",
+      "Aus Viscose",
+      "500 Tücher",
+      "Sanfte Reinigung"
+    ],
+    "variants": [
+      {
+        "id": "putztuch-weiss-celtex-glatt-5122",
+        "name": "Putztuch weiß Celtex (Glatte Struktur)",
+        "articleNumber": "5122",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/putztuch-weiss-celtex-glatt.jpg",
+    "slug": "putztuch-weiss-celtex-glatt",
+    "articleNumber": "5122",
+    "properties": [
+      "Sehr saugfähig",
+      "Schonend",
+      "Für sensible Oberflächen",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "fusselfrei_reinigen",
+      "schlierenfrei_reinigen",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "falthandtuecher-naturweiss-z-falz",
+    "name": "Falthandtücher naturweiß 1-lagig (Z-Falz)",
+    "category": "falthandtuecher-handtuchrollen",
+    "categoryName": "Falthandtücher und Handtuchrollen",
+    "subcategory": "falthandtuecher",
+    "subcategoryName": "Papierhandtücher",
+    "description": "Falthandtücher naturweiß, 1-lagig, Z-Falz, 5000 Blatt, 25 × 23 cm. Ideal für sanitäre Einrichtungen und Spendersysteme.",
+    "shortDescription": "Falthandtücher naturweiß, 1-lagig, Z-Falz, 5000 Blatt",
+    "benefits": [
+      "1-lagig",
+      "Z-Falz",
+      "5000 Blatt",
+      "Für Spendersysteme"
+    ],
+    "variants": [
+      {
+        "id": "falthandtuecher-naturweiss-z-falz-6100",
+        "name": "Falthandtücher naturweiß 1-lagig (Z-Falz)",
+        "articleNumber": "6100",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/falthandtuecher-naturweiss-z-falz.jpg",
+    "slug": "falthandtuecher-naturweiss-z-falz",
+    "articleNumber": "6100",
+    "properties": [
+      "Für Sanitärbereiche",
+      "Hygienisch",
+      "Für Spendersysteme"
+    ],
+    "useCases": [
+      "haende_hygiene",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "falthandtuecher-weiss-1-lagig-3360",
+    "name": "Falthandtücher weiß 1-lagig (3360 Blatt)",
+    "category": "falthandtuecher-handtuchrollen",
+    "categoryName": "Falthandtücher und Handtuchrollen",
+    "subcategory": "falthandtuecher",
+    "subcategoryName": "Papierhandtücher",
+    "description": "Falthandtücher naturweiß, 1-lagig, C-Falz, 3360 Blatt, 25 × 33 cm. Ideal für sanitäre Einrichtungen und Spendersysteme.",
+    "shortDescription": "Falthandtücher naturweiß, 1-lagig, C-Falz, 3360 Blatt",
+    "benefits": [
+      "1-lagig",
+      "C-Falz",
+      "3360 Blatt",
+      "Für Spendersysteme"
+    ],
+    "variants": [
+      {
+        "id": "falthandtuecher-weiss-1-lagig-3360-6110",
+        "name": "Falthandtücher weiß 1-lagig (3360 Blatt)",
+        "articleNumber": "6110",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/falthandtuecher-weiss-1-lagig-3360.jpg",
+    "slug": "falthandtuecher-weiss-1-lagig-3360",
+    "articleNumber": "6110",
+    "properties": [
+      "Für Sanitärbereiche",
+      "Hygienisch",
+      "Für Spendersysteme"
+    ],
+    "useCases": [
+      "haende_hygiene",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "falthandtuecher-naturweiss-c-falz",
+    "name": "Falthandtücher naturweiß 1-lagig (C-Falz)",
+    "category": "falthandtuecher-handtuchrollen",
+    "categoryName": "Falthandtücher und Handtuchrollen",
+    "subcategory": "falthandtuecher",
+    "subcategoryName": "Papierhandtücher",
+    "description": "Falthandtücher naturweiß, 1-lagig, C-Falz, 2500 Blatt, 25 × 50 cm. Ideal für sanitäre Einrichtungen und Spendersysteme.",
+    "shortDescription": "Falthandtücher naturweiß, 1-lagig, C-Falz, 2500 Blatt",
+    "benefits": [
+      "1-lagig",
+      "C-Falz",
+      "2500 Blatt",
+      "Für Spendersysteme"
+    ],
+    "variants": [
+      {
+        "id": "falthandtuecher-naturweiss-c-falz-6120",
+        "name": "Falthandtücher naturweiß 1-lagig (C-Falz)",
+        "articleNumber": "6120",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/falthandtuecher-naturweiss-c-falz.jpg",
+    "slug": "falthandtuecher-naturweiss-c-falz",
+    "articleNumber": "6120",
+    "properties": [
+      "Für Sanitärbereiche",
+      "Hygienisch",
+      "Für Spendersysteme"
+    ],
+    "useCases": [
+      "haende_hygiene",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "falthandtuecher-weiss-2-lagig",
+    "name": "Falthandtücher weiß 2-lagig",
+    "category": "falthandtuecher-handtuchrollen",
+    "categoryName": "Falthandtücher und Handtuchrollen",
+    "subcategory": "falthandtuecher",
+    "subcategoryName": "Papierhandtücher",
+    "description": "Falthandtücher weiß, 2-lagig, Z-Falz, 4000 Blatt, 25 × 23 cm. Höhere Saugfähigkeit durch 2 Lagen. Ideal für sanitäre Einrichtungen.",
+    "shortDescription": "Falthandtücher weiß, 2-lagig, Z-Falz, 4000 Blatt",
+    "benefits": [
+      "2-lagig für höhere Saugfähigkeit",
+      "Z-Falz",
+      "4000 Blatt",
+      "Für Spendersysteme"
+    ],
+    "variants": [
+      {
+        "id": "falthandtuecher-weiss-2-lagig-6130",
+        "name": "Falthandtücher weiß 2-lagig",
+        "articleNumber": "6130",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/falthandtuecher-weiss-2-lagig.jpg",
+    "slug": "falthandtuecher-weiss-2-lagig",
+    "articleNumber": "6130",
+    "properties": [
+      "Sehr saugstark",
+      "Hygienisch",
+      "Für Sanitärbereiche",
+      "Für Spendersysteme"
+    ],
+    "useCases": [
+      "haende_hygiene",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "handtuchrolle-weiss-aussenabwicklung",
+    "name": "Handtuchrolle weiß, Außenabwicklung",
+    "category": "falthandtuecher-handtuchrollen",
+    "categoryName": "Falthandtücher und Handtuchrollen",
     "subcategory": "handtuchrollen",
     "subcategoryName": "Handtuchrollen",
-    "description": "Handtuchrollen für Spendersysteme. Perfekt für den professionellen Einsatz in sanitären Einrichtungen. Hochwertige Qualität und optimale Passform für verschiedene Spendersysteme.",
-    "shortDescription": "Handtuchrollen für Spendersysteme",
+    "description": "Handtuchrolle weiß, 2-lagig, Außenabwicklung, Rollenbreite 20 m, Laufweite 180 m, 100% Zellstoff. Ideal für Spendersysteme mit Außenabwicklung.",
+    "shortDescription": "Handtuchrolle weiß, Außenabwicklung, 20 m breit, 180 m Laufweite",
     "benefits": [
-      "Für Spendersysteme",
-      "Professioneller Einsatz",
-      "Hochwertige Qualität",
-      "Optimale Passform"
+      "2-lagig",
+      "Außenabwicklung",
+      "20 m Rollenbreite",
+      "180 m Laufweite"
     ],
     "variants": [
       {
-        "id": "handtuchrollen-xxxx",
-        "name": "Handtuchrollen",
-        "articleNumber": "XXXX",
+        "id": "handtuchrolle-weiss-aussenabwicklung-6318",
+        "name": "Handtuchrolle weiß, Außenabwicklung",
+        "articleNumber": "6318",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/handtuchrolle-weiss-aussenabwicklung.jpg",
+    "slug": "handtuchrolle-weiss-aussenabwicklung",
+    "articleNumber": "6318",
+    "properties": [
+      "Für Sanitärbereiche",
+      "Hygienisch",
+      "Für Spendersysteme"
+    ],
+    "useCases": [
+      "haende_hygiene",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "handtuchrolle-weiss-450-blatt",
+    "name": "Handtuchrolle weiß 450 Blatt",
+    "category": "falthandtuecher-handtuchrollen",
+    "categoryName": "Falthandtücher und Handtuchrollen",
+    "subcategory": "handtuchrollen",
+    "subcategoryName": "Handtuchrollen",
+    "description": "Handtuchrolle weiß, 2-lagig, 450 Blatt pro Rolle, 100% Zellstoff. Ideal für Spendersysteme.",
+    "shortDescription": "Handtuchrolle weiß, 2-lagig, 450 Blatt pro Rolle",
+    "benefits": [
+      "2-lagig",
+      "450 Blatt pro Rolle",
+      "100% Zellstoff",
+      "Für Spendersysteme"
+    ],
+    "variants": [
+      {
+        "id": "handtuchrolle-weiss-450-blatt-6320",
+        "name": "Handtuchrolle weiß 450 Blatt",
+        "articleNumber": "6320",
+        "description": "Ihre gewünschte Anzahl an Rollen bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/handtuchrolle-weiss-450-blatt.jpg",
+    "slug": "handtuchrolle-weiss-450-blatt",
+    "articleNumber": "6320",
+    "properties": [
+      "Für Sanitärbereiche",
+      "Hygienisch",
+      "Für Spendersysteme"
+    ],
+    "useCases": [
+      "haende_hygiene",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "toilettenpapier-2-lagig",
+    "name": "Toilettenpapier 2-lagig",
+    "category": "toilettenpapier-kuechenrollen",
+    "categoryName": "Toilettenpapier und Küchenrollen",
+    "subcategory": "toilettenpapier",
+    "subcategoryName": "Toilettenpapier",
+    "description": "Toilettenpapier weiß, 2-lagig, 250 Blatt, 8 × 8 Rollen = 64 Stück per VE. Hochwertige Qualität für sanitäre Einrichtungen.",
+    "shortDescription": "Toilettenpapier weiß, 2-lagig, 64 Rollen pro VE",
+    "benefits": [
+      "2-lagig",
+      "250 Blatt pro Rolle",
+      "64 Rollen pro VE",
+      "Hochwertige Qualität"
+    ],
+    "variants": [
+      {
+        "id": "toilettenpapier-2-lagig-6220",
+        "name": "Toilettenpapier 2-lagig",
+        "articleNumber": "6220",
         "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/products/handtuchrollen.jpg",
-    "slug": "handtuchrollen",
-    "articleNumber": "XXXX",
-    "properties": ["Für Sanitärbereiche", "Für Spendersysteme", "Sehr saugstark", "Hygienisch"]
+    "image": "/images/products/toilettenpapier-2-lagig.jpg",
+    "slug": "toilettenpapier-2-lagig",
+    "articleNumber": "6220",
+    "properties": [
+      "Für Sanitärbereiche",
+      "Sehr saugstark",
+      "Hygienisch"
+    ],
+    "useCases": [
+      "haende_hygiene",
+      "fluessigkeiten_aufnehmen"
+    ]
   },
   {
-    "id": "spendersysteme",
-    "name": "Spendersysteme",
-    "category": "hygienepapiere",
-    "categoryName": "Hygienepapiere",
-    "subcategory": "spendersysteme",
+    "id": "toilettenpapier-3-lagig",
+    "name": "Toilettenpapier 3-lagig",
+    "category": "toilettenpapier-kuechenrollen",
+    "categoryName": "Toilettenpapier und Küchenrollen",
+    "subcategory": "toilettenpapier",
+    "subcategoryName": "Toilettenpapier",
+    "description": "Toilettenpapier weiß, 3-lagig, 6 × 8 Rollen = 48 Stück per VE. Höhere Saugfähigkeit und Komfort durch 3 Lagen.",
+    "shortDescription": "Toilettenpapier weiß, 3-lagig, 48 Rollen pro VE",
+    "benefits": [
+      "3-lagig für höhere Saugfähigkeit",
+      "48 Rollen pro VE",
+      "Höherer Komfort",
+      "Hochwertige Qualität"
+    ],
+    "variants": [
+      {
+        "id": "toilettenpapier-3-lagig-6230",
+        "name": "Toilettenpapier 3-lagig",
+        "articleNumber": "6230",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/toilettenpapier-3-lagig.jpg",
+    "slug": "toilettenpapier-3-lagig",
+    "articleNumber": "6230",
+    "properties": [
+      "Sehr saugstark",
+      "Hygienisch",
+      "Für Sanitärbereiche"
+    ],
+    "useCases": [
+      "haende_hygiene",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "jumbotoilettenpapier-2-lagig",
+    "name": "Jumbotoilettenpapier 2-lagig",
+    "category": "toilettenpapier-kuechenrollen",
+    "categoryName": "Toilettenpapier und Küchenrollen",
+    "subcategory": "toilettenpapier",
+    "subcategoryName": "Toilettenpapier",
+    "description": "Jumbotoilettenpapier weiß, 2-lagig, 400 m, 6 Rollen per VE. Extra große Rollen für längere Laufzeit und weniger Wechsel.",
+    "shortDescription": "Jumbotoilettenpapier weiß, 2-lagig, 400 m, 6 Rollen pro VE",
+    "benefits": [
+      "2-lagig",
+      "400 m pro Rolle",
+      "6 Rollen pro VE",
+      "Längere Laufzeit"
+    ],
+    "variants": [
+      {
+        "id": "jumbotoilettenpapier-2-lagig-6225",
+        "name": "Jumbotoilettenpapier 2-lagig",
+        "articleNumber": "6225",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/jumbotoilettenpapier-2-lagig.jpg",
+    "slug": "jumbotoilettenpapier-2-lagig",
+    "articleNumber": "6225",
+    "properties": [
+      "Für Sanitärbereiche",
+      "Sehr saugstark",
+      "Hygienisch",
+      "Längere Laufzeit"
+    ],
+    "useCases": [
+      "haende_hygiene",
+      "fluessigkeiten_aufnehmen"
+    ]
+  },
+  {
+    "id": "kuechenrolle",
+    "name": "Küchenrolle (individuelle Beratung)",
+    "category": "toilettenpapier-kuechenrollen",
+    "categoryName": "Toilettenpapier und Küchenrollen",
+    "subcategory": "kuechenrollen",
+    "subcategoryName": "Küchenrollen",
+    "description": "Küchenrollen für Industrie und Gewerbe. Individuelle Beratung für die optimale Lösung. Verschiedene Größen und Qualitäten verfügbar.",
+    "shortDescription": "Küchenrollen für Industrie und Gewerbe",
+    "benefits": [
+      "Individuelle Beratung",
+      "Verschiedene Größen",
+      "Für Industrie und Gewerbe",
+      "Flexible Lösungen"
+    ],
+    "variants": [
+      {
+        "id": "kuechenrolle-xxxx",
+        "name": "Küchenrolle (individuelle Beratung)",
+        "articleNumber": "XXXX",
+        "description": "Bitte kontaktieren Sie uns für eine individuelle Beratung."
+      }
+    ],
+    "image": "/images/products/kuechenrolle.jpg",
+    "slug": "kuechenrolle",
+    "articleNumber": "XXXX",
+    "properties": [
+      "Für Industrie",
+      "Individuelle Beratung"
+    ],
+    "useCases": [
+      "haende_hygiene",
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen"
+    ]
+  },
+  {
+    "id": "spendersysteme-auf-anfrage",
+    "name": "Sonstige Spendersysteme (auf Anfrage)",
+    "category": "toilettenpapier-kuechenrollen",
+    "categoryName": "Toilettenpapier und Küchenrollen",
     "subcategoryName": "Spendersysteme",
-    "description": "Spendersysteme für Putzpapierrollen, Toilettenpapier und Falthandtücher. Robust, hygienisch und benutzerfreundlich. Ideal für den professionellen Einsatz in Industrie und Gewerbe.",
+    "description": "Spendersysteme für Putzpapierrollen, Toilettenpapier und Falthandtücher. Robust, hygienisch und benutzerfreundlich. Je nach Anforderung wird das passende System bereitgestellt. Bitte kontaktieren Sie uns für eine individuelle Beratung.",
     "shortDescription": "Spendersysteme für Putzpapierrollen, Toilettenpapier und Falthandtücher",
     "benefits": [
       "Robust und langlebig",
       "Hygienisch",
       "Benutzerfreundlich",
-      "Für professionellen Einsatz"
+      "Individuelle Beratung"
     ],
     "variants": [
       {
-        "id": "spendersysteme-xxxx",
-        "name": "Spendersysteme",
+        "id": "spendersysteme-auf-anfrage-xxxx",
+        "name": "Sonstige Spendersysteme (auf Anfrage)",
+        "articleNumber": "XXXX",
+        "description": "Bitte kontaktieren Sie uns für eine individuelle Beratung."
+      }
+    ],
+    "image": "/images/products/spendersysteme.jpg",
+    "slug": "spendersysteme-auf-anfrage",
+    "articleNumber": "XXXX",
+    "properties": [
+      "Für Sanitärbereiche",
+      "Hygienisch",
+      "Robust",
+      "Für Spendersysteme",
+      "Individuelle Beratung"
+    ],
+    "useCases": [
+      "haende_hygiene"
+    ]
+  },
+  {
+    "id": "putztuchleasing",
+    "name": "Putztuchleasing",
+    "category": "putztuchreinigung",
+    "categoryName": "Maschinenputztücher",
+    "description": "Mehrwegsystem Putztuchreinigung - Putztuchleasing. Wir stellen eine bedarfsgerechte Menge an Putztüchern und Transportbehältern zur Verfügung. Austausch im festgelegten Turnus. Tücher und Behälter bleiben Eigentum des Unternehmens. Keine Lager-, Abfall- und Transportkosten.",
+    "shortDescription": "Putztuchleasing - Mehrwegsystem ohne Lager- und Transportkosten",
+    "benefits": [
+      "Keine Lagerkosten",
+      "Keine Abfallkosten",
+      "Keine Transportkosten",
+      "Austausch im festgelegten Turnus"
+    ],
+    "variants": [
+      {
+        "id": "putztuchleasing-xxxx",
+        "name": "Putztuchleasing",
+        "articleNumber": "XXXX",
+        "description": "Bitte kontaktieren Sie uns für eine individuelle Beratung und ein Angebot."
+      }
+    ],
+    "image": "/images/products/putztuchleasing.jpg",
+    "slug": "putztuchleasing",
+    "articleNumber": "XXXX",
+    "properties": [
+      "Nachhaltig",
+      "Kosteneffizient",
+      "Umweltfreundlich"
+    ],
+    "useCases": [
+      "maschinenreinigung"
+    ]
+  },
+  {
+    "id": "putztuchreinigung-lohnarbeit",
+    "name": "Putztuchreinigung in Lohnarbeit",
+    "category": "putztuchreinigung",
+    "categoryName": "Maschinenputztücher",
+    "description": "Mehrwegsystem Putztuchreinigung - Putztuchreinigung in Lohnarbeit. Sie erwerben Putztücher und Transportbehälter (gehen in Ihr Eigentum über). Abrechnung erfolgt nach Anzahl verschmutzter Tücher. Putztücher aus 100% Baumwolle in ca. 40 × 40 cm.",
+    "shortDescription": "Putztuchreinigung in Lohnarbeit - Abrechnung nach Anzahl verschmutzter Tücher",
+    "benefits": [
+      "Putztücher in Ihrem Eigentum",
+      "Abrechnung nach Anzahl",
+      "Putztücher aus 100% Baumwolle",
+      "40 × 40 cm"
+    ],
+    "variants": [
+      {
+        "id": "putztuchreinigung-lohnarbeit-xxxx",
+        "name": "Putztuchreinigung in Lohnarbeit",
+        "articleNumber": "XXXX",
+        "description": "Bitte kontaktieren Sie uns für eine individuelle Beratung und ein Angebot."
+      }
+    ],
+    "image": "/images/products/putztuchreinigung-lohnarbeit.jpg",
+    "slug": "putztuchreinigung-lohnarbeit",
+    "articleNumber": "XXXX",
+    "properties": [
+      "Nachhaltig",
+      "Kosteneffizient",
+      "Umweltfreundlich"
+    ],
+    "useCases": [
+      "maschinenreinigung"
+    ]
+  },
+  {
+    "id": "muellsaecke",
+    "name": "Müllsäcke",
+    "category": "sonstiges",
+    "categoryName": "Sonstiges",
+    "description": "Müllsäcke für Industrie und Gewerbe. Verschiedene Größen und Stärken verfügbar. Ideal für die Entsorgung von Abfällen.",
+    "shortDescription": "Müllsäcke für Industrie und Gewerbe",
+    "benefits": [
+      "Verschiedene Größen",
+      "Verschiedene Stärken",
+      "Für Industrie und Gewerbe",
+      "Robust"
+    ],
+    "variants": [
+      {
+        "id": "muellsaecke-xxxx",
+        "name": "Müllsäcke",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/muellsaecke.jpg",
+    "slug": "muellsaecke",
+    "articleNumber": "XXXX",
+    "properties": [
+      "Robust",
+      "Für Industrie"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen"
+    ]
+  },
+  {
+    "id": "oelsaugtuecher",
+    "name": "Ölsaugtücher",
+    "category": "sonstiges",
+    "categoryName": "Sonstiges",
+    "description": "Ölsaugtücher für die Aufnahme von Öl und anderen Flüssigkeiten. Sehr saugfähig und ideal für industrielle Anwendungen.",
+    "shortDescription": "Ölsaugtücher für die Aufnahme von Öl und Flüssigkeiten",
+    "benefits": [
+      "Sehr saugfähig",
+      "Für Öl und Flüssigkeiten",
+      "Für industrielle Anwendungen",
+      "Robust"
+    ],
+    "variants": [
+      {
+        "id": "oelsaugtuecher-xxxx",
+        "name": "Ölsaugtücher",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Anzahl an Kartons bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/oelsaugtuecher.jpg",
+    "slug": "oelsaugtuecher",
+    "articleNumber": "XXXX",
+    "properties": [
+      "Sehr saugfähig",
+      "Für Öl",
+      "Für Industrie"
+    ],
+    "useCases": [
+      "oel_fett_entfernen",
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen"
+    ]
+  },
+  {
+    "id": "oelbindemittel",
+    "name": "Ölbindemittel",
+    "category": "sonstiges",
+    "categoryName": "Sonstiges",
+    "description": "Ölbindemittel für die Aufnahme und Bindung von Öl und anderen Flüssigkeiten. Ideal für Unfälle und Leckagen.",
+    "shortDescription": "Ölbindemittel für die Aufnahme und Bindung von Öl",
+    "benefits": [
+      "Bindet Öl und Flüssigkeiten",
+      "Ideal für Unfälle",
+      "Für Leckagen",
+      "Umweltfreundlich"
+    ],
+    "variants": [
+      {
+        "id": "oelbindemittel-xxxx",
+        "name": "Ölbindemittel",
         "articleNumber": "XXXX",
         "description": "Ihre gewünschte Anzahl bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/products/spendersysteme.jpg",
-    "slug": "spendersysteme",
+    "image": "/images/products/oelbindemittel.jpg",
+    "slug": "oelbindemittel",
     "articleNumber": "XXXX",
-    "properties": ["Für Sanitärbereiche", "Hygienisch", "Robust", "Für Spendersysteme", "Für hohe Hygieneanforderungen"]
+    "properties": [
+      "Für Öl",
+      "Umweltfreundlich",
+      "Für Unfälle"
+    ],
+    "useCases": [
+      "oel_fett_entfernen",
+      "fluessigkeiten_aufnehmen",
+      "grobe_verschmutzungen"
+    ]
+  },
+  {
+    "id": "handwaschpaste",
+    "name": "Handwaschpaste",
+    "category": "sonstiges",
+    "categoryName": "Sonstiges",
+    "description": "Handwaschpaste für die professionelle Handreinigung. Ideal für Industrie und Gewerbe mit hohen Anforderungen an Handhygiene.",
+    "shortDescription": "Handwaschpaste für professionelle Handreinigung",
+    "benefits": [
+      "Professionelle Handreinigung",
+      "Für Industrie und Gewerbe",
+      "Hochwertige Qualität",
+      "Hygienisch"
+    ],
+    "variants": [
+      {
+        "id": "handwaschpaste-xxxx",
+        "name": "Handwaschpaste",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Anzahl an Handwaschpasten bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/handwaschpaste.jpg",
+    "slug": "handwaschpaste",
+    "articleNumber": "XXXX",
+    "properties": [
+      "Hygienisch",
+      "Für Industrie"
+    ],
+    "useCases": [
+      "haende_hygiene"
+    ]
+  },
+  {
+    "id": "malerabdeckvlies",
+    "name": "Malerabdeckvlies",
+    "category": "sonstiges",
+    "categoryName": "Sonstiges",
+    "description": "Malerabdeckvlies zum Schutz von Oberflächen bei Malerarbeiten. Robust und vielseitig einsetzbar.",
+    "shortDescription": "Malerabdeckvlies zum Schutz bei Malerarbeiten",
+    "benefits": [
+      "Schützt Oberflächen",
+      "Robust",
+      "Vielseitig einsetzbar",
+      "Für Malerarbeiten"
+    ],
+    "variants": [
+      {
+        "id": "malerabdeckvlies-xxxx",
+        "name": "Malerabdeckvlies",
+        "articleNumber": "XXXX",
+        "description": "Ihre gewünschte Anzahl bitte in untenstehendes Feld eingeben."
+      }
+    ],
+    "image": "/images/products/malerabdeckvlies.jpg",
+    "slug": "malerabdeckvlies",
+    "articleNumber": "XXXX",
+    "properties": [
+      "Schützend",
+      "Robust"
+    ],
+    "useCases": [
+      "grobe_verschmutzungen"
+    ]
   }
 ]

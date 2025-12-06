@@ -1,0 +1,94 @@
+{
+  "useCasesMeta": [
+    {
+      "id": "oel_fett_entfernen",
+      "label": "Öl & Fett entfernen"
+    },
+    {
+      "id": "grobe_verschmutzungen",
+      "label": "Grobe Verschmutzungen"
+    },
+    {
+      "id": "fusselfrei_reinigen",
+      "label": "Fusselfrei reinigen"
+    },
+    {
+      "id": "polieren",
+      "label": "Polieren"
+    },
+    {
+      "id": "fluessigkeiten_aufnehmen",
+      "label": "Flüssigkeiten aufnehmen"
+    },
+    {
+      "id": "reissfest_nassfest",
+      "label": "Reißfest / Nassfest"
+    },
+    {
+      "id": "schlierenfrei_reinigen",
+      "label": "Schlierenfrei reinigen"
+    },
+    {
+      "id": "maschinenreinigung",
+      "label": "Maschinenreinigung"
+    },
+    {
+      "id": "haende_hygiene",
+      "label": "Hände & Hygiene"
+    }
+  ],
+  "productUseCases": {
+    "2222": ["oel_fett_entfernen", "fluessigkeiten_aufnehmen", "grobe_verschmutzungen"],
+    "2242": ["oel_fett_entfernen", "fluessigkeiten_aufnehmen", "grobe_verschmutzungen"],
+    "2292": ["oel_fett_entfernen", "fluessigkeiten_aufnehmen", "grobe_verschmutzungen"],
+    "2298": ["oel_fett_entfernen", "fluessigkeiten_aufnehmen", "grobe_verschmutzungen"],
+    "2102": ["fusselfrei_reinigen", "schlierenfrei_reinigen", "grobe_verschmutzungen"],
+    "2190": ["fusselfrei_reinigen", "schlierenfrei_reinigen", "grobe_verschmutzungen"],
+    "2153": ["fusselfrei_reinigen", "schlierenfrei_reinigen", "fluessigkeiten_aufnehmen"],
+    "2150": ["polieren", "schlierenfrei_reinigen", "fluessigkeiten_aufnehmen"],
+    "2180": ["fusselfrei_reinigen", "schlierenfrei_reinigen", "fluessigkeiten_aufnehmen"],
+    "2302": ["fluessigkeiten_aufnehmen", "grobe_verschmutzungen", "oel_fett_entfernen"],
+    "3000": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen"],
+    "3015": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen"],
+    "3023": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen"],
+    "1010": ["oel_fett_entfernen", "fluessigkeiten_aufnehmen", "grobe_verschmutzungen"],
+    "1013": ["oel_fett_entfernen", "fluessigkeiten_aufnehmen", "grobe_verschmutzungen"],
+    "4127": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4137": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4122": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4132": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4038": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4022": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4032": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4228": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4238": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4222": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4232": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4202": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4203": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4207": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4247": ["grobe_verschmutzungen", "fluessigkeiten_aufnehmen", "oel_fett_entfernen"],
+    "4561": ["fluessigkeiten_aufnehmen", "oel_fett_entfernen", "grobe_verschmutzungen"],
+    "4570": ["fluessigkeiten_aufnehmen", "grobe_verschmutzungen", "schlierenfrei_reinigen"],
+    "4601": ["reissfest_nassfest", "fluessigkeiten_aufnehmen", "oel_fett_entfernen", "grobe_verschmutzungen"],
+    "4700": ["reissfest_nassfest", "grobe_verschmutzungen", "fluessigkeiten_aufnehmen"],
+    "4710": ["fusselfrei_reinigen", "schlierenfrei_reinigen", "fluessigkeiten_aufnehmen"],
+    "4713": ["fusselfrei_reinigen", "schlierenfrei_reinigen", "fluessigkeiten_aufnehmen"],
+    "5401": ["fluessigkeiten_aufnehmen", "oel_fett_entfernen", "grobe_verschmutzungen"],
+    "5107": ["fluessigkeiten_aufnehmen", "schlierenfrei_reinigen", "grobe_verschmutzungen"],
+    "5510": ["reissfest_nassfest", "fluessigkeiten_aufnehmen", "oel_fett_entfernen", "grobe_verschmutzungen"],
+    "5500": ["reissfest_nassfest", "fluessigkeiten_aufnehmen", "grobe_verschmutzungen"],
+    "5120": ["fusselfrei_reinigen", "schlierenfrei_reinigen", "fluessigkeiten_aufnehmen"],
+    "5122": ["fusselfrei_reinigen", "schlierenfrei_reinigen", "fluessigkeiten_aufnehmen"],
+    "6100": ["haende_hygiene", "fluessigkeiten_aufnehmen"],
+    "6110": ["haende_hygiene", "fluessigkeiten_aufnehmen"],
+    "6120": ["haende_hygiene", "fluessigkeiten_aufnehmen"],
+    "6130": ["haende_hygiene", "fluessigkeiten_aufnehmen"],
+    "6318": ["haende_hygiene", "fluessigkeiten_aufnehmen"],
+    "6320": ["haende_hygiene", "fluessigkeiten_aufnehmen"],
+    "6220": ["haende_hygiene", "fluessigkeiten_aufnehmen"],
+    "6230": ["haende_hygiene", "fluessigkeiten_aufnehmen"],
+    "6225": ["haende_hygiene", "fluessigkeiten_aufnehmen"]
+  }
+}
+

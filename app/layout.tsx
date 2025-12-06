@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
+import { SearchResultsBadge } from '@/components/SearchResultsBadge';
 import { JsonLd } from '@/components/JsonLd';
 import { CartProvider } from '@/components/CartContext';
 import { Cart } from '@/components/Cart';
@@ -102,6 +103,7 @@ export default function RootLayout({
         <CartProvider>
           <div className="min-h-screen flex flex-col bg-white">
             <Navbar />
+            <SearchResultsBadge />
             <main className="flex-1">
               {children}
             </main>

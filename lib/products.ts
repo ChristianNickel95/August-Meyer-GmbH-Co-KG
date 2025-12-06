@@ -26,6 +26,7 @@ export interface Product {
   slug: string;
   articleNumber?: string;
   properties?: string[];
+  useCases?: string[];
   downloads?: {
     name: string;
     url: string;

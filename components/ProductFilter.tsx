@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import { X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { getAllProducts, Product } from '@/lib/products';
+import useCasesData from '@/content/useCases.json';
 
 interface ProductFilterProps {
   onFilterChange: (filteredProducts: Product[]) => void;
@@ -12,40 +13,37 @@ interface ProductFilterProps {
 
 export function ProductFilter({ onFilterChange, onPropertyFilterChange }: ProductFilterProps): JSX.Element {
   const allProducts = getAllProducts();
-  const [selectedProperties, setSelectedProperties] = useState<string[]>([]);
+  const [selectedUseCases, setSelectedUseCases] = useState<string[]>([]);
+  const useCasesMeta = useCasesData.useCasesMeta;
 
-  // Alle verfügbaren anwendungsbezogenen Eigenschaften sammeln
-  const availableProperties = useMemo(() => {
-    const properties = new Set<string>();
-    allProducts.forEach((product) => {
-      if (product.properties) {
-        product.properties.forEach((prop) => {
-          properties.add(prop);
-        });
-      }
+  // Use-Cases mit Labels mappen
+  const useCaseMap = useMemo(() => {
+    const map = new Map<string, string>();
+    useCasesMeta.forEach((uc: { id: string; label: string }) => {
+      map.set(uc.id, uc.label);
     });
-    return Array.from(properties).sort();
-  }, [allProducts]);
+    return map;
+  }, []);
 
-  const handlePropertyToggle = (property: string): void => {
-    const newSelected = selectedProperties.includes(property)
-      ? selectedProperties.filter((p) => p !== property)
-      : [...selectedProperties, property];
+  const handleUseCaseToggle = (useCaseId: string): void => {
+    const newSelected = selectedUseCases.includes(useCaseId)
+      ? selectedUseCases.filter((uc) => uc !== useCaseId)
+      : [...selectedUseCases, useCaseId];
     
-    setSelectedProperties(newSelected);
+    setSelectedUseCases(newSelected);
     onPropertyFilterChange(newSelected);
 
-    // Produkte filtern
+    // Produkte filtern - ein Produkt muss mindestens einen der ausgewählten Use-Cases haben
     const filtered = allProducts.filter((product) => {
       if (newSelected.length === 0) return true;
-      return product.properties?.some((prop) => newSelected.includes(prop));
+      return product.useCases?.some((uc) => newSelected.includes(uc));
     });
 
     onFilterChange(filtered);
   };
 
   const clearFilters = (): void => {
-    setSelectedProperties([]);
+    setSelectedUseCases([]);
     onPropertyFilterChange([]);
     onFilterChange(allProducts);
   };
@@ -57,7 +55,7 @@ export function ProductFilter({ onFilterChange, onPropertyFilterChange }: Produc
           <h3 className="text-lg font-semibold text-neutral-900 mb-1">Nach Anwendung filtern</h3>
           <p className="text-sm text-neutral-600">Finden Sie das passende Produkt für Ihre Anforderungen</p>
         </div>
-        {selectedProperties.length > 0 && (
+        {selectedUseCases.length > 0 && (
           <Button
             variant="ghost"
             size="sm"
@@ -71,22 +69,22 @@ export function ProductFilter({ onFilterChange, onPropertyFilterChange }: Produc
       </div>
 
       <div className="flex flex-wrap gap-2">
-        {availableProperties.map((property) => (
+        {useCasesMeta.map((useCase: { id: string; label: string }) => (
           <Button
-            key={property}
-            variant={selectedProperties.includes(property) ? 'default' : 'outline'}
+            key={useCase.id}
+            variant={selectedUseCases.includes(useCase.id) ? 'default' : 'outline'}
             size="sm"
-            onClick={() => handlePropertyToggle(property)}
+            onClick={() => handleUseCaseToggle(useCase.id)}
             className="text-sm"
           >
-            {property}
+            {useCase.label}
           </Button>
         ))}
       </div>
 
-      {selectedProperties.length > 0 && (
+      {selectedUseCases.length > 0 && (
         <div className="mt-4 text-sm text-neutral-600">
-          {selectedProperties.length} {selectedProperties.length === 1 ? 'Eigenschaft' : 'Eigenschaften'} ausgewählt
+          {selectedUseCases.length} {selectedUseCases.length === 1 ? 'Anwendung' : 'Anwendungen'} ausgewählt
         </div>
       )}
     </div>
