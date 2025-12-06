@@ -80,7 +80,7 @@ export default function CategoryPage({ params }: CategoryPageProps): JSX.Element
             <>
               <div className="mb-8">
                 <p className="text-gray-600">
-                  {products.length} Produkt{products.length !== 1 ? 'e' : ''} in der Kategorie "{category.name}"
+                  {products.length} Produkt{products.length !== 1 ? 'e' : ''} in der Kategorie &quot;{category.name}&quot;
                 </p>
               </div>
 

@@ -47,7 +47,7 @@ export default function DatenschutzPage(): JSX.Element {
                   <h4 className="font-semibold text-gray-900 mb-2">Datenerfassung auf dieser Website</h4>
                   <p className="text-gray-700">
                     Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. 
-                    Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle" 
+                    Dessen Kontaktdaten können Sie dem Abschnitt &quot;Hinweis zur Verantwortlichen Stelle&quot; 
                     in dieser Datenschutzerklärung entnehmen.
                   </p>
                 </div>
@@ -150,7 +150,7 @@ export default function DatenschutzPage(): JSX.Element {
                 <p className="text-gray-700">
                   Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher 
                   Inhalte eine SSL-bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen 
-                  Sie daran, dass die Adresszeile des Browsers von "http://" auf "https://" wechselt 
+                  Sie daran, dass die Adresszeile des Browsers von &quot;http://&quot; auf &quot;https://&quot; wechselt 
                   und an dem Schloss-Symbol in Ihrer Browserzeile.
                 </p>
               </CardContent>

@@ -23,7 +23,7 @@ export function ProductFilter({ onFilterChange, onPropertyFilterChange }: Produc
       map.set(uc.id, uc.label);
     });
     return map;
-  }, []);
+  }, [useCasesMeta]);
 
   const handleUseCaseToggle = (useCaseId: string): void => {
     const newSelected = selectedUseCases.includes(useCaseId)
