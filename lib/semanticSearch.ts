@@ -33,7 +33,7 @@ function expandQuery(query: string): string[] {
     });
   });
   
-  return [...new Set(expanded)]; // Entferne Duplikate
+  return Array.from(new Set(expanded)); // Entferne Duplikate
 }
 
 /**
