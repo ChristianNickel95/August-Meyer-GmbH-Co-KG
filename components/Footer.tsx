@@ -4,15 +4,15 @@ import { Logo } from '@/components/Logo';
 export function Footer(): JSX.Element {
   return (
     <footer className="bg-neutral-900 text-white" role="contentinfo">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 lg:gap-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
               <Logo variant="dark" />
               <div className="flex flex-col">
-                <span className="text-2xl md:text-3xl font-bold text-sky-400 leading-tight tracking-tight">August Meyer</span>
-                <span className="text-sm md:text-base text-sky-300 leading-tight font-medium">GmbH & Co. KG</span>
+                <span className="text-xl md:text-2xl font-bold text-sky-400 leading-tight tracking-tight">August Meyer</span>
+                <span className="text-xs md:text-sm text-sky-300 leading-tight font-medium">GmbH & Co. KG</span>
               </div>
             </div>
             <p className="text-neutral-300 mb-6 max-w-md leading-relaxed text-base md:text-lg">
@@ -35,20 +35,20 @@ export function Footer(): JSX.Element {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg md:text-xl font-semibold mb-6 text-white">Schnellzugriff</h3>
-            <ul className="space-y-3">
+            <h3 className="text-base md:text-lg font-semibold mb-4 text-white">Schnellzugriff</h3>
+            <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-neutral-300 hover:text-white transition-colors duration-200 text-base md:text-lg">
+                <Link href="/" className="text-neutral-300 hover:text-white transition-colors duration-200 text-sm md:text-base">
                   Startseite
                 </Link>
               </li>
               <li>
-                <Link href="/produkte" className="text-neutral-300 hover:text-white transition-colors duration-200 text-base md:text-lg">
-                  Sortiment
+                <Link href="/produkte" className="text-neutral-300 hover:text-white transition-colors duration-200 text-sm md:text-base">
+                  Produkte
                 </Link>
               </li>
               <li>
-                <Link href="/kontakt" className="text-neutral-300 hover:text-white transition-colors duration-200 text-base md:text-lg">
+                <Link href="/kontakt" className="text-neutral-300 hover:text-white transition-colors duration-200 text-sm md:text-base">
                   Kontakt
                 </Link>
               </li>
@@ -57,15 +57,15 @@ export function Footer(): JSX.Element {
 
           {/* Legal */}
           <div>
-            <h3 className="text-lg md:text-xl font-semibold mb-6 text-white">Rechtliches</h3>
-            <ul className="space-y-3">
+            <h3 className="text-base md:text-lg font-semibold mb-4 text-white">Rechtliches</h3>
+            <ul className="space-y-2">
               <li>
-                <Link href="/impressum" className="text-neutral-300 hover:text-white transition-colors duration-200 text-base md:text-lg">
+                <Link href="/impressum" className="text-neutral-300 hover:text-white transition-colors duration-200 text-sm md:text-base">
                   Impressum
                 </Link>
               </li>
               <li>
-                <Link href="/datenschutz" className="text-neutral-300 hover:text-white transition-colors duration-200 text-base md:text-lg">
+                <Link href="/datenschutz" className="text-neutral-300 hover:text-white transition-colors duration-200 text-sm md:text-base">
                   Datenschutz
                 </Link>
               </li>
@@ -74,8 +74,8 @@ export function Footer(): JSX.Element {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-neutral-800 mt-12 md:mt-16 pt-8 md:pt-10 text-center">
-          <p className="text-neutral-400 text-sm md:text-base">&copy; {new Date().getFullYear()} August Meyer GmbH & Co. KG. Alle Rechte vorbehalten.</p>
+        <div className="border-t border-neutral-800 mt-8 md:mt-10 pt-6 md:pt-8 text-center">
+          <p className="text-neutral-400 text-xs md:text-sm">&copy; {new Date().getFullYear()} August Meyer GmbH & Co. KG. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>

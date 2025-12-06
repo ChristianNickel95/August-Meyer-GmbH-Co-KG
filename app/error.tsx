@@ -36,7 +36,7 @@ export default function Error({ error, reset }: ErrorProps): JSX.Element {
               Erneut versuchen
             </Button>
             <Button asChild variant="outline" className="w-full">
-              <Link href="/produkte">Zum Sortiment</Link>
+              <Link href="/produkte">Zu den Produkten</Link>
             </Button>
             <Button asChild variant="outline" className="w-full">
               <Link href="/">Zur Startseite</Link>

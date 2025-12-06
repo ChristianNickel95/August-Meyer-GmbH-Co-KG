@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { PageHeader } from '@/components/PageHeader';
 import { Container } from '@/components/Container';
@@ -17,6 +18,7 @@ import { JsonLd } from '@/components/JsonLd';
 export default function ProductsPage(): JSX.Element {
   const categories = getAllCategories();
   const allProducts = getAllProducts();
+  const searchParams = useSearchParams();
   
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [filteredProducts, setFilteredProducts] = useState<Product[]>(allProducts);
@@ -32,6 +34,37 @@ export default function ProductsPage(): JSX.Element {
       }
       return newSet;
     });
+  };
+
+  // Beim Laden prüfen, ob eine Kategorie aus der URL geöffnet werden soll
+  useEffect(() => {
+    const categoryParam = searchParams.get('kategorie');
+    if (categoryParam) {
+      // Kategorie-ID aus Slug finden
+      const category = categories.find(cat => cat.slug === categoryParam || cat.id === categoryParam);
+      if (category) {
+        setExpandedCategories(new Set([category.id]));
+        // Scroll zur Kategorie nach kurzer Verzögerung
+        setTimeout(() => {
+          const element = document.getElementById(`category-${category.id}`);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
+      }
+    }
+  }, [searchParams, categories]);
+
+  const handleCategoryCardClick = (categoryId: string, categorySlug: string): void => {
+    // Kategorie aufklappen
+    setExpandedCategories(new Set([categoryId]));
+    // Scroll zur Kategorie
+    setTimeout(() => {
+      const element = document.getElementById(`category-${categoryId}`);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
   };
 
   // Produkte nach Kategorien und Unterkategorien gruppieren
@@ -119,7 +152,7 @@ export default function ProductsPage(): JSX.Element {
         data={{
           '@context': 'https://schema.org',
           '@type': 'ItemList',
-          name: 'Sortiment - August Meyer GmbH & Co. KG',
+          name: 'Produkte - August Meyer GmbH & Co. KG',
           description: 'Industrielle Lösungen und Produkte',
           url: 'https://www.august-meyer.de/produkte',
           numberOfItems: categories.length,
@@ -137,8 +170,8 @@ export default function ProductsPage(): JSX.Element {
       />
 
       <PageHeader
-        title="Unser Sortiment"
-        description={`August Meyer ist ein traditionsreiches Familienunternehmen, das sich auf den Vertrieb von hochwertigen Industrieputzlappen und Reinigungstextilien spezialisiert hat. Als zuverlässiger Partner beliefern wir Kunden in ganz Deutschland mit einem umfassenden Sortiment an Reinigungsprodukten.
+        title="Unsere Produkte"
+        description={`August Meyer ist ein traditionsreiches Familienunternehmen, das sich auf den Vertrieb von hochwertigen Industrieputzlappen und Reinigungstextilien spezialisiert hat. Als zuverlässiger Partner beliefern wir Kunden in ganz Deutschland mit einem umfassenden Produktsortiment an Reinigungsprodukten.
 
 Unser Erfolg basiert auf drei wichtigen Säulen: der sorgfältigen Auswahl unserer Lieferanten, der Qualität unserer Produkte und unserem zuverlässigen Lieferservice. Wir arbeiten eng mit ausgewählten Herstellern zusammen, um Ihnen stets die beste Qualität zu fairen Preisen anbieten zu können.
 
@@ -146,98 +179,49 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
         fullWidth={true}
         breadcrumbs={[
           { label: 'Startseite', href: '/' },
-          { label: 'Sortiment' }
+          { label: 'Produkte' }
         ]}
       />
 
-      {/* Leistungs-Übersicht */}
-      <Section className="bg-neutral-50">
+      {/* Produktkategorien-Übersicht - Kompakt */}
+      <Section className="bg-neutral-50 py-6 md:py-8">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            {/* Industrieputzlappen */}
-            <Card className="border-2 border-neutral-200 hover:border-neutral-300 hover:shadow-lg transition-all duration-300">
-              <CardHeader>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <CardTitle className="text-xl md:text-2xl font-semibold mb-2">Industrieputzlappen</CardTitle>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-neutral-600 leading-relaxed">
-                  Hochwertige Putzlappen aus recycelten Alttextilien, speziell für die industrielle Reinigung entwickelt. Unsere Putzlappen sind ideal für die Reinigung von Maschinen und Anlagen.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Putzwolle & Vliestücher */}
-            <Card className="border-2 border-neutral-200 hover:border-neutral-300 hover:shadow-lg transition-all duration-300">
-              <CardHeader>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <CardTitle className="text-xl md:text-2xl font-semibold mb-2">Putzwolle & Vliestücher</CardTitle>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-neutral-600 leading-relaxed">
-                  Spezialisierte Putzwolle und Faservliestücher für anspruchsvolle Reinigungsaufgaben. Ideal für die Reinigung empfindlicher Oberflächen und technischer Anlagen.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Putzpapierrollen */}
-            <Card className="border-2 border-neutral-200 hover:border-neutral-300 hover:shadow-lg transition-all duration-300">
-              <CardHeader>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <CardTitle className="text-xl md:text-2xl font-semibold mb-2">Putzpapierrollen</CardTitle>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-neutral-600 leading-relaxed">
-                  Verschiedene Sorten von Putzpapierrollen für jeden Einsatzbereich. Von Standard bis Spezialpapier für spezifische Reinigungsanforderungen.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Reinigungsdienstleistungen */}
-            <Card className="border-2 border-neutral-200 hover:border-neutral-300 hover:shadow-lg transition-all duration-300">
-              <CardHeader>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <CardTitle className="text-xl md:text-2xl font-semibold mb-2">Reinigungsdienstleistungen</CardTitle>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-neutral-600 leading-relaxed">
-                  Professionelle Wäscherei- und Reinigungsservices für Ihre Maschinenputztücher. Wir bieten maßgeschneiderte Lösungen für Ihre spezifischen Anforderungen.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+            {/* Kategorien-Mapping für die 9 Kategorien */}
+            {[
+              { id: 'putzlappen', slug: 'putzlappen', name: 'Industrieputzlappen', description: 'Hochwertige Putzlappen aus recycelten Alttextilien, speziell für die industrielle Reinigung entwickelt.' },
+              { id: 'vliestuecher', slug: 'vliestuecher', name: 'Vliestücher', description: 'Saugfähige Vliestücher aus textilen Fasermaterialien für anspruchsvolle Reinigungsaufgaben.' },
+              { id: 'putzwolle', slug: 'putzwolle', name: 'Putzwolle', description: 'Hochwertige Putzwolle für die Reinigung empfindlicher Oberflächen und technischer Anlagen.' },
+              { id: 'putzpapierrollen', slug: 'putzpapier/putzpapierrollen', name: 'Putzpapierrollen', description: 'Verschiedene Sorten von Putzpapierrollen für jeden Einsatzbereich.' },
+              { id: 'putztuch-einzelblatt', slug: 'putzpapier/putztuch-im-einzelblatt', name: 'Putzpapier im Karton', description: 'Putzpapier in Einzelblattform, verpackt in Kartons für den praktischen Einsatz.' },
+              { id: 'falthandtuecher-handtuchrollen', slug: 'hygienepapiere', name: 'Falthandtücher und Handtuchrollen', description: 'Falthandtücher und Handtuchrollen für sanitäre Einrichtungen und Spendersysteme.' },
+              { id: 'toilettenpapier-kuechenrollen', slug: 'hygienepapiere', name: 'Toilettenpapier und Küchenrollen', description: 'Toilettenpapier und Küchenrollen für Industrie und Gewerbe.' },
+              { id: 'putztuchreinigung', slug: 'putztuchreinigung', name: 'Maschinenputztücher', description: 'Mehrwegsystem Putztuchreinigung - professionelle Wäscherei- und Reinigungsservices.' },
+              { id: 'sonstiges', slug: 'sonstiges', name: 'Sonstiges', description: 'Weitere Produkte für Industrie und Gewerbe wie Küchenrollen, Müllsäcke und mehr.' }
+            ].map((cat) => {
+              const category = categories.find(c => c.id === cat.id || c.slug === cat.slug);
+              return (
+                <Card
+                  key={cat.id}
+                  className="border-2 border-neutral-200 hover:border-neutral-400 hover:shadow-md transition-all duration-300 cursor-pointer"
+                  onClick={() => {
+                    const targetCategory = categories.find(c => c.id === cat.id || c.slug === cat.slug.split('/')[0]);
+                    if (targetCategory) {
+                      handleCategoryCardClick(targetCategory.id, targetCategory.slug);
+                    }
+                  }}
+                >
+                  <CardHeader className="p-4">
+                    <CardTitle className="text-base md:text-lg font-semibold">{cat.name}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-4 pt-0">
+                    <p className="text-sm text-neutral-600 leading-relaxed line-clamp-3">
+                      {cat.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </Container>
       </Section>
@@ -249,7 +233,7 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
             onPropertyFilterChange={setSelectedProperties}
           />
 
-          <div className="space-y-6">
+          <div className="space-y-4">
             {visibleCategories.map((category) => {
               const isExpanded = expandedCategories.has(category.id);
               const categoryProducts = productsByCategory[category.id] || [];
@@ -257,18 +241,19 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
               return (
                 <div
                   key={category.id}
+                  id={`category-${category.id}`}
                   className="border-2 border-neutral-200 rounded-lg overflow-hidden bg-white"
                 >
                   {/* Kategorie-Header */}
                   <button
                     onClick={() => toggleCategory(category.id)}
-                    className="w-full px-6 py-4 bg-neutral-50 hover:bg-neutral-100 transition-colors duration-200 flex items-center justify-between text-left"
+                    className="w-full px-4 py-3 bg-neutral-50 hover:bg-neutral-100 transition-colors duration-200 flex items-center justify-between text-left"
                   >
-                    <div className="flex items-center gap-4">
-                      <h2 className="text-xl md:text-2xl font-semibold text-neutral-900">
+                    <div className="flex items-center gap-3">
+                      <h2 className="text-lg md:text-xl font-semibold text-neutral-900">
                         {category.name}
                       </h2>
-                      <span className="text-sm text-neutral-600 bg-neutral-200 px-3 py-1 rounded-full">
+                      <span className="text-xs md:text-sm text-neutral-600 bg-neutral-200 px-2 py-1 rounded-full">
                         {(() => {
                           // Für Kategorien mit Unterkategorien: Varianten zählen
                           if (category.subcategories && category.subcategories.length > 0) {
@@ -289,17 +274,17 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
                       </span>
                     </div>
                     {isExpanded ? (
-                      <ChevronUp className="w-6 h-6 text-neutral-600 flex-shrink-0" />
+                      <ChevronUp className="w-5 h-5 text-neutral-600 flex-shrink-0" />
                     ) : (
-                      <ChevronDown className="w-6 h-6 text-neutral-600 flex-shrink-0" />
+                      <ChevronDown className="w-5 h-5 text-neutral-600 flex-shrink-0" />
                     )}
                   </button>
 
                   {/* Kategorie-Inhalt (Produkte oder Unterkategorien) */}
                   {isExpanded && (
-                    <div className="p-6">
+                    <div className="p-4">
                       {category.description && (
-                        <p className="text-neutral-600 mb-6 text-lg">{category.description}</p>
+                        <p className="text-neutral-600 mb-4 text-sm md:text-base">{category.description}</p>
                       )}
                       
                       {/* Spezialfall: Putztuchreinigung - keine Produkte, aber Anfrage-Möglichkeit */}
@@ -328,16 +313,16 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
 
                       {/* Kategorien mit Unterkategorien */}
                       {category.subcategories && category.subcategories.length > 0 && (
-                        <div className="space-y-6">
+                        <div className="space-y-4">
                           {category.subcategories.map((subcategory) => {
                             const subcategoryProducts = productsBySubcategory[category.id]?.[subcategory.id] || [];
                             // Anzahl der Varianten in dieser Unterkategorie berechnen
                             const variantCount = subcategoryProducts.reduce((sum, product) => sum + (product.variants?.length || 0), 0);
                             
                             return (
-                              <div key={subcategory.id} className="border border-neutral-200 rounded-lg p-4 bg-neutral-50">
+                              <div key={subcategory.id} className="border border-neutral-200 rounded-lg p-3 bg-neutral-50">
                                 <div className="flex items-center justify-between mb-2">
-                                  <h3 className="text-base font-semibold text-neutral-900">
+                                  <h3 className="text-sm md:text-base font-semibold text-neutral-900">
                                     {subcategory.name}
                                   </h3>
                                   <span className="text-xs text-neutral-600 bg-neutral-200 px-2 py-1 rounded-full">
@@ -345,17 +330,17 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
                                   </span>
                                 </div>
                                 {subcategory.description && (
-                                  <p className="text-neutral-600 mb-3 text-xs">{subcategory.description}</p>
+                                  <p className="text-neutral-600 mb-2 text-xs">{subcategory.description}</p>
                                 )}
                                 
                                 {subcategoryProducts.length > 0 ? (
-                                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
                                     {subcategoryProducts.map((product) => (
                                       <ProductCard key={product.id} product={product} />
                                     ))}
                                   </div>
                                 ) : (
-                                  <p className="text-neutral-500 text-center py-4 text-sm">
+                                  <p className="text-neutral-500 text-center py-3 text-sm">
                                     Keine Produkte in dieser Unterkategorie gefunden.
                                   </p>
                                 )}
@@ -369,13 +354,13 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
                       {(!category.subcategories || category.subcategories.length === 0) && category.id !== 'putztuchreinigung' && (
                         <>
                           {categoryProducts.length > 0 ? (
-                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
                               {categoryProducts.map((product) => (
                                 <ProductCard key={product.id} product={product} />
                               ))}
                             </div>
                           ) : (
-                            <p className="text-neutral-500 text-center py-8">
+                            <p className="text-neutral-500 text-center py-4 text-sm">
                               Keine Produkte in dieser Kategorie gefunden.
                             </p>
                           )}
@@ -389,12 +374,13 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
           </div>
 
           {visibleCategories.length === 0 && (
-            <div className="text-center py-12">
-              <p className="text-neutral-600 text-lg mb-4">
+            <div className="text-center py-8">
+              <p className="text-neutral-600 text-base mb-4">
                 Keine Produkte gefunden, die den ausgewählten Filtern entsprechen.
               </p>
               <Button
                 variant="outline"
+                size="sm"
                 onClick={() => {
                   setFilteredProducts(allProducts);
                   setSelectedProperties([]);
@@ -405,12 +391,12 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
             </div>
           )}
 
-          <div className="text-center mt-16">
-            <div className="bg-neutral-50 rounded-lg p-8 max-w-3xl mx-auto border-2 border-neutral-200">
-              <h3 className="text-3xl md:text-4xl font-semibold text-neutral-900 mb-4">
+          <div className="text-center mt-8 md:mt-10">
+            <div className="bg-neutral-50 rounded-lg p-6 max-w-3xl mx-auto border-2 border-neutral-200">
+              <h3 className="text-xl md:text-2xl font-semibold text-neutral-900 mb-3">
                 Individuelle Beratung
               </h3>
-              <p className="text-lg md:text-xl text-neutral-600 mb-6 leading-relaxed">
+              <p className="text-sm md:text-base text-neutral-600 mb-4 leading-relaxed">
                 Unser erfahrenes Team berät Sie gerne bei der Auswahl der richtigen Produkte für Ihre spezifischen Anforderungen. Kontaktieren Sie uns für eine persönliche Beratung.
               </p>
               <Button asChild size="lg" variant="default" className="font-semibold">

@@ -81,7 +81,7 @@ export default function ProductPage({ params }: ProductPageProps): JSX.Element {
         description={product.shortDescription}
         breadcrumbs={[
           { label: 'Startseite', href: '/' },
-          { label: 'Sortiment', href: '/produkte' },
+          { label: 'Produkte', href: '/produkte' },
           { label: category?.name || product.categoryName, href: `/produkte/${product.category}` },
           { label: product.name }
         ]}

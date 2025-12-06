@@ -20,13 +20,13 @@ export function Navbar(): JSX.Element {
   return (
     <nav className="bg-white border-b-2 border-neutral-200" role="navigation" aria-label="Hauptnavigation">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24 md:h-28 lg:h-32">
+        <div className="flex justify-between items-center h-20 md:h-24 lg:h-28">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-4 md:space-x-5" onClick={closeMenu}>
             <Logo variant="light" />
             <div className="flex flex-col">
-              <span className="text-2xl md:text-3xl lg:text-4xl font-bold text-sky-600 leading-tight tracking-tight">August Meyer</span>
-              <span className="text-sm md:text-base text-sky-500 leading-tight font-medium">GmbH & Co. KG</span>
+              <span className="text-xl md:text-2xl lg:text-3xl font-bold text-sky-600 leading-tight tracking-tight">August Meyer</span>
+              <span className="text-xs md:text-sm lg:text-base text-sky-500 leading-tight font-medium">GmbH & Co. KG</span>
             </div>
           </Link>
 
@@ -36,7 +36,7 @@ export function Navbar(): JSX.Element {
               Startseite
             </Link>
             <Link href="/produkte" className="text-neutral-700 hover:text-neutral-900 font-medium transition-colors duration-300 text-sm lg:text-base">
-              Sortiment
+              Produkte
             </Link>
             <Link href="/kontakt" className="text-neutral-700 hover:text-neutral-900 font-medium transition-colors duration-300 text-sm lg:text-base">
               Kontakt
@@ -80,7 +80,7 @@ export function Navbar(): JSX.Element {
                 className="block px-4 py-3 text-neutral-700 hover:text-neutral-900 hover:bg-neutral-50 rounded-md font-medium transition-colors duration-200"
                 onClick={closeMenu}
               >
-                Sortiment
+                Produkte
               </Link>
               <Link
                 href="/kontakt"

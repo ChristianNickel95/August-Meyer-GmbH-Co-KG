@@ -21,7 +21,7 @@ export default function NotFound(): JSX.Element {
           
           <div className="space-y-4">
             <Button asChild size="lg" className="w-full">
-              <Link href="/produkte">Zum Sortiment</Link>
+              <Link href="/produkte">Zu den Produkten</Link>
             </Button>
             <Button asChild variant="outline" className="w-full">
               <Link href="/">Zur Startseite</Link>

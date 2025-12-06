@@ -69,7 +69,7 @@ export default function CategoryPage({ params }: CategoryPageProps): JSX.Element
         description={category.description}
         breadcrumbs={[
           { label: 'Startseite', href: '/' },
-          { label: 'Sortiment', href: '/produkte' },
+          { label: 'Produkte', href: '/produkte' },
           { label: category.name }
         ]}
       />
