@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Product } from '@/lib/products';
 import { AddProductToCartButton } from './AddProductToCartButton';
@@ -13,10 +14,21 @@ export function ProductCard({ product }: ProductCardProps): JSX.Element {
       {/* Oberer Bereich: Platzhalterbild + Text */}
       <div className="flex flex-col">
         {/* Bild / Icon-Bereich */}
-        <div className="h-32 md:h-36 w-full bg-gradient-to-b from-[#1E2C3C] to-[#101A27] flex items-center justify-center">
-          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#2F6BA8]/20 border border-[#2F6BA8]/30 rounded-full flex items-center justify-center">
-            <span className="text-[#2F6BA8] font-semibold text-lg sm:text-xl">{product.name.charAt(0)}</span>
-          </div>
+        <div className="h-32 md:h-36 w-full bg-gradient-to-b from-[#1E2C3C] to-[#101A27] flex items-center justify-center relative overflow-hidden">
+          {product.image ? (
+            <Image 
+              src={product.image} 
+              alt={product.name}
+              width={200}
+              height={144}
+              className="w-full h-full object-contain p-4"
+              unoptimized={product.image.toLowerCase().includes('.svg')}
+            />
+          ) : (
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#2F6BA8]/20 border border-[#2F6BA8]/30 rounded-full flex items-center justify-center">
+              <span className="text-[#2F6BA8] font-semibold text-lg sm:text-xl">{product.name.charAt(0)}</span>
+            </div>
+          )}
         </div>
 
         {/* Textbereich */}

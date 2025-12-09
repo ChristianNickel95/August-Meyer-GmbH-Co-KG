@@ -505,7 +505,7 @@
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/products/vliestuecher-bunt.jpg",
+    "image": "/images/Produkte/Vliesputztuch/Vliesputztuch - Bunt.svg",
     "slug": "vliestuecher-bunt",
     "articleNumber": "3000",
     "properties": [
@@ -540,7 +540,7 @@
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/products/vliestuecher-hellbunt.jpg",
+    "image": "/images/Produkte/Vliesputztuch/Vliesputztuch - Hellbunt.svg",
     "slug": "vliestuecher-hellbunt",
     "articleNumber": "3015",
     "properties": [
@@ -575,7 +575,7 @@
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/products/vliestuecher-weiss.jpg",
+    "image": "/images/Produkte/Vliesputztuch/Vliesputztuch - Weiß.svg",
     "slug": "vliestuecher-weiss",
     "articleNumber": "3023",
     "properties": [

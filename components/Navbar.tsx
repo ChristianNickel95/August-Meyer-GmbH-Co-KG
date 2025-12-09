@@ -84,11 +84,18 @@ export function Navbar(): JSX.Element {
             </div>
           </form>
 
-          {/* Navigation Links - Desktop (nur wenn genug Platz) */}
-          <div className="hidden xl:flex items-center gap-6 text-sm text-gray-200">
-            <Link href="/produkte" className="hover:text-white font-medium transition-colors duration-300">
+          {/* Navigation Link "Produkte" - rechts neben Suchfeld */}
+          <div className="hidden lg:flex items-center">
+            <Link href="/produkte" className="text-sm text-gray-200 hover:text-white font-medium transition-colors duration-300">
               Produkte
             </Link>
+          </div>
+          </div>
+
+        {/* Rechts: Kontakt, Impressum + Button + Hamburger-Menü */}
+        <div className="flex items-center justify-end gap-4 lg:gap-6">
+          {/* Navigation Links "Kontakt" und "Impressum" - Desktop (ab lg) */}
+          <div className="hidden lg:flex items-center gap-6 text-sm text-gray-200">
             <Link href="/kontakt" className="hover:text-white font-medium transition-colors duration-300">
               Kontakt
             </Link>
@@ -96,10 +103,7 @@ export function Navbar(): JSX.Element {
               Impressum
             </Link>
           </div>
-          </div>
 
-        {/* Rechts: Button + Hamburger-Menü */}
-        <div className="flex items-center justify-end gap-2">
           {/* Button - Desktop/Tablet */}
           <div className="hidden md:flex">
             <Button asChild variant="sustainability" size="sm">

@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import { AddProductToCartButton } from '@/components/AddProductToCartButton';
 import { LeadForm } from '@/components/LeadForm';
@@ -94,10 +95,21 @@ export function ProductDetailClient({ product, categoryName, variants }: Product
         {/* Linke Spalte: Produkt-Content */}
         <div className="space-y-6 lg:space-y-8">
           {/* 1. Produktbild / Platzhalter */}
-          <div className="rounded-2xl border border-[#1F2937] bg-[#111827] p-6 flex items-center justify-center h-64 md:h-80">
-            <div className="w-24 h-24 md:w-32 md:h-32 bg-[#2F6BA8]/20 border border-[#2F6BA8]/30 rounded-full flex items-center justify-center">
-              <span className="text-[#2F6BA8] font-semibold text-4xl md:text-5xl">{selectedVariant.name.charAt(0)}</span>
-            </div>
+          <div className="rounded-2xl border border-[#1F2937] bg-[#111827] p-6 flex items-center justify-center h-64 md:h-80 relative overflow-hidden">
+            {selectedVariant.image ? (
+              <Image 
+                src={selectedVariant.image} 
+                alt={selectedVariant.name}
+                width={400}
+                height={320}
+                className="w-full h-full object-contain"
+                unoptimized={selectedVariant.image.toLowerCase().includes('.svg')}
+              />
+            ) : (
+              <div className="w-24 h-24 md:w-32 md:h-32 bg-[#2F6BA8]/20 border border-[#2F6BA8]/30 rounded-full flex items-center justify-center">
+                <span className="text-[#2F6BA8] font-semibold text-4xl md:text-5xl">{selectedVariant.name.charAt(0)}</span>
+              </div>
+            )}
           </div>
 
           {/* Angebot-Box auf Mobile (nach dem Bild) */}
