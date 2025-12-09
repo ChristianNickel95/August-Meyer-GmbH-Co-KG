@@ -35,7 +35,17 @@ export default function HomePage(): JSX.Element {
       />
 
       {/* Hero Section - Dark Clean Industrial - Full Width */}
-      <section className="relative w-full overflow-hidden bg-gradient-to-br from-[#0D1C2E] via-[#122536] to-[#1B2B3C]">
+      <section className="relative w-full overflow-hidden">
+        {/* Hintergrundbild mit Overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/images/Hero_Section_Startseite_AM_cleaning-cloths.jpg)',
+          }}
+        />
+        {/* Overlay für Lesbarkeit - behält Farbton bei */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0D1C2E]/90 via-[#122536]/85 to-[#1B2B3C]/90" />
+        
         <div className="relative z-10 max-w-4xl ml-6 md:ml-10 lg:ml-12 xl:ml-16 pt-20 md:pt-24 pb-14 md:pb-16 text-left">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight text-white">
             Ihr zuverlässiger Partner für Industrieputzlappen und Betriebshygiene
