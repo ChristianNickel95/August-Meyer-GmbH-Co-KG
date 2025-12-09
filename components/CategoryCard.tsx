@@ -12,26 +12,26 @@ interface CategoryCardProps {
 
 export function CategoryCard({ category }: CategoryCardProps): JSX.Element {
   return (
-    <Card className="h-full flex flex-col bg-white border-2 border-neutral-200 hover:border-neutral-400 hover:shadow-xl transition-all duration-300">
-      <div className="aspect-[4/3] bg-gradient-to-br from-neutral-100 to-neutral-50 flex items-center justify-center overflow-hidden">
-        <div className="w-24 h-24 md:w-28 md:h-28 bg-neutral-200/60 rounded-full flex items-center justify-center">
-          <span className="text-neutral-700 font-semibold text-3xl md:text-4xl">{category.name.charAt(0)}</span>
+    <Card className="h-full flex flex-col bg-[#1B2B3C] border border-[#2A3F55] hover:border-[#2F6BA8] hover:shadow-lg transition-all duration-300 rounded-xl">
+      <div className="aspect-[4/3] bg-gradient-to-br from-[#1B2B3C] via-[#2A3F55] to-[#1B2B3C] flex items-center justify-center overflow-hidden rounded-t-xl">
+        <div className="w-24 h-24 md:w-28 md:h-28 bg-[#2F6BA8]/20 border border-[#2F6BA8]/30 rounded-full flex items-center justify-center">
+          <span className="text-[#2F6BA8] font-semibold text-3xl md:text-4xl">{category.name.charAt(0)}</span>
         </div>
       </div>
       
-      <CardHeader className="flex-1 p-8 space-y-4">
-        <CardTitle className="text-2xl md:text-3xl font-semibold text-neutral-900 leading-tight tracking-tight">
+      <CardHeader className="flex-1 p-6 space-y-3">
+        <CardTitle className="text-xl md:text-2xl font-semibold text-white leading-tight tracking-tight">
           {category.name}
         </CardTitle>
-        <CardDescription className="text-lg md:text-xl text-neutral-600 leading-relaxed line-clamp-3">
+        <CardDescription className="text-base text-neutral-300 leading-relaxed">
           {category.description}
         </CardDescription>
       </CardHeader>
       
-      <CardContent className="flex-1 flex flex-col justify-between p-8 pt-0 space-y-4">
-        <div className="mb-4">
-          <p className="text-sm text-neutral-600">
-            <strong className="text-neutral-900">{category.productCount} Produkte</strong> verfügbar
+      <CardContent className="flex-1 flex flex-col justify-between p-6 pt-0 space-y-4">
+        <div className="mb-2">
+          <p className="text-sm text-neutral-300">
+            <strong className="text-white">{category.productCount} Produkte</strong> verfügbar
           </p>
         </div>
         
@@ -45,7 +45,7 @@ export function CategoryCard({ category }: CategoryCardProps): JSX.Element {
             />
           )}
           
-          <Button variant="outline" asChild className="w-full font-semibold border-2">
+          <Button variant="outline" asChild className="w-full font-semibold border-2 border-[#2F6BA8] text-[#E6EDF3] hover:bg-[#2F6BA8]/20">
             <Link href={`/produkte/${category.slug}`}>
               Details anzeigen
             </Link>

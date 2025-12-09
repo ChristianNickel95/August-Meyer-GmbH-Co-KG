@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Product } from '@/lib/products';
 import { AddProductToCartButton } from './AddProductToCartButton';
@@ -10,54 +9,62 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps): JSX.Element {
   return (
-    <Card className="h-full flex flex-col bg-white border border-neutral-200 hover:border-neutral-400 hover:shadow-lg transition-all duration-300 group">
-      <div className="aspect-[4/3] bg-gradient-to-br from-neutral-100 to-neutral-50 flex items-center justify-center overflow-hidden">
-        <div className="w-12 h-12 md:w-14 md:h-14 bg-neutral-200/60 group-hover:bg-neutral-300/80 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-          <span className="text-neutral-700 font-semibold text-xl md:text-2xl">{product.name.charAt(0)}</span>
+    <article className="flex h-full flex-col rounded-2xl bg-[#151F2C] border border-[#2A3F55] shadow-sm overflow-hidden hover:border-[#2F6BA8] hover:shadow-md transition-shadow transition-colors">
+      {/* Oberer Bereich: Platzhalterbild + Text */}
+      <div className="flex flex-col">
+        {/* Bild / Icon-Bereich */}
+        <div className="h-32 md:h-36 w-full bg-gradient-to-b from-[#1E2C3C] to-[#101A27] flex items-center justify-center">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#2F6BA8]/20 border border-[#2F6BA8]/30 rounded-full flex items-center justify-center">
+            <span className="text-[#2F6BA8] font-semibold text-lg sm:text-xl">{product.name.charAt(0)}</span>
+          </div>
+        </div>
+
+        {/* Textbereich */}
+        <div className="flex flex-col px-4 md:px-5 pt-4 pb-3">
+          <div className="min-h-[3.5rem] md:min-h-[3.75rem] flex items-start">
+            <h4 className="text-base md:text-lg font-semibold text-white leading-snug line-clamp-2">
+              {product.name}
+            </h4>
+          </div>
+          <p className="mt-2 text-sm text-gray-300 min-h-[3rem]">
+            {product.shortDescription}
+          </p>
         </div>
       </div>
-      
-      <CardHeader className="p-2.5 md:p-3 space-y-1">
-        <CardTitle className="text-sm md:text-base font-semibold text-neutral-900 leading-tight tracking-tight line-clamp-2">{product.name}</CardTitle>
-        <CardDescription className="text-xs md:text-sm text-neutral-600 leading-snug line-clamp-2 font-light">
-          {product.shortDescription}
-        </CardDescription>
-      </CardHeader>
-      
-      <CardContent className="flex-1 flex flex-col p-2.5 md:p-3 pt-0">
-        <div className="mt-auto space-y-1.5">
-          <AddProductToCartButton 
-            product={product}
-            defaultQuantity={(() => {
-              // Bestimme defaultQuantity basierend auf Kategorie
-              if (product.category === 'putzlappen') return '360';
-              if (product.category === 'putzwolle') return '250';
-              if (product.category === 'vliestuecher') return '300';
-              if (product.category === 'putzpapierrollen' || product.category === 'putzpapier-karton' || 
-                  product.category === 'falthandtuecher-handtuchrollen' || product.category === 'toilettenpapier-kuechenrollen') return '12';
-              // Für Services (putztuchreinigung) und sonstiges: keine defaultValue
-              if (product.category === 'putztuchreinigung' || product.category === 'sonstiges') return '';
-              return '';
-            })()}
-            unit={(() => {
-              // Bestimme unit basierend auf Kategorie
-              if (product.category === 'putzlappen' || product.category === 'putzwolle' || product.category === 'vliestuecher') return 'kg';
-              if (product.category === 'putzpapierrollen') return 'Rollen';
-              if (product.category === 'putzpapier-karton' || product.category === 'falthandtuecher-handtuchrollen' || 
-                  product.category === 'toilettenpapier-kuechenrollen') return 'Kartons';
-              // Für Services: keine unit
-              if (product.category === 'putztuchreinigung') return null;
-              return null;
-            })()}
-          />
-          
-          <Button asChild variant="outline" size="sm" className="w-full font-semibold border text-xs md:text-sm py-1.5 h-auto">
-            <Link href={`/produkte/${product.category}/${product.slug}`}>
-              Details
-            </Link>
-          </Button>
-        </div>
-      </CardContent>
-    </Card>
+
+      {/* Unterer Bereich: Buttons immer bündig unten */}
+      <div className="mt-auto pt-4 flex flex-col gap-2 px-4 md:px-5 pb-4">
+        <AddProductToCartButton 
+          product={product}
+          defaultQuantity={(() => {
+            // Bestimme defaultQuantity basierend auf Kategorie
+            if (product.category === 'putzlappen') return '360';
+            if (product.category === 'putzwolle') return '250';
+            if (product.category === 'vliestuecher') return '300';
+            if (product.category === 'putzpapierrollen' || product.category === 'putzpapier-karton' || 
+                product.category === 'falthandtuecher-handtuchrollen' || product.category === 'toilettenpapier-kuechenrollen') return '12';
+            // Für Services (putztuchreinigung) und sonstiges: keine defaultValue
+            if (product.category === 'putztuchreinigung' || product.category === 'sonstiges') return '';
+            return '';
+          })()}
+          unit={(() => {
+            // Bestimme unit basierend auf Kategorie
+            if (product.category === 'putzlappen' || product.category === 'putzwolle' || product.category === 'vliestuecher') return 'kg';
+            if (product.category === 'putzpapierrollen') return 'Rollen';
+            if (product.category === 'putzpapier-karton' || product.category === 'falthandtuecher-handtuchrollen' || 
+                product.category === 'toilettenpapier-kuechenrollen') return 'Kartons';
+            // Für Services: keine unit
+            if (product.category === 'putztuchreinigung') return null;
+            return null;
+          })()}
+        />
+        
+        <Button asChild variant="outline" size="sm" className="w-full justify-center border-[#2A3F55] text-gray-100 hover:bg-[#1D2A3A]">
+          <Link href={`/produkte/${product.category}/${product.slug}`}>
+            Details anzeigen
+          </Link>
+        </Button>
+      </div>
+    </article>
   );
 }

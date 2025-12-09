@@ -7,43 +7,92 @@ Eine moderne, professionelle Website für die August Meyer GmbH & Co. KG, entwic
 - **Next.js 14** mit App Router
 - **TypeScript** für typsichere Entwicklung
 - **TailwindCSS** für modernes Styling
-- **shadcn/ui** Komponenten-Bibliothek
+- **Radix UI** Komponenten-Bibliothek für barrierefreie UI
 - **Responsive Design** für alle Geräte
+- **Semantische Suche** mit Synonym-Expansion und Relevance Scoring
+- **Warenkorb-System** mit LocalStorage Persistierung
+- **Use-Case-Filter** für intelligente Produktfilterung
 - **SEO-optimiert** mit Metadaten und JSON-LD
 - **Barrierefreiheit** nach WCAG-Richtlinien
 - **E2E-Tests** mit Playwright
-- **CI/CD** mit GitHub Actions
+- **Vercel Deployment** mit automatischem CI/CD
+
+## 🛠️ Technischer Stack
+
+### Framework & Core
+- **Next.js 14.0.4** - React Framework mit App Router
+- **React 18.2.0** - UI Library
+- **TypeScript 5.0.4** - Typsichere Entwicklung
+
+### Styling & UI
+- **Tailwind CSS 3.3.0** - Utility-First CSS Framework
+- **Radix UI** - Barrierefreie UI-Komponenten
+  - `@radix-ui/react-dialog` - Dialog/Modal Komponenten
+  - `@radix-ui/react-label` - Form Labels
+  - `@radix-ui/react-radio-group` - Radio Buttons
+  - `@radix-ui/react-slot` - Composition Pattern
+- **Lucide React 0.344.0** - Icon Library
+- **class-variance-authority 0.7.0** - Component Variants
+- **clsx & tailwind-merge** - Conditional CSS Classes
+
+### Datenstruktur
+- **JSON-basierte Content-Dateien**:
+  - `content/products.json` - Produktdaten mit Varianten
+  - `content/categories.json` - Kategorien & Subkategorien
+  - `content/useCases.json` - Use-Case-Tags für Filter
+
+### Features & Funktionalität
+- **Warenkorb-System** - React Context API mit LocalStorage
+- **Semantische Suche** - Synonym-Expansion & Relevance Scoring
+- **URL-basierte Filterung** - Shareable Links mit `useSearchParams`
+- **SEO & Structured Data** - JSON-LD Schema Markup
 
 ## 📁 Projektstruktur
 
 ```
+August-Meyer/
 ├── app/                    # Next.js App Router
 │   ├── api/               # API Routes
+│   │   └── lead/          # Lead-Formular Endpoint
+│   ├── produkte/          # Produktseiten
+│   │   ├── page.tsx       # Produktübersicht
+│   │   └── [category]/    # Kategorie-Seiten
+│   ├── kontakt/           # Kontaktseite
+│   ├── leistungen/        # Leistungsseite
+│   ├── datenschutz/       # Datenschutz
 │   ├── globals.css        # Globale Styles
 │   ├── layout.tsx         # Root Layout
 │   └── page.tsx           # Homepage
 ├── components/            # React Komponenten
-│   ├── ui/               # shadcn/ui Komponenten
-│   ├── Navbar.tsx        # Navigation
+│   ├── ui/               # Reusable UI Components
+│   ├── Navbar.tsx        # Navigation mit Suche
 │   ├── Footer.tsx        # Footer
+│   ├── ProductCard.tsx   # Produktkarte
+│   ├── CategoryCard.tsx  # Kategoriekarte
+│   ├── Cart.tsx          # Warenkorb
+│   ├── CartContext.tsx   # Warenkorb State Management
+│   ├── ProductFilter.tsx # Use-Case-Filter
+│   ├── SearchResultsBadge.tsx # Suchergebnis-Badge
 │   └── ...               # Weitere Komponenten
-├── content/              # Content Layer
+├── content/              # JSON Daten
 │   ├── categories.json   # Produktkategorien
-│   └── products.json     # Produktdaten
+│   ├── products.json     # Produktdaten
+│   └── useCases.json     # Use-Case-Mapping
 ├── lib/                  # Utility-Funktionen
-│   ├── products.ts       # Produkt-Logik
-│   └── utils.ts          # Hilfsfunktionen
+│   ├── products.ts       # Produkt-Helpers
+│   ├── semanticSearch.ts # Semantische Suchlogik
+│   └── utils.ts          # Allgemeine Utilities
 ├── tests/                # E2E Tests
-├── .github/              # GitHub Actions
-└── public/               # Statische Assets
+├── public/               # Statische Assets
+└── .github/              # GitHub Actions (optional)
 ```
 
 ## 🛠️ Installation
 
 ### Voraussetzungen
 
-- Node.js 18+ oder 20+
-- pnpm (empfohlen) oder npm
+- **Node.js 18+** oder **20+**
+- **npm** (mitgeliefert mit Node.js)
 
 ### Setup
 
@@ -55,12 +104,12 @@ Eine moderne, professionelle Website für die August Meyer GmbH & Co. KG, entwic
 
 2. **Dependencies installieren**
    ```bash
-   pnpm install
+   npm install
    ```
 
 3. **Entwicklungsserver starten**
    ```bash
-   pnpm dev
+   npm run dev
    ```
 
 4. **Browser öffnen**
@@ -70,17 +119,17 @@ Eine moderne, professionelle Website für die August Meyer GmbH & Co. KG, entwic
 
 ## 📜 Verfügbare Scripts
 
-```json
-{
-  "dev": "next dev",           # Entwicklungsserver
-  "build": "next build",       # Produktions-Build
-  "start": "next start",       # Produktions-Server
-  "lint": "next lint",         # ESLint
-  "typecheck": "tsc --noEmit", # TypeScript Check
-  "test:e2e": "playwright test", # E2E Tests
-  "ci:quality": "npm run lint && npm run typecheck && npm run test:e2e"
-}
+```bash
+npm run dev      # Entwicklungsserver starten (http://localhost:3000)
+npm run build    # Produktions-Build erstellen
+npm run start    # Produktions-Server starten (nach build)
 ```
+
+### Weitere verfügbare Commands
+
+- **ESLint**: Automatisch über Next.js integriert
+- **TypeScript**: Type Checking läuft automatisch im Build-Prozess
+- **Playwright Tests**: `npx playwright test` (falls konfiguriert)
 
 ## 🧪 Testing
 
@@ -88,13 +137,13 @@ Eine moderne, professionelle Website für die August Meyer GmbH & Co. KG, entwic
 
 ```bash
 # Tests ausführen
-pnpm test:e2e
+npx playwright test
 
 # Tests im UI-Modus
-pnpm exec playwright test --ui
+npx playwright test --ui
 
 # Tests für spezifischen Browser
-pnpm exec playwright test --project=chromium
+npx playwright test --project=chromium
 ```
 
 ### Accessibility Tests
@@ -106,48 +155,104 @@ Die Tests überprüfen automatisch:
 - ARIA-Attribute
 - Keyboard-Navigation
 
+### Code Quality
+
+- **ESLint**: Konfiguriert mit `next/core-web-vitals`
+- **TypeScript**: Strict Mode aktiviert
+- **Automatische Checks**: Während des Build-Prozesses
+
 ## 🚀 Deployment
 
-### Produktions-Build
+### Vercel Deployment (Empfohlen)
+
+Das Projekt ist für **Vercel** optimiert und nutzt automatisches CI/CD:
+
+1. **Repository mit Vercel verbinden**
+   - GitHub Repository mit Vercel verknüpfen
+   - Automatisches Deployment bei jedem Push zu `main`
+
+2. **Umgebungsvariablen** (optional)
+   ```env
+   NEXT_PUBLIC_SITE_URL=https://www.august-meyer.de
+   ```
+
+### Lokaler Produktions-Build
 
 ```bash
-pnpm build
-pnpm start
+npm run build
+npm run start
 ```
 
-### Umgebungsvariablen
+### Build-Konfiguration
 
-Erstellen Sie eine `.env.local` Datei:
-
-```env
-NEXT_PUBLIC_SITE_URL=https://www.august-meyer.de
-```
+- **Next.js Config**: `next.config.js`
+  - WebAssembly Support (für zukünftige Features)
+  - Image Optimization
+  - Webpack Fallbacks für Browser-Kompatibilität
+- **TypeScript Config**: `tsconfig.json`
+  - ES5 Target für Browser-Kompatibilität
+  - Path Aliases (`@/*`)
+  - Strict Type Checking
 
 ## 📱 Seiten
 
-- **/** - Homepage mit Hero-Section und Produkt-Highlights
-- **/produkte** - Produktübersicht nach Kategorien
+- **/** - Homepage mit Hero-Section und Kategorie-Carousel
+- **/produkte** - Produktübersicht nach Kategorien mit Suche & Filter
 - **/produkte/[category]** - Produkte einer Kategorie
 - **/produkte/[category]/[slug]** - Produktdetailseite
 - **/kontakt** - Kontaktformular und Unternehmensinformationen
+- **/leistungen** - Leistungsübersicht
 - **/impressum** - Rechtliche Informationen
 - **/datenschutz** - Datenschutzerklärung
+
+## 🎯 Hauptfunktionen
+
+### Semantische Suche
+
+Die Website verfügt über eine intelligente Suchfunktion (`lib/semanticSearch.ts`):
+- **Synonym-Expansion**: Erweitert Suchbegriffe mit verwandten Begriffen
+- **Relevance Scoring**: Bewertet Produkte nach Relevanz
+- **Multi-Field Search**: Durchsucht Name, Beschreibung, Kategorien, Use Cases
+- **Kategorie-Integration**: Berücksichtigt auch Kategorie-Beschreibungen
+
+### Warenkorb-System
+
+- **React Context API**: Globaler State Management (`CartContext.tsx`)
+- **LocalStorage Persistierung**: Warenkorb bleibt nach Seiten-Reload erhalten
+- **Produktvarianten**: Unterstützung für verschiedene Größen/Mengen
+- **Responsive Design**: Mobile-optimierte Warenkorb-Ansicht
+
+### Use-Case-Filter
+
+- **9 Use-Case-Tags**: Öl & Fett entfernen, Grobe Verschmutzungen, etc.
+- **Multi-Select**: Mehrere Filter gleichzeitig aktivierbar
+- **URL-basiert**: Filter werden in URL gespeichert (shareable Links)
+- **Auto-Expand**: Relevante Kategorien werden automatisch aufgeklappt
 
 ## 🔧 Konfiguration
 
 ### TailwindCSS
 
 Konfiguriert in `tailwind.config.js` mit:
-- Custom Color Palette
-- Responsive Breakpoints
-- Animation Utilities
+- **Custom Color Palette**: Neutral & Sustainability Farben
+- **Responsive Breakpoints**: Mobile-First Design
+- **Custom Typography**: Inter Font Family
+- **Animation Utilities**: Fade-in & Slide-up
+- **Container**: Responsive Container mit Padding
 
-### ESLint & Prettier
+### ESLint
 
-Strikte TypeScript-Regeln und Accessibility-Checks:
-- `@typescript-eslint/recommended`
-- `plugin:jsx-a11y/recommended`
-- Automatische Formatierung
+Konfiguriert in `.eslintrc.json`:
+- **next/core-web-vitals**: Next.js optimierte Regeln
+- **Automatische Checks**: Während Development und Build
+
+### TypeScript
+
+Konfiguriert in `tsconfig.json`:
+- **Target**: ES5 (Browser-Kompatibilität)
+- **Strict Mode**: Aktiviert
+- **Path Aliases**: `@/*` für einfache Imports
+- **Module Resolution**: Bundler (Next.js optimiert)
 
 ### SEO & Performance
 
@@ -159,22 +264,60 @@ Strikte TypeScript-Regeln und Accessibility-Checks:
 
 ## 📊 Performance
 
-### Lighthouse Budget
+### Optimierungen
+
+- **Image Optimization** mit Next.js automatisch
+- **Code Splitting** automatisch durch Next.js
+- **Client-Side Rendering** für interaktive Komponenten
+- **Server-Side Rendering** für SEO-kritische Seiten
+- **Static Generation** wo möglich
+- **Lazy Loading** für Komponenten und Bilder
+
+### Bundle-Größe
+
+- **Minimal Dependencies**: Nur notwendige Bibliotheken
+- **Tree Shaking**: Automatische Entfernung ungenutzten Codes
+- **Optimierte Imports**: Nur benötigte Komponenten werden geladen
+
+## 📦 Dependencies
+
+### Production Dependencies
 
 ```json
 {
-  "scripts": "<=150 KB",
-  "images": "<=800 KB",
-  "third-party": "<=3"
+  "@radix-ui/react-dialog": "^1.1.1",
+  "@radix-ui/react-label": "^2.1.8",
+  "@radix-ui/react-radio-group": "^1.3.8",
+  "@radix-ui/react-slot": "^1.1.0",
+  "@xenova/transformers": "^2.17.2",
+  "class-variance-authority": "^0.7.0",
+  "clsx": "^2.1.0",
+  "lucide-react": "^0.344.0",
+  "next": "14.0.4",
+  "react": "18.2.0",
+  "react-dom": "18.2.0",
+  "tailwind-merge": "^2.2.0"
 }
 ```
 
-### Optimierungen
+### Development Dependencies
 
-- **Image Optimization** mit Next.js
-- **Code Splitting** automatisch
-- **Bundle Analysis** verfügbar
-- **Lazy Loading** für Komponenten
+```json
+{
+  "@types/node": "20.10.0",
+  "@types/react": "18.2.0",
+  "@types/react-dom": "18.2.0",
+  "@typescript-eslint/eslint-plugin": "^6.21.0",
+  "@typescript-eslint/parser": "^6.21.0",
+  "autoprefixer": "10.4.0",
+  "eslint": "^8.57.0",
+  "eslint-config-next": "^14.2.33",
+  "eslint-plugin-jsx-a11y": "^6.8.0",
+  "postcss": "8.4.0",
+  "tailwindcss": "3.3.0",
+  "typescript": "5.0.4"
+}
+```
 
 ## 🌐 Internationalisierung
 

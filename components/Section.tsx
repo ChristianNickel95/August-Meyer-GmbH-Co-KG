@@ -8,7 +8,7 @@ interface SectionProps {
 
 export function Section({ children, className, id }: SectionProps): JSX.Element {
   return (
-    <section id={id} className={cn('section-padding', className)}>
+    <section id={id} className={cn('w-full', className)}>
       {children}
     </section>
   );

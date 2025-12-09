@@ -14,20 +14,30 @@ interface AddProductToCartButtonProps {
   product: Product;
   defaultQuantity?: string;
   unit?: string | null;
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
+  onTriggerClick?: () => void;
 }
 
 export function AddProductToCartButton({ 
   product,
   defaultQuantity = '',
-  unit = null 
+  unit = null,
+  open: controlledOpen,
+  onOpenChange: controlledOnOpenChange,
+  onTriggerClick
 }: AddProductToCartButtonProps): JSX.Element {
   const { addItem, items } = useCart();
   const [quantity, setQuantity] = useState(defaultQuantity);
   const [selectedVariant, setSelectedVariant] = useState<ProductVariant | null>(
     product.variants.length > 0 ? product.variants[0] : null
   );
-  const [isOpen, setIsOpen] = useState(false);
+  const [internalOpen, setInternalOpen] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
+  
+  // Use controlled state if provided, otherwise use internal state
+  const isOpen = controlledOpen !== undefined ? controlledOpen : internalOpen;
+  const setIsOpen = controlledOnOpenChange || setInternalOpen;
 
   // Prüfen, ob dieses Produkt bereits im Warenkorb ist
   const itemId = selectedVariant ? `${product.id}-${selectedVariant.id}` : product.id;
@@ -41,9 +51,14 @@ export function AddProductToCartButton({
         : quantity;
       
       if (finalQuantity && finalQuantity !== '0') {
+        // Wenn Produktname und Variantenname gleich sind, nur einmal anzeigen
+        const displayName = product.name === selectedVariant.name 
+          ? `${product.name} (Art.-Nr.: ${selectedVariant.articleNumber})`
+          : `${product.name} - ${selectedVariant.name} (Art.-Nr.: ${selectedVariant.articleNumber})`;
+        
         addItem({
           categoryId: itemId,
-          categoryName: `${product.name} - ${selectedVariant.name} (Art.-Nr.: ${selectedVariant.articleNumber})`,
+          categoryName: displayName,
           quantity: finalQuantity,
           unit,
         });
@@ -57,11 +72,24 @@ export function AddProductToCartButton({
     }
   };
 
+  const handleTriggerClick = (): void => {
+    if (onTriggerClick) {
+      onTriggerClick();
+    } else {
+      setIsOpen(true);
+    }
+  };
+
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button variant="default" size="sm" className="w-full font-semibold text-xs md:text-sm py-1.5 h-auto">
-          <ShoppingCart className="w-3 h-3 md:w-4 md:h-4 mr-1.5" />
+        <Button 
+          variant="default" 
+          size="sm" 
+          className="w-full justify-center font-semibold text-xs sm:text-sm"
+          onClick={handleTriggerClick}
+        >
+          <ShoppingCart className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5" />
           {existingItem ? 'Menge ändern' : 'Anfragen'}
         </Button>
       </DialogTrigger>

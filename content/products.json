@@ -37,13 +37,13 @@
   },
   {
     "id": "trikotputzlappen-extra-hell",
-    "name": "Trikotputzlappen extra hell (Pastell)",
+    "name": "Trikotputzlappen extra hell",
     "category": "putzlappen",
     "categoryName": "Putzlappen",
     "subcategory": "trikotputzlappen",
     "subcategoryName": "Trikotputzlappen",
     "description": "Bearbeitet nach DIN 61650. Putzlappen in Pastellfarben aus Baumwolle in T-Shirt, Sweatshirt und Unterhemdenqualität. Sehr saugfähiges Material, ideal für die Aufnahme von Fett und Öl. Die hellen Pastelltöne ermöglichen eine bessere Kontrolle der Reinigungsqualität.",
-    "shortDescription": "Putzlappen in Pastellfarben aus Baumwolle",
+    "shortDescription": "Putzlappen in Pastellfarben aus Baumwolle (Pastell)",
     "benefits": [
       "Sehr saugfähiges Material",
       "Sehr gut geeignet für die Aufnahme von Fett und Öl",
@@ -53,7 +53,7 @@
     "variants": [
       {
         "id": "trikot-extra-hell-2242",
-        "name": "Trikotputzlappen extra hell (Pastell)",
+        "name": "Trikotputzlappen extra hell",
         "articleNumber": "2242",
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
@@ -73,13 +73,13 @@
   },
   {
     "id": "trikotputzlappen-weiss-1",
-    "name": "Trikotputzlappen weiß 1 (reinweiß)",
+    "name": "Trikotputzlappen weiß 1",
     "category": "putzlappen",
     "categoryName": "Putzlappen",
     "subcategory": "trikotputzlappen",
     "subcategoryName": "Trikotputzlappen",
     "description": "Bearbeitet nach DIN 61650. Hergestellt aus sehr saugfähigen Baumwollstoffen wie T-Shirt und Unterhemdenmaterial. Reinweiße Ausführung. Sehr gut geeignet für die Aufnahme von Fett und Öl. Ideal für sensible Bereiche und Lebensmittelindustrie.",
-    "shortDescription": "Reinweiße Trikotputzlappen aus sehr saugfähigen Baumwollstoffen",
+    "shortDescription": "Reinweiße Trikotputzlappen aus sehr saugfähigen Baumwollstoffen (reinweiß)",
     "benefits": [
       "Sehr saugfähiges Material",
       "Sehr gut geeignet für die Aufnahme von Fett und Öl",
@@ -89,7 +89,7 @@
     "variants": [
       {
         "id": "trikot-weiss-1-2292",
-        "name": "Trikotputzlappen weiß 1 (reinweiß)",
+        "name": "Trikotputzlappen weiß 1",
         "articleNumber": "2292",
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
@@ -111,13 +111,13 @@
   },
   {
     "id": "trikotputzlappen-weiss-2",
-    "name": "Trikotputzlappen weiß 2 (weiß gründlich mit farblichen Applikationen)",
+    "name": "Trikotputzlappen weiß 2",
     "category": "putzlappen",
     "categoryName": "Putzlappen",
     "subcategory": "trikotputzlappen",
     "subcategoryName": "Trikotputzlappen",
     "description": "Bearbeitet nach DIN 61650. Hergestellt aus sehr saugfähigen Baumwollstoffen wie T-Shirt und Unterhemdenmaterial. Weiß gründlich mit farblichen Applikationen. Sehr gut geeignet für die Aufnahme von Fett und Öl. Die farblichen Applikationen ermöglichen eine bessere Unterscheidung bei verschiedenen Anwendungen.",
-    "shortDescription": "Weiße Trikotputzlappen mit farblichen Applikationen",
+    "shortDescription": "Weiße Trikotputzlappen mit farblichen Applikationen (weiß gründlich mit farblichen Applikationen)",
     "benefits": [
       "Sehr saugfähiges Material",
       "Sehr gut geeignet für die Aufnahme von Fett und Öl",
@@ -127,7 +127,7 @@
     "variants": [
       {
         "id": "trikot-weiss-2-2298",
-        "name": "Trikotputzlappen weiß 2 (weiß gründlich mit farblichen Applikationen)",
+        "name": "Trikotputzlappen weiß 2",
         "articleNumber": "2298",
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }

@@ -4,60 +4,78 @@
 
 @layer base {
   :root {
-    /* Industrial Neutral Palette - inspired by Dyson/Lenzing */
-    --neutral-50: 248 250 252;
-    --neutral-100: 241 245 249;
-    --neutral-200: 226 232 240;
-    --neutral-300: 203 213 225;
-    --neutral-400: 148 163 184;
-    --neutral-500: 100 116 139;
-    --neutral-600: 71 85 105;
-    --neutral-700: 51 65 85;
-    --neutral-800: 30 41 59;
-    --neutral-900: 15 23 42;
+    /* Dark Clean Industrial Color System */
+    /* Primary Dark Background: #0D1C2E */
+    --dark-bg: 13 28 46;
+    /* Dark Panel: #1B2B3C */
+    --dark-panel: 27 43 60;
+    /* Dark Border: #2A3F55 */
+    --dark-border: 42 63 85;
+    /* Steel Blue Primary: #2F6BA8 */
+    --steel-blue: 47 107 168;
+    /* Sustainability Green CTA: #4CC17C */
+    --sustainability-green: 76 193 124;
+    /* Light Gray Text: #E6EDF3 */
+    --light-gray: 230 237 243;
+    /* Footer Dark: #0B1622 */
+    --footer-dark: 11 22 34;
+    /* Logo Panel Border: #1F3A52 */
+    --logo-border: 31 58 82;
 
-    /* Sustainability Accent - inspired by Patagonia */
+    /* Industrial Neutral Palette - Dark Theme Adjusted */
+    --neutral-50: 230 237 243;
+    --neutral-100: 203 213 225;
+    --neutral-200: 148 163 184;
+    --neutral-300: 100 116 139;
+    --neutral-400: 71 85 105;
+    --neutral-500: 51 65 85;
+    --neutral-600: 42 63 85;
+    --neutral-700: 30 41 59;
+    --neutral-800: 27 43 60;
+    --neutral-900: 13 28 46;
+
+    /* Sustainability Accent - Adjusted for Dark Theme */
     --sustainability-50: 240 253 244;
     --sustainability-100: 220 252 231;
     --sustainability-200: 187 247 208;
     --sustainability-300: 134 239 172;
     --sustainability-400: 74 222 128;
-    --sustainability-500: 34 197 94;
+    --sustainability-500: 76 193 124;
     --sustainability-600: 22 163 74;
     --sustainability-700: 21 128 61;
     --sustainability-800: 22 101 52;
     --sustainability-900: 20 83 45;
 
-    /* System Colors */
-    --background: 255 255 255;
-    --foreground: 15 23 42;
-    --card: 255 255 255;
-    --card-foreground: 15 23 42;
-    --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
+    /* System Colors - Dark Theme */
+    --background: 13 28 46;
+    --foreground: 230 237 243;
+    --card: 27 43 60;
+    --card-foreground: 230 237 243;
+    --popover: 27 43 60;
+    --popover-foreground: 230 237 243;
     
-    /* Primary = Industrial Neutral Dark */
-    --primary: 51 65 85;
+    /* Primary = Steel Blue */
+    --primary: 47 107 168;
     --primary-foreground: 255 255 255;
     
-    /* Secondary = Sustainability Accent */
-    --secondary: 22 163 74;
+    /* Secondary = Sustainability Green */
+    --secondary: 76 193 124;
     --secondary-foreground: 255 255 255;
     
-    --muted: 241 245 249;
-    --muted-foreground: 71 85 105;
+    --muted: 42 63 85;
+    --muted-foreground: 203 213 225;
     
-    --accent: 240 253 244;
-    --accent-foreground: 22 163 74;
+    --accent: 47 107 168;
+    --accent-foreground: 255 255 255;
     
     --destructive: 239 68 68;
     --destructive-foreground: 255 255 255;
     
-    --border: 226 232 240;
-    --input: 226 232 240;
-    --ring: 51 65 85;
+    --border: 42 63 85;
+    --input: 42 63 85;
+    --ring: 47 107 168;
     
-    --radius: 0.375rem;
+    --radius: 0.75rem;
   }
 }
 
@@ -67,16 +85,16 @@
   }
   
   body {
-    @apply bg-neutral-50 text-neutral-900 antialiased;
+    @apply bg-[#0D1C2E] text-[#E6EDF3] antialiased;
     font-feature-settings: "kern" 1, "liga" 1;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   
-  /* Refined Typography Scale */
+  /* Refined Typography Scale - Dark Theme */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold tracking-tight text-neutral-900;
+    @apply font-semibold tracking-tight text-[#E6EDF3];
     letter-spacing: -0.02em;
   }
   
@@ -108,7 +126,7 @@
   }
   
   p {
-    @apply text-base md:text-lg text-neutral-600;
+    @apply text-base md:text-lg text-neutral-300;
     line-height: 1.75;
   }
   
@@ -134,5 +152,20 @@
   
   .grid-rhythm {
     @apply gap-12 md:gap-16 lg:gap-20;
+  }
+  
+  .grid-auto-fit {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+  
+  .grid-auto-fit-categories {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+  
+  @media (max-width: 640px) {
+    .grid-auto-fit,
+    .grid-auto-fit-categories {
+      grid-template-columns: 1fr;
+    }
   }
 }

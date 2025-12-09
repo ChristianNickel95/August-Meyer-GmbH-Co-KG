@@ -101,16 +101,16 @@ export default function RootLayout({
           }}
         />
         <CartProvider>
-          <div className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+        <div className="min-h-screen flex flex-col bg-white">
+          <Navbar />
             <SearchResultsBadge />
-            <main className="flex-1">
-              {children}
-            </main>
-            <Footer />
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
             <Cart />
             <FloatingContactButton />
-          </div>
+        </div>
         </CartProvider>
       </body>
     </html>

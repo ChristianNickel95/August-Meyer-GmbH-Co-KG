@@ -49,18 +49,14 @@ export function ProductFilter({ onFilterChange, onPropertyFilterChange }: Produc
   };
 
   return (
-    <div className="bg-neutral-50 border-2 border-neutral-200 rounded-lg p-6 mb-8">
+    <>
       <div className="flex items-center justify-between mb-4">
-        <div>
-          <h3 className="text-lg font-semibold text-neutral-900 mb-1">Nach Anwendung filtern</h3>
-          <p className="text-sm text-neutral-600">Finden Sie das passende Produkt für Ihre Anforderungen</p>
-        </div>
         {selectedUseCases.length > 0 && (
           <Button
             variant="ghost"
             size="sm"
             onClick={clearFilters}
-            className="text-neutral-600 hover:text-neutral-900"
+            className="text-gray-400 hover:text-white hover:bg-[#2A3F55] ml-auto"
           >
             <X className="w-4 h-4 mr-1" />
             Filter zurücksetzen
@@ -68,14 +64,18 @@ export function ProductFilter({ onFilterChange, onPropertyFilterChange }: Produc
         )}
       </div>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-3">
         {useCasesMeta.map((useCase: { id: string; label: string }) => (
           <Button
             key={useCase.id}
             variant={selectedUseCases.includes(useCase.id) ? 'default' : 'outline'}
             size="sm"
             onClick={() => handleUseCaseToggle(useCase.id)}
-            className="text-sm"
+            className={`text-sm rounded-full px-4 py-1 ${
+              selectedUseCases.includes(useCase.id)
+                ? 'bg-[#2F6BA8] text-white border-[#2F6BA8]'
+                : 'border-[#2F6BA8] text-[#E6EDF3] hover:bg-[#2F6BA8]/20'
+            }`}
           >
             {useCase.label}
           </Button>
@@ -83,11 +83,11 @@ export function ProductFilter({ onFilterChange, onPropertyFilterChange }: Produc
       </div>
 
       {selectedUseCases.length > 0 && (
-        <div className="mt-4 text-sm text-neutral-600">
+        <div className="mt-4 text-sm text-gray-400">
           {selectedUseCases.length} {selectedUseCases.length === 1 ? 'Anwendung' : 'Anwendungen'} ausgewählt
         </div>
       )}
-    </div>
+    </>
   );
 }
 

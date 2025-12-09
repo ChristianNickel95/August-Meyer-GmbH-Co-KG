@@ -4,13 +4,9 @@ import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { ChevronDown, ChevronUp, X } from 'lucide-react';
-import { PageHeader } from '@/components/PageHeader';
-import { Container } from '@/components/Container';
-import { Section } from '@/components/Section';
 import { ProductCard } from '@/components/ProductCard';
 import { ProductFilter } from '@/components/ProductFilter';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { getAllCategories, getAllProducts, getProductsByCategory, Product, Category } from '@/lib/products';
 import { AddToCartButton } from '@/components/AddToCartButton';
 import { JsonLd } from '@/components/JsonLd';
@@ -80,6 +76,19 @@ export default function ProductsPage(): JSX.Element {
   useEffect(() => {
     let filtered = allProducts;
 
+    // Wenn Suche leer ist, alle Produkte anzeigen (ggf. mit Use-Case-Filter)
+    if (!searchQuery.trim()) {
+      // Nur nach Use-Cases filtern, wenn welche ausgewählt sind
+      if (selectedProperties.length > 0) {
+        filtered = filtered.filter((product) => {
+          return product.useCases?.some((uc) => selectedProperties.includes(uc));
+        });
+      }
+      setFilteredProducts(filtered);
+      window.dispatchEvent(new CustomEvent('searchResults', { detail: filtered.length }));
+      return;
+    }
+
     // Zuerst nach Use-Cases filtern
     if (selectedProperties.length > 0) {
       filtered = filtered.filter((product) => {
@@ -88,38 +97,34 @@ export default function ProductsPage(): JSX.Element {
     }
 
     // Dann semantische Suche (oder Fallback auf normale Suche)
-    if (searchQuery.trim()) {
-      // Dynamischer Import für semantische Suche (nur wenn benötigt)
-      import('@/lib/semanticSearch')
-        .then(({ searchProducts }) => {
-          return searchProducts(searchQuery, filtered, selectedProperties);
-        })
-        .then((results) => {
-          setFilteredProducts(results);
-          // Ergebnisanzahl an SearchResultsBadge senden
-          window.dispatchEvent(new CustomEvent('searchResults', { detail: results.length }));
-        })
-        .catch((error) => {
-          console.warn('Semantische Suche nicht verfügbar, verwende Textsuche:', error);
-          // Fallback auf normale Textsuche
-          const query = searchQuery.toLowerCase().trim();
-          const textFiltered = filtered.filter((product) => {
-            const nameMatch = product.name.toLowerCase().includes(query);
-            const descriptionMatch = product.description?.toLowerCase().includes(query) || 
-                                    product.shortDescription?.toLowerCase().includes(query);
-            const categoryMatch = product.categoryName?.toLowerCase().includes(query) ||
-                                 product.subcategoryName?.toLowerCase().includes(query);
-            const articleMatch = product.articleNumber?.toLowerCase().includes(query);
-            
-            return nameMatch || descriptionMatch || categoryMatch || articleMatch;
-          });
-          setFilteredProducts(textFiltered);
-          // Ergebnisanzahl an SearchResultsBadge senden
-          window.dispatchEvent(new CustomEvent('searchResults', { detail: textFiltered.length }));
+    // Dynamischer Import für semantische Suche (nur wenn benötigt)
+    import('@/lib/semanticSearch')
+      .then(({ searchProducts }) => {
+        return searchProducts(searchQuery, filtered, selectedProperties);
+      })
+      .then((results) => {
+        setFilteredProducts(results);
+        // Ergebnisanzahl an SearchResultsBadge senden
+        window.dispatchEvent(new CustomEvent('searchResults', { detail: results.length }));
+      })
+      .catch((error) => {
+        console.warn('Semantische Suche nicht verfügbar, verwende Textsuche:', error);
+        // Fallback auf normale Textsuche
+        const query = searchQuery.toLowerCase().trim();
+        const textFiltered = filtered.filter((product) => {
+          const nameMatch = product.name.toLowerCase().includes(query);
+          const descriptionMatch = product.description?.toLowerCase().includes(query) || 
+                                  product.shortDescription?.toLowerCase().includes(query);
+          const categoryMatch = product.categoryName?.toLowerCase().includes(query) ||
+                               product.subcategoryName?.toLowerCase().includes(query);
+          const articleMatch = product.articleNumber?.toLowerCase().includes(query);
+          
+          return nameMatch || descriptionMatch || categoryMatch || articleMatch;
         });
-    } else {
-      setFilteredProducts(filtered);
-    }
+        setFilteredProducts(textFiltered);
+        // Ergebnisanzahl an SearchResultsBadge senden
+        window.dispatchEvent(new CustomEvent('searchResults', { detail: textFiltered.length }));
+      });
   }, [searchQuery, allProducts, selectedProperties]);
 
   const handleCategoryCardClick = (categoryId: string, categorySlug: string): void => {
@@ -192,7 +197,7 @@ export default function ProductsPage(): JSX.Element {
       return {
         ...category,
         productCount: directVariantCount,
-      };
+};
     });
   }, [categories, productsByCategory, productsBySubcategory]);
 
@@ -271,24 +276,27 @@ export default function ProductsPage(): JSX.Element {
         }}
       />
 
-      <PageHeader
-        title="Unsere Produkte"
-        description={`August Meyer ist ein traditionsreiches Familienunternehmen, das sich auf den Vertrieb von hochwertigen Industrieputzlappen und Reinigungstextilien spezialisiert hat. Als zuverlässiger Partner beliefern wir Kunden in ganz Deutschland mit einem umfassenden Produktsortiment an Reinigungsprodukten.
-
-Unser Erfolg basiert auf drei wichtigen Säulen: der sorgfältigen Auswahl unserer Lieferanten, der Qualität unserer Produkte und unserem zuverlässigen Lieferservice. Wir arbeiten eng mit ausgewählten Herstellern zusammen, um Ihnen stets die beste Qualität zu fairen Preisen anbieten zu können.
-
-Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen Service und individuelle Beratung. Unser erfahrenes Team steht Ihnen bei allen Fragen zur Verfügung und entwickelt gemeinsam mit Ihnen maßgeschneiderte Lösungen für Ihre Reinigungsanforderungen.`}
-        fullWidth={true}
-        breadcrumbs={[
-          { label: 'Startseite', href: '/' },
-          { label: 'Produkte' }
-        ]}
-      />
-
-      {/* Produktkategorien-Übersicht - Kompakt */}
-      <Section className="bg-neutral-50 py-4 md:py-6">
-        <Container>
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-3">
+      <main className="min-h-screen w-full bg-[#050C16] text-white">
+        <section className="w-full bg-gradient-to-br from-[#0D1C2E] via-[#122536] to-[#1B2B3C]">
+          <div className="w-full px-4 md:px-6 lg:px-8 xl:px-12 py-12 md:py-16">
+          {/* Einleitung */}
+          <div>
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Unsere Produkte
+            </h1>
+            <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+              August Meyer ist ein traditionsreiches Familienunternehmen, das sich auf den Vertrieb von hochwertigen Industrieputzlappen und Reinigungstextilien spezialisiert hat. Als zuverlässiger Partner beliefern wir Kunden in ganz Deutschland mit einem umfassenden Produktsortiment an Reinigungsprodukten.
+            </p>
+            <p className="text-base md:text-lg text-gray-300 leading-relaxed mt-4">
+              Unser Erfolg basiert auf drei wichtigen Säulen: der sorgfältigen Auswahl unserer Lieferanten, der Qualität unserer Produkte und unserem zuverlässigen Lieferservice. Wir arbeiten eng mit ausgewählten Herstellern zusammen, um Ihnen stets die beste Qualität zu fairen Preisen anbieten zu können.
+            </p>
+            <p className="text-base md:text-lg text-gray-300 leading-relaxed mt-4">
+              Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen Service und individuelle Beratung. Unser erfahrenes Team steht Ihnen bei allen Fragen zur Verfügung und entwickelt gemeinsam mit Ihnen maßgeschneiderte Lösungen für Ihre Reinigungsanforderungen.
+            </p>
+          </div>
+                  
+          {/* Kategorie-Karten */}
+          <div className="mt-10 md:mt-12 grid gap-6 grid-auto-fit-categories">
             {/* Kategorien-Mapping für die 9 Kategorien - nur relevante anzeigen wenn gefiltert */}
             {(() => {
               const categoryCards = [
@@ -314,9 +322,9 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
             })().map((cat) => {
               const category = categories.find(c => c.id === cat.id || c.slug === cat.slug);
               return (
-                <Card
+                <div
                   key={cat.id}
-                  className="border border-neutral-200 hover:border-neutral-400 hover:shadow-md transition-all duration-300 cursor-pointer h-full flex flex-col"
+                  className="flex h-full flex-col justify-between rounded-xl border border-[#2A3F55] bg-[#1B2B3C] p-5 sm:p-6 shadow-md cursor-pointer hover:border-[#2F6BA8] hover:shadow-lg transition-all duration-300"
                   onClick={() => {
                     const targetCategory = categories.find(c => c.id === cat.id || c.slug === cat.slug.split('/')[0]);
                     if (targetCategory) {
@@ -324,29 +332,37 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
                     }
                   }}
                 >
-                  <CardHeader className="p-2.5 md:p-3">
-                    <CardTitle className="text-sm md:text-base font-semibold">{cat.name}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-2.5 md:p-3 pt-0 flex-1">
-                    <p className="text-xs md:text-sm text-neutral-600 leading-snug">
-                      {cat.description}
-                    </p>
-                  </CardContent>
-                </Card>
+                  <h3 className="text-base sm:text-lg font-semibold text-white">
+                    {cat.name}
+                  </h3>
+                  <p className="mt-3 text-sm text-gray-300 leading-relaxed">
+                    {cat.description}
+                  </p>
+                  </div>
               );
             })}
-          </div>
-        </Container>
-      </Section>
+                </div>
+                
+          {/* Filterbereich "Nach Anwendung filtern" */}
+          <section className="mt-10 md:mt-12 rounded-2xl border border-[#2A3F55] bg-[#101A27] px-4 md:px-6 py-5 md:py-6">
+            <div>
+              <h3 className="text-base font-semibold text-white mb-1">
+                Nach Anwendung filtern
+              </h3>
+              <p className="text-sm text-gray-400">
+                Finden Sie das passende Produkt für Ihre Anforderungen.
+                    </p>
+                  </div>
+            <div className="mt-4">
+              <ProductFilter
+                onFilterChange={setFilteredProducts}
+                onPropertyFilterChange={setSelectedProperties}
+              />
+            </div>
+          </section>
 
-      <Section>
-        <Container>
-          <ProductFilter
-            onFilterChange={setFilteredProducts}
-            onPropertyFilterChange={setSelectedProperties}
-          />
-
-          <div className="space-y-2.5">
+          {/* Accordion / Produkt-Liste */}
+          <div className="mt-8 space-y-4">
             {visibleCategories.map((category) => {
               const isExpanded = expandedCategories.has(category.id);
               const categoryProducts = productsByCategory[category.id] || [];
@@ -355,18 +371,18 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
                 <div
                   key={category.id}
                   id={`category-${category.id}`}
-                  className="border border-neutral-200 rounded-lg overflow-hidden bg-white"
+                  className="rounded-xl overflow-hidden"
                 >
                   {/* Kategorie-Header */}
                   <button
                     onClick={() => toggleCategory(category.id)}
-                    className="w-full px-3 py-2 bg-neutral-50 hover:bg-neutral-100 transition-colors duration-200 flex items-center justify-between text-left"
+                    className="flex w-full items-center justify-between rounded-xl bg-[#0D1C2E] px-4 py-2.5 md:py-3 border border-[#1F2F40] hover:border-[#2A3F55] transition-colors"
                   >
-                    <div className="flex items-center gap-2">
-                      <h2 className="text-base md:text-lg font-semibold text-neutral-900">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <h3 className="text-lg md:text-xl font-semibold text-white">
                         {category.name}
-                      </h2>
-                      <span className="text-xs text-neutral-600 bg-neutral-200 px-1.5 py-0.5 rounded-full">
+                      </h3>
+                      <span className="ml-3 rounded-full bg-white/5 px-3 py-1 text-xs md:text-sm text-gray-200">
                         {(() => {
                           // Für Kategorien mit Unterkategorien: Varianten zählen
                           if (category.subcategories && category.subcategories.length > 0) {
@@ -387,50 +403,50 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
                       </span>
                     </div>
                     {isExpanded ? (
-                      <ChevronUp className="w-4 h-4 text-neutral-600 flex-shrink-0" />
+                      <ChevronUp className="h-4 w-4 text-gray-400 flex-shrink-0 transition-transform" />
                     ) : (
-                      <ChevronDown className="w-4 h-4 text-neutral-600 flex-shrink-0" />
+                      <ChevronDown className="h-4 w-4 text-gray-400 flex-shrink-0 transition-transform" />
                     )}
                   </button>
 
                   {/* Kategorie-Inhalt (Produkte oder Unterkategorien) */}
                   {isExpanded && (
-                    <div className="p-3">
+                    <div className="mt-3 rounded-2xl border border-[#2A3F55] bg-[#101A27] px-4 md:px-6 py-4 md:py-5">
                       {category.description && (
-                        <p className="text-neutral-600 mb-3 text-xs md:text-sm">{category.description}</p>
+                        <p className="text-sm text-gray-300 leading-relaxed mb-4">{category.description}</p>
                       )}
                       
 
                       {/* Kategorien mit Unterkategorien */}
                       {category.subcategories && category.subcategories.length > 0 && (
-                        <div className="space-y-2.5">
+                        <div className="space-y-6">
                           {category.subcategories.map((subcategory) => {
                             const subcategoryProducts = productsBySubcategory[category.id]?.[subcategory.id] || [];
                             // Anzahl der Varianten in dieser Unterkategorie berechnen
                             const variantCount = subcategoryProducts.reduce((sum, product) => sum + (product.variants?.length || 0), 0);
                             
                             return (
-                              <div key={subcategory.id} className="border border-neutral-200 rounded-lg p-2 bg-neutral-50">
-                                <div className="flex items-center justify-between mb-1.5">
-                                  <h3 className="text-xs md:text-sm font-semibold text-neutral-900">
+                              <div key={subcategory.id} className="border border-[#2A3F55] rounded-xl p-4 sm:p-5 bg-[#182537]">
+                                <div className="flex items-center justify-between mb-3">
+                                  <h3 className="text-base sm:text-lg font-semibold text-white">
                                     {subcategory.name}
                                   </h3>
-                                  <span className="text-xs text-neutral-600 bg-neutral-200 px-1.5 py-0.5 rounded-full">
+                                  <span className="text-xs sm:text-sm text-gray-300 bg-[#2F6BA8]/20 border border-[#2F6BA8]/30 px-2 py-0.5 rounded-full">
                                     {variantCount} {variantCount === 1 ? 'Artikel' : 'Artikel'}
                                   </span>
                                 </div>
                                 {subcategory.description && (
-                                  <p className="text-neutral-600 mb-1.5 text-xs line-clamp-1">{subcategory.description}</p>
+                                  <p className="text-gray-300 mb-2 text-xs line-clamp-1">{subcategory.description}</p>
                                 )}
                                 
                                 {subcategoryProducts.length > 0 ? (
-                                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-2">
+                                  <div className="mt-4 grid gap-4 md:gap-5 lg:gap-6 grid-auto-fit">
                                     {subcategoryProducts.map((product) => (
                                       <ProductCard key={product.id} product={product} />
                                     ))}
                                   </div>
                                 ) : (
-                                  <p className="text-neutral-500 text-center py-2 text-xs">
+                                  <p className="text-gray-400 text-center py-2 text-xs">
                                     Keine Produkte in dieser Unterkategorie gefunden.
                                   </p>
                                 )}
@@ -444,13 +460,13 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
                       {(!category.subcategories || category.subcategories.length === 0) && (
                         <>
                           {categoryProducts.length > 0 ? (
-                            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-2">
+                            <div className="mt-4 grid gap-4 md:gap-5 lg:gap-6 grid-auto-fit">
                               {categoryProducts.map((product) => (
                                 <ProductCard key={product.id} product={product} />
-                              ))}
-                            </div>
+            ))}
+          </div>
                           ) : (
-                            <p className="text-neutral-500 text-center py-2 text-xs">
+                            <p className="text-gray-400 text-center py-2 text-xs">
                               Keine Produkte in dieser Kategorie gefunden.
                             </p>
                           )}
@@ -462,10 +478,10 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
               );
             })}
           </div>
-
+                  
           {visibleCategories.length === 0 && (
-            <div className="text-center py-8">
-              <p className="text-neutral-600 text-base mb-4">
+            <div className="text-center py-12">
+              <p className="text-gray-300 text-base mb-4">
                 Keine Produkte gefunden, die den ausgewählten Filtern entsprechen.
               </p>
               <Button
@@ -474,28 +490,31 @@ Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen S
                 onClick={() => {
                   setFilteredProducts(allProducts);
                   setSelectedProperties([]);
+                  setSearchQuery('');
                 }}
+                className="border-[#2A3F55] text-gray-100 hover:bg-[#1D2A3A]"
               >
                 Filter zurücksetzen
               </Button>
             </div>
           )}
 
-          <div className="text-center mt-8 md:mt-10">
-            <div className="bg-neutral-50 rounded-lg p-6 max-w-3xl mx-auto border-2 border-neutral-200">
-              <h3 className="text-xl md:text-2xl font-semibold text-neutral-900 mb-3">
+          <div className="text-center mt-10 md:mt-12">
+            <div className="bg-[#101A27] rounded-xl p-6 sm:p-8 max-w-3xl mx-auto border border-[#2A3F55]">
+              <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">
                 Individuelle Beratung
               </h3>
-              <p className="text-sm md:text-base text-neutral-600 mb-4 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-300 mb-4 leading-relaxed">
                 Unser erfahrenes Team berät Sie gerne bei der Auswahl der richtigen Produkte für Ihre spezifischen Anforderungen. Kontaktieren Sie uns für eine persönliche Beratung.
               </p>
-              <Button asChild size="lg" variant="default" className="font-semibold">
+              <Button asChild size="lg" variant="sustainability" className="font-semibold">
                 <Link href="/kontakt">Beratung anfordern</Link>
               </Button>
             </div>
           </div>
-        </Container>
-      </Section>
+          </div>
+        </section>
+      </main>
     </>
   );
 }

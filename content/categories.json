@@ -9,7 +9,7 @@
     "unit": "kg",
     "productCount": 0,
     "subcategories": [
-      {
+  {
         "id": "trikotputzlappen",
         "name": "Trikotputzlappen",
         "slug": "trikotputzlappen",
@@ -89,7 +89,7 @@
     "unit": "Kartons",
     "productCount": 0,
     "subcategories": [
-      {
+  {
         "id": "falthandtuecher",
         "name": "Falthandtücher",
         "slug": "falthandtuecher",
@@ -113,7 +113,7 @@
     "unit": "Kartons",
     "productCount": 0,
     "subcategories": [
-      {
+  {
         "id": "toilettenpapier",
         "name": "Toilettenpapier",
         "slug": "toilettenpapier",

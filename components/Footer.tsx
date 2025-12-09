@@ -3,7 +3,7 @@ import { Logo } from '@/components/Logo';
 
 export function Footer(): JSX.Element {
   return (
-    <footer className="bg-neutral-900 text-white" role="contentinfo">
+    <footer className="bg-[#0B1622] text-white" role="contentinfo">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10">
           {/* Company Info */}
@@ -11,8 +11,8 @@ export function Footer(): JSX.Element {
             <div className="flex items-center space-x-4 mb-6">
               <Logo variant="dark" />
               <div className="flex flex-col">
-                <span className="text-xl md:text-2xl font-bold text-sky-400 leading-tight tracking-tight">August Meyer</span>
-                <span className="text-xs md:text-sm text-sky-300 leading-tight font-medium">GmbH & Co. KG</span>
+                <span className="text-xl md:text-2xl font-bold text-[#2F6BA8] leading-tight tracking-tight">August Meyer</span>
+                <span className="text-xs md:text-sm text-neutral-300 leading-tight font-medium">GmbH & Co. KG</span>
               </div>
             </div>
             <p className="text-neutral-300 mb-6 max-w-md leading-relaxed text-base md:text-lg">
@@ -74,8 +74,15 @@ export function Footer(): JSX.Element {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-neutral-800 mt-8 md:mt-10 pt-6 md:pt-8 text-center">
+        <div className="border-t border-[#1F3A52] mt-8 md:mt-10 pt-6 md:pt-8 text-center">
           <p className="text-neutral-400 text-xs md:text-sm">&copy; {new Date().getFullYear()} August Meyer GmbH & Co. KG. Alle Rechte vorbehalten.</p>
+          <div className="mt-4">
+            <Link href="/kontakt">
+              <button className="inline-flex items-center px-4 py-2 bg-[#4CC17C] hover:bg-[#4CC17C]/90 text-white font-semibold rounded-full transition-colors duration-200">
+                Jetzt Kontakt aufnehmen
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

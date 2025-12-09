@@ -64,18 +64,18 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
 
   if (isSubmitted) {
     return (
-      <Card className={className}>
-        <CardContent className="pt-6 text-center">
-          <div className="text-green-600 mb-4">
+      <Card className={`bg-[#1B2B3C] border border-[#2A3F55] rounded-xl ${className}`}>
+        <CardContent className="pt-6 text-center p-6">
+          <div className="text-[#4CC17C] mb-4">
             <svg className="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
           </div>
-          <h3 className="text-lg font-semibold mb-2">Vielen Dank für Ihre Anfrage!</h3>
-          <p className="text-gray-600 mb-4">
+          <h3 className="text-lg font-semibold mb-2 text-white">Vielen Dank für Ihre Anfrage!</h3>
+          <p className="text-neutral-300 mb-4">
             Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.
           </p>
-          <Button onClick={() => setIsSubmitted(false)}>
+          <Button onClick={() => setIsSubmitted(false)} variant="outline">
             Neue Anfrage
           </Button>
         </CardContent>
@@ -84,21 +84,21 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
   }
 
   return (
-    <Card className={className}>
-      <CardHeader>
-        <CardTitle>Angebot anfragen</CardTitle>
-        <CardDescription>
+    <Card className={`bg-[#1B2B3C] border border-[#2A3F55] rounded-xl ${className}`}>
+      <CardHeader className="p-6">
+        <CardTitle className="text-white">Angebot anfragen</CardTitle>
+        <CardDescription className="text-neutral-300">
           {productName 
             ? `Füllen Sie das Formular aus, um ein Angebot für ${productName} zu erhalten.`
             : 'Füllen Sie das Formular aus, um ein Angebot zu erhalten.'
           }
         </CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className="p-6 pt-0">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="name" className="block text-sm font-medium text-white mb-1">
                 Name *
               </label>
               <Input
@@ -107,10 +107,11 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
                 type="text"
                 required
                 placeholder="Ihr vollständiger Name"
+                className="bg-[#0D1C2E] border-[#2A3F55] text-[#E6EDF3] placeholder:text-neutral-400 focus:border-[#2F6BA8]"
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="email" className="block text-sm font-medium text-white mb-1">
                 E-Mail *
               </label>
               <Input
@@ -119,13 +120,14 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
                 type="email"
                 required
                 placeholder="ihre.email@beispiel.de"
+                className="bg-[#0D1C2E] border-[#2A3F55] text-[#E6EDF3] placeholder:text-neutral-400 focus:border-[#2F6BA8]"
               />
             </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="company" className="block text-sm font-medium text-white mb-1">
                 Unternehmen
               </label>
               <Input
@@ -133,10 +135,11 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
                 name="company"
                 type="text"
                 placeholder="Ihr Unternehmen"
+                className="bg-[#0D1C2E] border-[#2A3F55] text-[#E6EDF3] placeholder:text-neutral-400 focus:border-[#2F6BA8]"
               />
             </div>
             <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="phone" className="block text-sm font-medium text-white mb-1">
                 Telefon
               </label>
               <Input
@@ -144,14 +147,15 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
                 name="phone"
                 type="tel"
                 placeholder="Ihre Telefonnummer"
+                className="bg-[#0D1C2E] border-[#2A3F55] text-[#E6EDF3] placeholder:text-neutral-400 focus:border-[#2F6BA8]"
               />
             </div>
           </div>
           
           {items.length > 0 && (
-            <div className="bg-neutral-50 border border-neutral-200 rounded-lg p-4">
-              <h4 className="font-semibold text-sm text-neutral-900 mb-2">Ihre Anfrage enthält:</h4>
-              <ul className="space-y-1 text-sm text-neutral-600">
+            <div className="bg-[#0D1C2E] border border-[#2A3F55] rounded-lg p-4">
+              <h4 className="font-semibold text-sm text-white mb-2">Ihre Anfrage enthält:</h4>
+              <ul className="space-y-1 text-sm text-neutral-300">
                 {items.map((item) => (
                   <li key={item.categoryId}>
                     {item.categoryName}: {item.quantity}{item.unit ? ` ${item.unit}` : ''}
@@ -162,7 +166,7 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
           )}
           
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="message" className="block text-sm font-medium text-white mb-1">
               Nachricht {items.length === 0 && '*'}
             </label>
             <textarea
@@ -170,12 +174,12 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
               name="message"
               required={items.length === 0}
               rows={4}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-3 py-2 bg-[#0D1C2E] border border-[#2A3F55] text-[#E6EDF3] placeholder:text-neutral-400 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2F6BA8] focus:border-transparent"
               placeholder={items.length > 0 ? "Zusätzliche Informationen (optional)..." : "Beschreiben Sie Ihre Anforderungen..."}
             />
           </div>
           
-          <Button type="submit" className="w-full" disabled={isSubmitting}>
+          <Button type="submit" className="w-full" variant="sustainability" disabled={isSubmitting}>
             {isSubmitting ? 'Wird gesendet...' : 'Anfrage senden'}
           </Button>
         </form>
