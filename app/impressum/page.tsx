@@ -35,17 +35,17 @@ export default function ImpressumPage(): JSX.Element {
               <CardContent className="p-6 pt-0 space-y-4">
                 <div>
                   <h4 className="font-semibold text-white mb-2">Unternehmen</h4>
-                  <p className="text-neutral-300">August Meyer GmbH & Co. KG</p>
-                  <p className="text-neutral-300">Seibertstr. 5</p>
-                  <p className="text-neutral-300">35708 Haiger</p>
-                  <p className="text-neutral-300">Deutschland</p>
+                  <p className="text-text-secondary">August Meyer GmbH & Co. KG</p>
+                  <p className="text-text-secondary">Seibertstr. 5</p>
+                  <p className="text-text-secondary">35708 Haiger</p>
+                  <p className="text-text-secondary">Deutschland</p>
                 </div>
                 
                 <div>
                   <h4 className="font-semibold text-white mb-2">Kontakt</h4>
-                  <p className="text-neutral-300">Tel.: 02773 / 5080</p>
-                  <p className="text-neutral-300">Fax: 02773 / 71485</p>
-                  <p className="text-neutral-300">
+                  <p className="text-text-secondary">Tel.: 02773 / 5080</p>
+                  <p className="text-text-secondary">Fax: 02773 / 71485</p>
+                  <p className="text-text-secondary">
                     <a href="mailto:info@august-meyer.de" className="text-[#6FE0FF] hover:text-[#6FE0FF]/80 transition-colors">
                       info@august-meyer.de
                     </a>
@@ -54,13 +54,13 @@ export default function ImpressumPage(): JSX.Element {
                 
                 <div>
                   <h4 className="font-semibold text-white mb-2">Umsatzsteuer-ID</h4>
-                  <p className="text-neutral-300">Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:</p>
-                  <p className="text-neutral-300">DE111796861</p>
+                  <p className="text-text-secondary">Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:</p>
+                  <p className="text-text-secondary">DE111796861</p>
                 </div>
                 
                 <div>
                   <h4 className="font-semibold text-white mb-2">Steuer-Nr.</h4>
-                  <p className="text-neutral-300">00934630062</p>
+                  <p className="text-text-secondary">00934630062</p>
                 </div>
               </CardContent>
             </Card>
@@ -70,9 +70,9 @@ export default function ImpressumPage(): JSX.Element {
                 <CardTitle className="text-white">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</CardTitle>
               </CardHeader>
               <CardContent className="p-6 pt-0">
-                <p className="text-neutral-300">August Meyer GmbH & Co. KG</p>
-                <p className="text-neutral-300">Seibertstr. 5</p>
-                <p className="text-neutral-300">35708 Haiger</p>
+                <p className="text-text-secondary">August Meyer GmbH & Co. KG</p>
+                <p className="text-text-secondary">Seibertstr. 5</p>
+                <p className="text-text-secondary">35708 Haiger</p>
               </CardContent>
             </Card>
 
@@ -83,7 +83,7 @@ export default function ImpressumPage(): JSX.Element {
               <CardContent className="p-6 pt-0 space-y-4">
                 <div>
                   <h4 className="font-semibold text-white mb-2">Haftung für Inhalte</h4>
-                  <p className="text-neutral-300">
+                  <p className="text-text-secondary">
                     Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, 
                     Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. 
                     Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten 
@@ -93,7 +93,7 @@ export default function ImpressumPage(): JSX.Element {
                 
                 <div>
                   <h4 className="font-semibold text-white mb-2">Haftung für Links</h4>
-                  <p className="text-neutral-300">
+                  <p className="text-text-secondary">
                     Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen 
                     Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. 
                     Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der 
@@ -103,7 +103,7 @@ export default function ImpressumPage(): JSX.Element {
                 
                 <div>
                   <h4 className="font-semibold text-white mb-2">Urheberrecht</h4>
-                  <p className="text-neutral-300">
+                  <p className="text-text-secondary">
                     Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen 
                     dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art 
                     der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen 

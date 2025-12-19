@@ -83,7 +83,7 @@ export function Cart(): JSX.Element {
                           placeholder="0"
                         />
                         {item.unit && (
-                          <span className="text-sm text-gray-300">{item.unit}</span>
+                          <span className="text-sm text-text-secondary">{item.unit}</span>
                         )}
                       </div>
                     </div>
@@ -102,7 +102,7 @@ export function Cart(): JSX.Element {
                   onClick={clearCart}
                   variant="outline"
                   size="sm"
-                  className="w-full border-[#2A3F55] text-gray-300 hover:bg-[#2A3F55] hover:text-white"
+                  className="w-full border-[#2A3F55] text-text-secondary hover:bg-[#2A3F55] hover:text-white"
                 >
                   Warenkorb leeren
                 </Button>

@@ -53,8 +53,12 @@ export function AddProductToCartButton({
       if (finalQuantity && finalQuantity !== '0') {
         // Wenn Produktname und Variantenname gleich sind, nur einmal anzeigen
         const displayName = product.name === selectedVariant.name 
-          ? `${product.name} (Art.-Nr.: ${selectedVariant.articleNumber})`
-          : `${product.name} - ${selectedVariant.name} (Art.-Nr.: ${selectedVariant.articleNumber})`;
+          ? (product.category === 'sonstiges' 
+              ? product.name 
+              : `${product.name} (Art.-Nr.: ${selectedVariant.articleNumber})`)
+          : (product.category === 'sonstiges'
+              ? `${product.name} - ${selectedVariant.name}`
+              : `${product.name} - ${selectedVariant.name} (Art.-Nr.: ${selectedVariant.articleNumber})`);
         
         addItem({
           categoryId: itemId,
@@ -123,9 +127,11 @@ export function AddProductToCartButton({
                     <RadioGroupItem value={variant.id} id={variant.id} className="mt-1" />
                     <Label htmlFor={variant.id} className="flex-1 cursor-pointer">
                       <div className="font-medium text-neutral-900">{variant.name}</div>
-                      <div className="text-sm text-neutral-600 mt-1">
-                        Art.-Nr.: <span className="font-mono">{variant.articleNumber}</span>
-                      </div>
+                      {product.category !== 'sonstiges' && (
+                        <div className="text-sm text-neutral-600 mt-1">
+                          Art.-Nr.: <span className="font-mono">{variant.articleNumber}</span>
+                        </div>
+                      )}
                       {variant.description && (
                         <div className="text-sm text-neutral-500 mt-1">{variant.description}</div>
                       )}
@@ -140,9 +146,11 @@ export function AddProductToCartButton({
             <div className="bg-neutral-50 border border-neutral-200 rounded-lg p-3">
               <div className="text-sm">
                 <span className="font-medium text-neutral-900">{product.variants[0].name}</span>
-                <div className="text-neutral-600 mt-1">
-                  Art.-Nr.: <span className="font-mono">{product.variants[0].articleNumber}</span>
-                </div>
+                {product.category !== 'sonstiges' && (
+                  <div className="text-neutral-600 mt-1">
+                    Art.-Nr.: <span className="font-mono">{product.variants[0].articleNumber}</span>
+                  </div>
+                )}
               </div>
             </div>
           )}

@@ -4,78 +4,77 @@
 
 @layer base {
   :root {
-    /* Dark Clean Industrial Color System */
-    /* Primary Dark Background: #0D1C2E */
-    --dark-bg: 13 28 46;
-    /* Dark Panel: #1B2B3C */
-    --dark-panel: 27 43 60;
-    /* Dark Border: #2A3F55 */
-    --dark-border: 42 63 85;
-    /* Steel Blue Primary: #2F6BA8 */
-    --steel-blue: 47 107 168;
-    /* Sustainability Green CTA: #4CC17C */
-    --sustainability-green: 76 193 124;
-    /* Light Gray Text: #E6EDF3 */
-    --light-gray: 230 237 243;
-    /* Footer Dark: #0B1622 */
-    --footer-dark: 11 22 34;
-    /* Logo Panel Border: #1F3A52 */
-    --logo-border: 31 58 82;
+    /* Siemens-Inspired Industrial Dark Blue Color System */
+    /* Primary Background: #0b1a33 bis #0e1f3d (Dark Blue) */
+    --primary-bg: 11 26 51;
+    --primary-bg-alt: 14 31 61;
+    /* Secondary Background: #13294b */
+    --secondary-bg: 19 41 75;
+    /* Surface / Card Backgrounds: leicht aufgehelltes Dark Blue */
+    --surface: 19 41 75;
+    --surface-light: 25 50 85;
+    /* Text Primary: #ffffff */
+    --text-primary: 255 255 255;
+    /* Text Secondary: #c7d2e0 */
+    --text-secondary: 199 210 224;
+    /* Accent / Interaction Color: Siemens-Grün #00ffb3 */
+    --accent-green: 0 255 179;
+    /* Borders / Divider: rgba(255,255,255,0.08) */
+    --border-divider: 255 255 255 / 0.08;
 
-    /* Industrial Neutral Palette - Dark Theme Adjusted */
-    --neutral-50: 230 237 243;
-    --neutral-100: 203 213 225;
+    /* Legacy compatibility - mapped to new system */
+    --dark-bg: 11 26 51;
+    --dark-panel: 19 41 75;
+    --dark-border: 255 255 255 / 0.08;
+    --steel-blue: 0 255 179;
+    --sustainability-green: 0 255 179;
+    --light-gray: 255 255 255;
+    --footer-dark: 11 26 51;
+    --logo-border: 255 255 255 / 0.08;
+
+    /* Industrial Neutral Palette - Dark Blue Theme */
+    --neutral-50: 255 255 255;
+    --neutral-100: 199 210 224;
     --neutral-200: 148 163 184;
     --neutral-300: 100 116 139;
     --neutral-400: 71 85 105;
     --neutral-500: 51 65 85;
     --neutral-600: 42 63 85;
     --neutral-700: 30 41 59;
-    --neutral-800: 27 43 60;
-    --neutral-900: 13 28 46;
+    --neutral-800: 19 41 75;
+    --neutral-900: 11 26 51;
 
-    /* Sustainability Accent - Adjusted for Dark Theme */
-    --sustainability-50: 240 253 244;
-    --sustainability-100: 220 252 231;
-    --sustainability-200: 187 247 208;
-    --sustainability-300: 134 239 172;
-    --sustainability-400: 74 222 128;
-    --sustainability-500: 76 193 124;
-    --sustainability-600: 22 163 74;
-    --sustainability-700: 21 128 61;
-    --sustainability-800: 22 101 52;
-    --sustainability-900: 20 83 45;
-
-    /* System Colors - Dark Theme */
-    --background: 13 28 46;
-    --foreground: 230 237 243;
-    --card: 27 43 60;
-    --card-foreground: 230 237 243;
-    --popover: 27 43 60;
-    --popover-foreground: 230 237 243;
+    /* System Colors - Dark Blue Theme */
+    --background: 11 26 51;
+    --foreground: 255 255 255;
+    --card: 19 41 75;
+    --card-foreground: 255 255 255;
+    --popover: 19 41 75;
+    --popover-foreground: 255 255 255;
     
-    /* Primary = Steel Blue */
-    --primary: 47 107 168;
-    --primary-foreground: 255 255 255;
+    /* Primary = Siemens Green (for CTAs, interactions) */
+    --primary: 0 255 179;
+    --primary-foreground: 0 0 0;
     
-    /* Secondary = Sustainability Green */
-    --secondary: 76 193 124;
+    /* Secondary = Dark Blue Surface */
+    --secondary: 19 41 75;
     --secondary-foreground: 255 255 255;
     
-    --muted: 42 63 85;
-    --muted-foreground: 203 213 225;
+    --muted: 255 255 255 / 0.08;
+    --muted-foreground: 199 210 224;
     
-    --accent: 47 107 168;
-    --accent-foreground: 255 255 255;
+    --accent: 0 255 179;
+    --accent-foreground: 0 0 0;
     
     --destructive: 239 68 68;
     --destructive-foreground: 255 255 255;
     
-    --border: 42 63 85;
-    --input: 42 63 85;
-    --ring: 47 107 168;
+    --border: 255 255 255 / 0.08;
+    --input: 255 255 255 / 0.08;
+    --ring: 0 255 179;
     
-    --radius: 0.75rem;
+    /* Border radius: 2-4px (industriell, keine stark abgerundeten Ecken) */
+    --radius: 0.125rem; /* 2px */
   }
 }
 
@@ -85,16 +84,16 @@
   }
   
   body {
-    @apply bg-[#0D1C2E] text-[#E6EDF3] antialiased;
+    @apply bg-[#0b1a33] text-white antialiased overflow-x-hidden;
     font-feature-settings: "kern" 1, "liga" 1;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   
-  /* Refined Typography Scale - Dark Theme */
+  /* Refined Typography Scale - Dark Blue Theme */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold tracking-tight text-[#E6EDF3];
+    @apply font-semibold tracking-tight text-white;
     letter-spacing: -0.02em;
   }
   
@@ -126,13 +125,13 @@
   }
   
   p {
-    @apply text-base md:text-lg text-neutral-300;
+    @apply text-base md:text-lg text-[#c7d2e0];
     line-height: 1.75;
   }
   
   /* Improved Link Styling */
   a {
-    @apply transition-colors duration-200;
+    @apply transition-colors duration-150;
   }
 }
 

@@ -10,27 +10,33 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps): JSX.Element {
   return (
-    <article className="flex h-full flex-col rounded-2xl bg-[#151F2C] border border-[#2A3F55] shadow-sm overflow-hidden hover:border-[#2F6BA8] hover:shadow-md transition-shadow transition-colors">
+    <article className="flex h-full flex-col rounded-sm bg-[#13294b] border border-white/8 shadow-sm overflow-hidden hover:border-[#00ffb3] hover:shadow-[0_0_8px_rgba(0,255,179,0.2)] transition-all duration-150">
       {/* Oberer Bereich: Platzhalterbild + Text */}
       <div className="flex flex-col">
         {/* Bild / Icon-Bereich */}
-        <div className="h-32 md:h-36 w-full bg-gradient-to-b from-[#1E2C3C] to-[#101A27] flex items-center justify-center relative overflow-hidden">
+        <div className="h-32 md:h-36 w-full bg-gradient-to-b from-[#13294b] to-[#0b1a33] flex items-center justify-center relative overflow-hidden">
           {product.image ? (
             <Image 
               src={product.image} 
               alt={product.name}
               width={200}
               height={144}
-              className="w-full h-full object-contain p-4"
+              className={`w-full h-full object-contain p-4 ${
+                product.id === 'vliestuecher-bunt' 
+                  ? 'brightness-75 opacity-90' 
+                  : product.id === 'vliestuecher-hellbunt'
+                  ? 'brightness-100 opacity-100'
+                  : ''
+              }`}
               unoptimized={product.image.toLowerCase().includes('.svg')}
             />
           ) : (
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#2F6BA8]/20 border border-[#2F6BA8]/30 rounded-full flex items-center justify-center">
-              <span className="text-[#2F6BA8] font-semibold text-lg sm:text-xl">{product.name.charAt(0)}</span>
-            </div>
-          )}
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#00ffb3]/20 border border-[#00ffb3]/30 rounded-sm flex items-center justify-center">
+              <span className="text-[#00ffb3] font-semibold text-lg sm:text-xl">{product.name.charAt(0)}</span>
         </div>
-
+          )}
+      </div>
+      
         {/* Textbereich */}
         <div className="flex flex-col px-4 md:px-5 pt-4 pb-3">
           <div className="min-h-[3.5rem] md:min-h-[3.75rem] flex items-start">
@@ -38,12 +44,12 @@ export function ProductCard({ product }: ProductCardProps): JSX.Element {
               {product.name}
             </h4>
           </div>
-          <p className="mt-2 text-sm text-gray-300 min-h-[3rem]">
-            {product.shortDescription}
+          <p className="mt-2 text-sm text-[#c7d2e0] min-h-[3rem]">
+          {product.shortDescription}
           </p>
+          </div>
         </div>
-      </div>
-
+        
       {/* Unterer Bereich: Buttons immer bündig unten */}
       <div className="mt-auto pt-4 flex flex-col gap-2 px-4 md:px-5 pb-4">
         <AddProductToCartButton 
@@ -71,12 +77,12 @@ export function ProductCard({ product }: ProductCardProps): JSX.Element {
           })()}
         />
         
-        <Button asChild variant="outline" size="sm" className="w-full justify-center border-[#2A3F55] text-gray-100 hover:bg-[#1D2A3A]">
-          <Link href={`/produkte/${product.category}/${product.slug}`}>
-            Details anzeigen
-          </Link>
-        </Button>
-      </div>
+        <Button asChild variant="outline" size="sm" className="w-full justify-center">
+            <Link href={`/produkte/${product.category}/${product.slug}`}>
+              Details anzeigen
+            </Link>
+          </Button>
+        </div>
     </article>
   );
 }

@@ -101,7 +101,7 @@ export default function RootLayout({
           }}
         />
         <CartProvider>
-        <div className="min-h-screen flex flex-col bg-white">
+        <div className="min-h-screen flex flex-col bg-[#0b1a33]">
           <Navbar />
             <SearchResultsBadge />
           <main className="flex-1">

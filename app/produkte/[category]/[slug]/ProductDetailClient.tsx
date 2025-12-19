@@ -9,6 +9,7 @@ import { LeadForm } from '@/components/LeadForm';
 import { Product } from '@/lib/products';
 import { useCart } from '@/components/CartContext';
 import { clsx } from 'clsx';
+import { getPackagingInfo } from '@/lib/packaging';
 
 interface ProductDetailClientProps {
   product: Product;
@@ -102,7 +103,13 @@ export function ProductDetailClient({ product, categoryName, variants }: Product
                 alt={selectedVariant.name}
                 width={400}
                 height={320}
-                className="w-full h-full object-contain"
+                className={`w-full h-full object-contain ${
+                  selectedVariant.id === 'vliestuecher-bunt' 
+                    ? 'brightness-75 opacity-90' 
+                    : selectedVariant.id === 'vliestuecher-hellbunt'
+                    ? 'brightness-100 opacity-100'
+                    : ''
+                }`}
                 unoptimized={selectedVariant.image.toLowerCase().includes('.svg')}
               />
             ) : (
@@ -115,8 +122,8 @@ export function ProductDetailClient({ product, categoryName, variants }: Product
           {/* Angebot-Box auf Mobile (nach dem Bild) */}
           <div className="lg:hidden">
             <div id="anfrage-formular-mobile" className="flex h-full flex-col rounded-2xl bg-[#0b1521] border border-[#1f2937] p-6 shadow-lg">
-              <h2 className="text-xl md:text-2xl font-semibold text-white mb-2">Angebot anfragen</h2>
-              <p className="text-sm md:text-base text-gray-300 mb-4 leading-relaxed">
+              <h2 className="text-xl md:text-2xl font-semibold text-white mb-2">Angebot einholen</h2>
+              <p className="text-sm md:text-base text-text-secondary mb-4 leading-relaxed">
                 Füllen Sie das Formular aus, um ein Angebot für dieses Produkt zu erhalten.
               </p>
               
@@ -131,10 +138,26 @@ export function ProductDetailClient({ product, categoryName, variants }: Product
                   <span className="font-medium text-white">
                     {getQuantityAndUnit.quantity} {getQuantityAndUnit.unit}
                   </span>
-                  {selectedVariant.articleNumber && (
+                  {selectedVariant.category !== 'sonstiges' && selectedVariant.articleNumber && (
                     <> (Art.-Nr. {selectedVariant.articleNumber})</>
                   )}
                 </p>
+                {(() => {
+                  const packagingInfo = getPackagingInfo(selectedVariant);
+                  if (packagingInfo) {
+                    return (
+                      <div className="mt-2 pt-2 border-t border-[#1f2937] space-y-1">
+                        <p className="text-xs text-text-secondary">
+                          Verpackungsgröße: <span className="text-gray-200">{packagingInfo.packagingSize}</span>
+                        </p>
+                        <p className="text-xs text-text-secondary">
+                          Palettengröße: <span className="text-gray-200">{packagingInfo.palletSize}</span>
+                        </p>
+                      </div>
+                    );
+                  }
+                  return null;
+                })()}
               </div>
 
               <AddProductToCartButton
@@ -169,7 +192,7 @@ export function ProductDetailClient({ product, categoryName, variants }: Product
           {/* 2. Produktbeschreibung-Card */}
           <section className="rounded-2xl bg-[#0b1521] border border-[#1f2937] p-6">
             <h2 className="text-xl font-semibold text-white mb-3">Produktbeschreibung</h2>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed">
+            <p className="text-sm md:text-base text-text-secondary leading-relaxed">
               {selectedVariant.description}
             </p>
           </section>
@@ -178,7 +201,7 @@ export function ProductDetailClient({ product, categoryName, variants }: Product
           {selectedVariant.benefits && selectedVariant.benefits.length > 0 && (
             <section className="rounded-2xl bg-[#0b1521] border border-[#1f2937] p-6">
               <h2 className="text-xl font-semibold text-white mb-3">Vorteile & Features</h2>
-              <div className="mt-3 space-y-2 text-sm md:text-base text-gray-300">
+              <div className="mt-3 space-y-2 text-sm md:text-base text-text-secondary">
                 {selectedVariant.benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-2">
                     <span className="mt-1 h-2 w-2 rounded-full bg-[#36a768] flex-shrink-0" />
@@ -261,11 +284,11 @@ export function ProductDetailClient({ product, categoryName, variants }: Product
                         )}
                       </div>
                       {variantProduct.shortDescription && (
-                        <p className="text-xs text-gray-300 leading-relaxed line-clamp-3">
+                        <p className="text-xs text-text-secondary leading-relaxed line-clamp-3">
                           {variantProduct.shortDescription}
                         </p>
                       )}
-                      {variantProduct.articleNumber && (
+                      {variantProduct.category !== 'sonstiges' && variantProduct.articleNumber && (
                         <p className="mt-1 text-[11px] text-gray-400">
                           Art.-Nr.: {variantProduct.articleNumber}
                         </p>
@@ -329,11 +352,11 @@ export function ProductDetailClient({ product, categoryName, variants }: Product
           )}
         </div>
 
-        {/* Rechte Spalte: Angebot anfragen (Sticky) - nur auf Desktop sichtbar */}
+        {/* Rechte Spalte: Angebot einholen (Sticky) - nur auf Desktop sichtbar */}
         <aside className="hidden lg:block lg:sticky lg:top-28">
           <div id="anfrage-formular" className="flex h-full flex-col rounded-2xl bg-[#0b1521] border border-[#1f2937] p-6 shadow-lg">
-            <h2 className="text-xl md:text-2xl font-semibold text-white mb-2">Angebot anfragen</h2>
-            <p className="text-sm md:text-base text-gray-300 mb-4 leading-relaxed">
+            <h2 className="text-xl md:text-2xl font-semibold text-white mb-2">Angebot einholen</h2>
+            <p className="text-sm md:text-base text-text-secondary mb-4 leading-relaxed">
               Füllen Sie das Formular aus, um ein Angebot für dieses Produkt zu erhalten.
             </p>
             
@@ -348,10 +371,26 @@ export function ProductDetailClient({ product, categoryName, variants }: Product
                 <span className="font-medium text-white">
                   {getQuantityAndUnit.quantity} {getQuantityAndUnit.unit}
                 </span>
-                {selectedVariant.articleNumber && (
+                {selectedVariant.category !== 'sonstiges' && selectedVariant.articleNumber && (
                   <> (Art.-Nr. {selectedVariant.articleNumber})</>
                 )}
               </p>
+              {(() => {
+                const packagingInfo = getPackagingInfo(selectedVariant);
+                if (packagingInfo) {
+                  return (
+                    <div className="mt-2 pt-2 border-t border-[#1f2937] space-y-1">
+                      <p className="text-xs text-text-secondary">
+                        Verpackungsgröße: <span className="text-gray-200">{packagingInfo.packagingSize}</span>
+                      </p>
+                      <p className="text-xs text-text-secondary">
+                        Palettengröße: <span className="text-gray-200">{packagingInfo.palletSize}</span>
+                      </p>
+                    </div>
+                  );
+                }
+                return null;
+              })()}
             </div>
 
             <AddProductToCartButton

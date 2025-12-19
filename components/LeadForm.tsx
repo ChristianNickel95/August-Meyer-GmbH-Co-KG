@@ -72,7 +72,7 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
             </svg>
           </div>
           <h3 className="text-lg font-semibold mb-2 text-white">Vielen Dank für Ihre Anfrage!</h3>
-          <p className="text-neutral-300 mb-4">
+          <p className="text-text-secondary mb-4">
             Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.
           </p>
           <Button onClick={() => setIsSubmitted(false)} variant="outline">
@@ -86,8 +86,8 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
   return (
     <Card className={`bg-[#1B2B3C] border border-[#2A3F55] rounded-xl ${className}`}>
       <CardHeader className="p-6">
-        <CardTitle className="text-white">Angebot anfragen</CardTitle>
-        <CardDescription className="text-neutral-300">
+        <CardTitle className="text-white">Angebot einholen</CardTitle>
+        <CardDescription className="text-text-secondary">
           {productName 
             ? `Füllen Sie das Formular aus, um ein Angebot für ${productName} zu erhalten.`
             : 'Füllen Sie das Formular aus, um ein Angebot zu erhalten.'
@@ -155,7 +155,7 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
           {items.length > 0 && (
             <div className="bg-[#0D1C2E] border border-[#2A3F55] rounded-lg p-4">
               <h4 className="font-semibold text-sm text-white mb-2">Ihre Anfrage enthält:</h4>
-              <ul className="space-y-1 text-sm text-neutral-300">
+              <ul className="space-y-1 text-sm text-text-secondary">
                 {items.map((item) => (
                   <li key={item.categoryId}>
                     {item.categoryName}: {item.quantity}{item.unit ? ` ${item.unit}` : ''}

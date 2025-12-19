@@ -1,8 +1,5 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { CategoryCard } from './CategoryCard';
 import { getAllCategories, getAllProducts } from '@/lib/products';
 import { Category } from '@/lib/products';
@@ -97,10 +94,8 @@ const categoryOrder = [
 ];
 
 export function CategoryCarousel(): JSX.Element {
-  const [currentIndex, setCurrentIndex] = useState(0);
   const allCategories = getAllCategories();
   const allProducts = getAllProducts();
-  const itemsPerView = 3;
 
   // Funktion zur Berechnung der Produktanzahl (Anzahl der Varianten)
   const calculateProductCount = (categoryId: string, subcategoryId?: string): number => {
@@ -158,108 +153,12 @@ export function CategoryCarousel(): JSX.Element {
     };
   });
 
-  const totalSlides = Math.ceil(homepageCategories.length / itemsPerView);
-  const maxIndex = Math.max(0, totalSlides - 1);
-
-  const goToPrevious = (): void => {
-    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : maxIndex));
-  };
-
-  const goToNext = (): void => {
-    setCurrentIndex((prev) => (prev < maxIndex ? prev + 1 : maxIndex));
-  };
-
-  // Auto-rotate (optional)
-  useEffect(() => {
-    if (totalSlides <= 1) return;
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev < maxIndex ? prev + 1 : 0));
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [totalSlides, maxIndex]);
-
-  const visibleCategories = homepageCategories.slice(
-    currentIndex * itemsPerView,
-    currentIndex * itemsPerView + itemsPerView
-  );
-
-  // Wenn weniger als itemsPerView Kategorien vorhanden sind, zeige alle
-  if (homepageCategories.length <= itemsPerView) {
-    return (
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-        {homepageCategories.map((category) => (
-          <CategoryCard key={category.id} category={category} />
-        ))}
-      </div>
-    );
-  }
-
+  // Statisches Grid-Layout: 1 Spalte auf Mobile, 2 auf Tablet, 3 auf Desktop (maximal)
   return (
-    <div className="relative">
-      <div className="overflow-hidden">
-        <div
-          className="flex transition-transform duration-500 ease-in-out"
-          style={{
-            transform: `translateX(-${currentIndex * 100}%)`,
-          }}
-        >
-          {Array.from({ length: totalSlides }).map((_, slideIndex) => (
-            <div
-              key={slideIndex}
-              className="min-w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
-            >
-              {homepageCategories
-                .slice(slideIndex * itemsPerView, slideIndex * itemsPerView + itemsPerView)
-                .map((category) => (
-                  <CategoryCard key={category.id} category={category} />
-                ))}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Navigation Buttons */}
-      {totalSlides > 1 && (
-        <>
-          <Button
-            variant="outline"
-            size="icon"
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white border-2 shadow-lg hover:bg-neutral-50 z-10"
-            onClick={goToPrevious}
-            aria-label="Vorherige Kategorien"
-          >
-            <ChevronLeft className="h-5 w-5" />
-          </Button>
-          <Button
-            variant="outline"
-            size="icon"
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white border-2 shadow-lg hover:bg-neutral-50 z-10"
-            onClick={goToNext}
-            aria-label="Nächste Kategorien"
-          >
-            <ChevronRight className="h-5 w-5" />
-          </Button>
-        </>
-      )}
-
-      {/* Dots Indicator */}
-      {totalSlides > 1 && (
-        <div className="flex justify-center gap-2 mt-6">
-          {Array.from({ length: totalSlides }).map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`h-2 rounded-full transition-all ${
-                index === currentIndex
-                  ? 'w-8 bg-neutral-900'
-                  : 'w-2 bg-neutral-300 hover:bg-neutral-400'
-              }`}
-              aria-label={`Zu Slide ${index + 1} gehen`}
-            />
-          ))}
-        </div>
-      )}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      {homepageCategories.map((category) => (
+        <CategoryCard key={category.id} category={category} />
+      ))}
     </div>
   );
 }
-

@@ -55,17 +55,17 @@ export function Navbar(): JSX.Element {
   }, [pathname]);
 
   return (
-    <nav className="relative w-full bg-[#0B1622] border-b border-[#2A3F55] h-16 md:h-20" role="navigation" aria-label="Hauptnavigation">
+    <nav className="relative w-full bg-[#0b1a33] border-b border-white/8 h-20 md:h-24" role="navigation" aria-label="Hauptnavigation">
       {/* Innerer Container für Inhalt - full-width Hintergrund, zentrierter Inhalt */}
-      <div className="w-full mx-auto flex h-16 md:h-20 items-center justify-between px-6 md:px-10 lg:px-12">
+      <div className="w-full mx-auto flex h-20 md:h-24 items-center justify-between px-6 md:px-10 lg:px-12">
         {/* Links: Branding als Link */}
-        <div className="flex items-center gap-4 md:gap-6 xl:gap-8">
+        <div className="flex items-center gap-6 md:gap-8 xl:gap-10">
           {/* Branding-Block als Link zur Startseite */}
           <Link href="/" className="flex flex-col leading-tight hover:opacity-90 transition-opacity duration-300 flex-shrink-0">
-            <span className="text-base md:text-lg lg:text-xl font-semibold text-[#6FE0FF]">
+            <span className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-white">
               August Meyer
             </span>
-            <span className="text-[10px] md:text-xs text-gray-300">
+            <span className="text-[10px] md:text-xs text-[#c7d2e0]">
               GmbH &amp; Co. KG
             </span>
           </Link>
@@ -78,28 +78,25 @@ export function Navbar(): JSX.Element {
                 placeholder="Produkte suchen..."
                 value={searchQuery}
                 onChange={handleSearchChange}
-                className="w-40 lg:w-48 xl:w-64 pl-10 pr-4 py-2 text-sm bg-[#1B2B3C] border-[#2A3F55] text-[#E6EDF3] placeholder:text-neutral-400 focus:border-[#2F6BA8] focus:ring-[#2F6BA8]"
+                className="w-40 lg:w-48 xl:w-64 pl-10 pr-4 py-2 text-sm bg-[#13294b] border-white/8 text-white placeholder:text-[#c7d2e0] focus:border-[#00ffb3] focus:ring-[#00ffb3]"
               />
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-neutral-400" />
             </div>
           </form>
 
-          {/* Navigation Link "Produkte" - rechts neben Suchfeld */}
-          <div className="hidden lg:flex items-center">
-            <Link href="/produkte" className="text-sm text-gray-200 hover:text-white font-medium transition-colors duration-300">
-              Produkte
-            </Link>
-          </div>
           </div>
 
-        {/* Rechts: Kontakt, Impressum + Button + Hamburger-Menü */}
+        {/* Rechts: Produkte, Kontakt, Impressum + Button + Hamburger-Menü */}
         <div className="flex items-center justify-end gap-4 lg:gap-6">
-          {/* Navigation Links "Kontakt" und "Impressum" - Desktop (ab lg) */}
-          <div className="hidden lg:flex items-center gap-6 text-sm text-gray-200">
-            <Link href="/kontakt" className="hover:text-white font-medium transition-colors duration-300">
+          {/* Navigation Links "Produkte", "Kontakt" und "Impressum" - Desktop (ab xl) */}
+          <div className="hidden xl:flex items-center gap-6 text-base text-white">
+            <Link href="/produkte" className="text-base text-white hover:text-[#00ffb3] font-medium transition-colors duration-150">
+              Produkte
+            </Link>
+            <Link href="/kontakt" className="hover:text-[#00ffb3] font-medium transition-colors duration-150">
               Kontakt
             </Link>
-            <Link href="/impressum" className="text-gray-400 hover:text-gray-200 font-medium transition-colors duration-300">
+            <Link href="/impressum" className="text-[#c7d2e0] hover:text-white font-medium transition-colors duration-150">
               Impressum
             </Link>
           </div>
@@ -107,14 +104,14 @@ export function Navbar(): JSX.Element {
           {/* Button - Desktop/Tablet */}
           <div className="hidden md:flex">
             <Button asChild variant="sustainability" size="sm">
-              <Link href="/kontakt">Angebot anfragen</Link>
+              <Link href="/kontakt">Angebot einholen</Link>
             </Button>
           </div>
 
-          {/* Mobile/Tablet: Burger Menu Button */}
+          {/* Mobile/Tablet: Burger Menu Button - zeigt sich wenn Produkte-Button versteckt wird */}
           <div className="xl:hidden">
           <button
-              className="p-2 rounded-md text-[#E6EDF3] hover:text-white hover:bg-[#1B2B3C] focus:outline-none focus:ring-2 focus:ring-[#2F6BA8] transition-colors"
+              className="p-2 rounded-sm text-white hover:text-[#00ffb3] hover:bg-white/8 focus:outline-none focus:ring-2 focus:ring-[#00ffb3] transition-colors duration-150"
             onClick={toggleMenu}
             aria-expanded={isMenuOpen}
             aria-label="Menü öffnen"
@@ -134,8 +131,8 @@ export function Navbar(): JSX.Element {
                 onClick={closeMenu}
             aria-hidden="true"
           />
-          {/* Dropdown Menu Box */}
-          <div className="xl:hidden absolute top-full right-4 mt-2 w-80 max-w-[85vw] bg-[#0B1622] border border-[#2A3F55] rounded-xl shadow-2xl z-50 overflow-hidden">
+          {/* Dropdown Menu Box - zeigt sich wenn Produkte-Button versteckt wird */}
+          <div className="xl:hidden absolute top-full right-4 mt-2 w-80 max-w-[85vw] bg-[#0b1a33] border border-white/8 rounded-sm shadow-2xl z-50 overflow-hidden">
             <div className="w-full px-6 py-4 space-y-2">
               {/* Mobile Search (nur wenn nicht bereits sichtbar) */}
               <form onSubmit={handleSearch} className="mb-4 md:hidden">
@@ -145,7 +142,7 @@ export function Navbar(): JSX.Element {
                     placeholder="Produkte suchen..."
                     value={searchQuery}
                     onChange={handleSearchChange}
-                    className="w-full pl-10 pr-4 py-2 text-sm bg-[#1B2B3C] border-[#2A3F55] text-[#E6EDF3] placeholder:text-neutral-400 focus:border-[#2F6BA8] focus:ring-[#2F6BA8]"
+                    className="w-full pl-10 pr-4 py-2 text-sm bg-[#13294b] border-white/8 text-white placeholder:text-[#c7d2e0] focus:border-[#00ffb3] focus:ring-[#00ffb3]"
                   />
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-neutral-400" />
                 </div>
@@ -153,21 +150,21 @@ export function Navbar(): JSX.Element {
               
               <Link
                 href="/produkte"
-                className="block px-4 py-3 text-[#E6EDF3] hover:text-white hover:bg-[#1B2B3C] rounded-md font-medium transition-colors duration-200"
+                className="block px-4 py-3 text-white hover:text-[#00ffb3] hover:bg-white/8 rounded-sm font-medium transition-colors duration-150"
                 onClick={closeMenu}
               >
                 Produkte
               </Link>
               <Link
                 href="/kontakt"
-                className="block px-4 py-3 text-[#E6EDF3] hover:text-white hover:bg-[#1B2B3C] rounded-md font-medium transition-colors duration-200"
+                className="block px-4 py-3 text-white hover:text-[#00ffb3] hover:bg-white/8 rounded-sm font-medium transition-colors duration-150"
                 onClick={closeMenu}
               >
                 Kontakt
               </Link>
               <Link
                 href="/impressum"
-                className="block px-4 py-3 text-gray-400 hover:text-[#E6EDF3] hover:bg-[#1B2B3C] rounded-md font-medium transition-colors duration-200"
+                className="block px-4 py-3 text-[#c7d2e0] hover:text-white hover:bg-white/8 rounded-sm font-medium transition-colors duration-150"
                 onClick={closeMenu}
               >
                 Impressum
@@ -176,7 +173,7 @@ export function Navbar(): JSX.Element {
               <div className="pt-6 md:hidden">
                 <Button asChild variant="sustainability" className="w-full">
                   <Link href="/kontakt" onClick={closeMenu}>
-                    Angebot anfragen
+                    Angebot einholen
                   </Link>
                 </Button>
               </div>
@@ -187,7 +184,7 @@ export function Navbar(): JSX.Element {
 
       {/* LogoPanel - rund, größer, zentriert mit stärkerer Überlappung zur Topbar - ohne Border */}
       <Link href="/" className="absolute left-1/2 -translate-x-1/2 top-2 md:top-3 lg:top-4 z-20 hover:opacity-90 transition-opacity duration-300 hidden sm:flex">
-        <div className="flex items-center justify-center rounded-full bg-[#0D1C2E] shadow-xl w-[72px] h-[72px] md:w-[88px] md:h-[88px] lg:w-32 lg:h-32 xl:w-36 xl:h-36">
+        <div className="flex items-center justify-center rounded-full bg-[#0b1a33] shadow-xl w-[72px] h-[72px] md:w-[88px] md:h-[88px] lg:w-32 lg:h-32 xl:w-36 xl:h-36">
           <Logo variant="dark" className="w-12 h-12 md:w-16 md:h-16 lg:w-24 lg:h-24 xl:w-28 xl:h-28" />
       </div>
       </Link>

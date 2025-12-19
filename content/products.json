@@ -42,8 +42,8 @@
     "categoryName": "Putzlappen",
     "subcategory": "trikotputzlappen",
     "subcategoryName": "Trikotputzlappen",
-    "description": "Bearbeitet nach DIN 61650. Putzlappen in Pastellfarben aus Baumwolle in T-Shirt, Sweatshirt und Unterhemdenqualität. Sehr saugfähiges Material, ideal für die Aufnahme von Fett und Öl. Die hellen Pastelltöne ermöglichen eine bessere Kontrolle der Reinigungsqualität.",
-    "shortDescription": "Putzlappen in Pastellfarben aus Baumwolle (Pastell)",
+    "description": "Putzlappen pastellfarben aus Baumwolle in T-shirt und Unterhemdenqualität",
+    "shortDescription": "Putzlappen pastellfarben aus Baumwolle in T-shirt und Unterhemdenqualität",
     "benefits": [
       "Sehr saugfähiges Material",
       "Sehr gut geeignet für die Aufnahme von Fett und Öl",
@@ -78,8 +78,8 @@
     "categoryName": "Putzlappen",
     "subcategory": "trikotputzlappen",
     "subcategoryName": "Trikotputzlappen",
-    "description": "Bearbeitet nach DIN 61650. Hergestellt aus sehr saugfähigen Baumwollstoffen wie T-Shirt und Unterhemdenmaterial. Reinweiße Ausführung. Sehr gut geeignet für die Aufnahme von Fett und Öl. Ideal für sensible Bereiche und Lebensmittelindustrie.",
-    "shortDescription": "Reinweiße Trikotputzlappen aus sehr saugfähigen Baumwollstoffen (reinweiß)",
+    "description": "reinweiße Putzlappen aus Baumwolle in T-shirt und Unterhemdenqualität",
+    "shortDescription": "reinweiße Putzlappen aus Baumwolle in T-shirt und Unterhemdenqualität",
     "benefits": [
       "Sehr saugfähiges Material",
       "Sehr gut geeignet für die Aufnahme von Fett und Öl",
@@ -116,8 +116,8 @@
     "categoryName": "Putzlappen",
     "subcategory": "trikotputzlappen",
     "subcategoryName": "Trikotputzlappen",
-    "description": "Bearbeitet nach DIN 61650. Hergestellt aus sehr saugfähigen Baumwollstoffen wie T-Shirt und Unterhemdenmaterial. Weiß gründlich mit farblichen Applikationen. Sehr gut geeignet für die Aufnahme von Fett und Öl. Die farblichen Applikationen ermöglichen eine bessere Unterscheidung bei verschiedenen Anwendungen.",
-    "shortDescription": "Weiße Trikotputzlappen mit farblichen Applikationen (weiß gründlich mit farblichen Applikationen)",
+    "description": "weißgründiger Putzlappen aus Baumwolle in T-shirt und Unterhemdenqualität mit farbigen Applikationen",
+    "shortDescription": "weißgründiger Putzlappen aus Baumwolle in T-shirt und Unterhemdenqualität mit farbigen Applikationen",
     "benefits": [
       "Sehr saugfähiges Material",
       "Sehr gut geeignet für die Aufnahme von Fett und Öl",
@@ -153,8 +153,8 @@
     "categoryName": "Putzlappen",
     "subcategory": "kattunputzlappen",
     "subcategoryName": "Kattunputzlappen",
-    "description": "Putzlappen nach DIN 61650 aus dünner, leichter Baumwollware, wie Hemden, Blusen und Schürzenstoffe. Sehr gut geeignet für leichte Putzarbeiten bei fusselfreiem Einsatz. Ideal für empfindliche Oberflächen und feine Reinigungsarbeiten.",
-    "shortDescription": "Leichte Putzlappen aus dünner Baumwollware für fusselfreie Putzarbeiten",
+    "description": "Leichte Putzlappen aus dünner Baumwollware für fusselarme Putzarbeiten",
+    "shortDescription": "Leichte Putzlappen aus dünner Baumwollware für fusselarme Putzarbeiten",
     "benefits": [
       "Fusselfrei",
       "Geeignet für leichte Putzarbeiten",
@@ -190,8 +190,8 @@
     "categoryName": "Putzlappen",
     "subcategory": "kattunputzlappen",
     "subcategoryName": "Kattunputzlappen",
-    "description": "Weiße Kattunputzlappen nach DIN 61650, hergestellt aus leichten Baumwollstoffen wie Hemden, Blusen und Schürzenmaterial. Sehr gut geeignet für leichte Putzarbeiten bei fusselfreiem Einsatz. Ideal für empfindliche Oberflächen und hygienische Anforderungen.",
-    "shortDescription": "Weiße, leichte Putzlappen für fusselfreie Putzarbeiten",
+    "description": "Leichte Putzlappen aus dünner Baumwollware für fusselarme Putzarbeiten",
+    "shortDescription": "Leichte Putzlappen aus dünner Baumwollware für fusselarme Putzarbeiten",
     "benefits": [
       "Fusselfrei",
       "Geeignet für leichte Putzarbeiten",
@@ -200,15 +200,15 @@
     ],
     "variants": [
       {
-        "id": "kattun-weiss-2190",
+        "id": "kattun-weiss-2192",
         "name": "Kattunputzlappen weiß",
-        "articleNumber": "2190",
+        "articleNumber": "2192",
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
     "image": "/images/products/kattunputzlappen-weiss.jpg",
     "slug": "kattunputzlappen-weiss",
-    "articleNumber": "2190",
+    "articleNumber": "2192",
     "properties": [
       "Für leichte Putzarbeiten",
       "Fusselfrei",
@@ -228,8 +228,8 @@
     "categoryName": "Putzlappen",
     "subcategory": "putzlappen-bettwaesche",
     "subcategoryName": "Putzlappen aus Bettwäsche",
-    "description": "Bunte Putzlappen aus Bettwäsche nach DIN 61650. Hergestellt aus reinen Baumwollstoffen wie Bettlaken, Bezüge usw. Nahtlos, fusselfrei und sehr saugfähig. Ideal für mittlere bis schwere Reinigungsaufgaben.",
-    "shortDescription": "Putzlappen aus recycelter Bettwäsche",
+    "description": "hergestellt aus Bett- und Kopfkissenbezügen sowie aus Bettlaken, gut geeignet für Reinigungs- und Polierarbeiten",
+    "shortDescription": "hergestellt aus Bett- und Kopfkissenbezügen sowie aus Bettlaken, gut geeignet für Reinigungs- und Polierarbeiten",
     "benefits": [
       "Aus recycelter Bettwäsche",
       "Sehr saugfähig",
@@ -303,8 +303,8 @@
     "categoryName": "Putzlappen",
     "subcategory": "putzlappen-bettwaesche",
     "subcategoryName": "Putzlappen aus Bettwäsche",
-    "description": "Weiße Putzlappen aus Bettwäsche nach DIN 61650. Sehr saugfähig, fusselarm und nahtfrei. Ideal für mittlere bis schwere Reinigungsaufgaben mit hohen hygienischen Anforderungen.",
-    "shortDescription": "Weiße Putzlappen aus recycelter Bettwäsche",
+    "description": "hergestellt aus Bett- und Kopfkissenbezügen sowie aus Bettlaken, gut geeignet für Reinigungs- und Polierarbeiten",
+    "shortDescription": "hergestellt aus Bett- und Kopfkissenbezügen sowie aus Bettlaken, gut geeignet für Reinigungs- und Polierarbeiten",
     "benefits": [
       "Sehr saugfähig",
       "Fusselarm",
@@ -313,15 +313,15 @@
     ],
     "variants": [
       {
-        "id": "bettwaesche-weiss-2180",
+        "id": "bettwaesche-weiss-2182",
         "name": "Putzlappen aus Bettwäsche weiß",
-        "articleNumber": "2180",
+        "articleNumber": "2182",
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
     "image": "/images/products/putzlappen-bettwaesche-weiss.jpg",
     "slug": "putzlappen-aus-bettwaesche-weiss",
-    "articleNumber": "2180",
+    "articleNumber": "2182",
     "properties": [
       "Nahtlos",
       "Fusselfrei",
@@ -540,7 +540,7 @@
         "description": "Ihre gewünschte Menge in Kilogramm bitte in untenstehendes Feld eingeben."
       }
     ],
-    "image": "/images/Produkte/Vliesputztuch/Vliesputztuch - Hellbunt.svg",
+    "image": "/images/Produkte/Vliesputztuch/Vliesputztuch - Bunt.svg",
     "slug": "vliestuecher-hellbunt",
     "articleNumber": "3015",
     "properties": [
