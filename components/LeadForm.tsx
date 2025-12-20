@@ -64,9 +64,9 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
 
   if (isSubmitted) {
     return (
-      <Card className={`bg-[#1B2B3C] border border-[#2A3F55] rounded-xl ${className}`}>
+      <Card className={`bg-[#13294b] border border-white/8 rounded-sm ${className}`}>
         <CardContent className="pt-6 text-center p-6">
-          <div className="text-[#4CC17C] mb-4">
+          <div className="text-[#00ffb3] mb-4">
             <svg className="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
@@ -84,7 +84,7 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
   }
 
   return (
-    <Card className={`bg-[#1B2B3C] border border-[#2A3F55] rounded-xl ${className}`}>
+    <Card className={`bg-[#13294b] border border-[#00ffb3] rounded-sm ${className}`}>
       <CardHeader className="p-6">
         <CardTitle className="text-white">Angebot einholen</CardTitle>
         <CardDescription className="text-text-secondary">
@@ -107,7 +107,7 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
                 type="text"
                 required
                 placeholder="Ihr vollständiger Name"
-                className="bg-[#0D1C2E] border-[#2A3F55] text-[#E6EDF3] placeholder:text-neutral-400 focus:border-[#2F6BA8]"
+                className="bg-[#13294b] border-white/8 text-white placeholder:text-[#c7d2e0] focus:border-[#00ffb3]"
               />
             </div>
             <div>
@@ -120,7 +120,7 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
                 type="email"
                 required
                 placeholder="ihre.email@beispiel.de"
-                className="bg-[#0D1C2E] border-[#2A3F55] text-[#E6EDF3] placeholder:text-neutral-400 focus:border-[#2F6BA8]"
+                className="bg-[#13294b] border-white/8 text-white placeholder:text-[#c7d2e0] focus:border-[#00ffb3]"
               />
             </div>
           </div>
@@ -135,7 +135,7 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
                 name="company"
                 type="text"
                 placeholder="Ihr Unternehmen"
-                className="bg-[#0D1C2E] border-[#2A3F55] text-[#E6EDF3] placeholder:text-neutral-400 focus:border-[#2F6BA8]"
+                className="bg-[#13294b] border-white/8 text-white placeholder:text-[#c7d2e0] focus:border-[#00ffb3]"
               />
             </div>
             <div>
@@ -147,13 +147,13 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
                 name="phone"
                 type="tel"
                 placeholder="Ihre Telefonnummer"
-                className="bg-[#0D1C2E] border-[#2A3F55] text-[#E6EDF3] placeholder:text-neutral-400 focus:border-[#2F6BA8]"
+                className="bg-[#13294b] border-white/8 text-white placeholder:text-[#c7d2e0] focus:border-[#00ffb3]"
               />
             </div>
           </div>
           
           {items.length > 0 && (
-            <div className="bg-[#0D1C2E] border border-[#2A3F55] rounded-lg p-4">
+            <div className="bg-[#13294b] border border-white/8 rounded-sm p-4">
               <h4 className="font-semibold text-sm text-white mb-2">Ihre Anfrage enthält:</h4>
               <ul className="space-y-1 text-sm text-text-secondary">
                 {items.map((item) => (
@@ -167,15 +167,15 @@ export function LeadForm({ productName, className }: LeadFormProps): JSX.Element
           
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-white mb-1">
-              Nachricht {items.length === 0 && '*'}
+              Nachricht
             </label>
             <textarea
               id="message"
               name="message"
-              required={items.length === 0}
+              required={false}
               rows={4}
-              className="w-full px-3 py-2 bg-[#0D1C2E] border border-[#2A3F55] text-[#E6EDF3] placeholder:text-neutral-400 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2F6BA8] focus:border-transparent"
-              placeholder={items.length > 0 ? "Zusätzliche Informationen (optional)..." : "Beschreiben Sie Ihre Anforderungen..."}
+              className="w-full px-3 py-2 bg-[#13294b] border border-white/8 text-white placeholder:text-[#c7d2e0] rounded-sm focus:outline-none focus:ring-2 focus:ring-[#00ffb3] focus:border-[#00ffb3]"
+              placeholder="Zusätzliche Informationen..."
             />
           </div>
           

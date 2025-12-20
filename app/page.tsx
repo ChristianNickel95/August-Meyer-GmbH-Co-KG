@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Handshake } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Container } from '@/components/Container';
@@ -46,10 +47,14 @@ export default function HomePage(): JSX.Element {
         {/* Overlay für Lesbarkeit - behält Farbton bei */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#0D1C2E]/90 via-[#122536]/85 to-[#1B2B3C]/90" />
         
-        <div className="relative z-10 max-w-4xl ml-6 md:ml-10 lg:ml-12 xl:ml-16 pt-20 md:pt-24 pb-14 md:pb-16 text-left">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-white">
+        <div className="relative z-10 max-w-4xl px-6 md:px-10 lg:px-12 xl:px-16 pt-20 md:pt-24 pb-14 md:pb-16 text-left">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white mb-4">
+            August Meyer
+          </h1>
+          
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-white mb-4">
             Ihr zuverlässiger Partner für Industrieputzlappen und Betriebshygiene
-                  </h1>
+          </h2>
           
           <p className="mt-4 text-base md:text-lg text-text-secondary max-w-2xl leading-relaxed">
             Als traditionsreiches Familienunternehmen stehen wir seit über 150 Jahren für höchste Qualität und Zuverlässigkeit. Unsere Produkte werden nach strengen Qualitätsstandards hergestellt und erfüllen die Anforderungen modernster Produktionsprozesse. Profitieren Sie von unserer langjährigen Erfahrung und unserem umfassenden Know-how im Vertrieb von Reinigungstextilien.
@@ -208,9 +213,7 @@ export default function HomePage(): JSX.Element {
 
             <div className="text-center space-y-4">
               <div className="w-20 h-20 md:w-24 md:h-24 bg-[#1B2B3C] border border-[#2F6BA8]/30 rounded-full flex items-center justify-center mx-auto transition-all duration-200 hover:scale-105 hover:border-[#2F6BA8]">
-                <svg className="w-10 h-10 md:w-12 md:h-12 text-[#2F6BA8]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+                <Handshake className="w-10 h-10 md:w-12 md:h-12 text-[#2F6BA8]" />
               </div>
               <h3 className="text-2xl md:text-3xl font-semibold text-white tracking-tight">Zuverlässigkeit</h3>
               <p className="text-base text-text-secondary leading-relaxed max-w-sm mx-auto">
@@ -238,7 +241,7 @@ export default function HomePage(): JSX.Element {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2">
               <Button asChild size="lg" variant="sustainability" className="font-semibold">
-                <Link href="/kontakt">Jetzt Angebot anfragen</Link>
+                <Link href="/kontakt">Jetzt Angebot einholen</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-[#2F6BA8] text-[#E6EDF3] hover:bg-[#2F6BA8]/20 font-semibold">
                 <Link href="/produkte">Produkte ansehen</Link>

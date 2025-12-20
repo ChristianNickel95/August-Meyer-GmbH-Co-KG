@@ -145,7 +145,7 @@ export function CategoryCarousel(): JSX.Element {
       name: mapping.name,
       description: mapping.description,
       image: originalCategory?.image || '/images/categories/default.jpg',
-      slug: linkSlug, // Verwende linkSlug für Navigation
+      slug: originalCategory?.slug || mapping.slug, // Verwende den tatsächlichen Slug aus categories.json
       productCount: productCount,
       defaultValue: mapping.defaultValue,
       unit: mapping.unit,

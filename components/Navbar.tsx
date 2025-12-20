@@ -182,8 +182,8 @@ export function Navbar(): JSX.Element {
         </>
         )}
 
-      {/* LogoPanel - rund, größer, zentriert mit stärkerer Überlappung zur Topbar - ohne Border */}
-      <Link href="/" className="absolute left-1/2 -translate-x-1/2 top-2 md:top-3 lg:top-4 z-20 hover:opacity-90 transition-opacity duration-300 hidden sm:flex">
+      {/* LogoPanel - rund, größer, zentriert mit perfekter Überlappung zur Topbar - ohne Border */}
+      <Link href="/" className="absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-1/2 z-20 hover:opacity-90 transition-opacity duration-300 hidden sm:flex">
         <div className="flex items-center justify-center rounded-full bg-[#0b1a33] shadow-xl w-[72px] h-[72px] md:w-[88px] md:h-[88px] lg:w-32 lg:h-32 xl:w-36 xl:h-36">
           <Logo variant="dark" className="w-12 h-12 md:w-16 md:h-16 lg:w-24 lg:h-24 xl:w-28 xl:h-28" />
       </div>

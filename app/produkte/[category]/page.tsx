@@ -39,7 +39,7 @@ export default function CategoryPage({ params }: CategoryPageProps): JSX.Element
     notFound();
   }
 
-  const products = getProductsByCategory(params.category);
+  const products = getProductsByCategory(category.id);
 
   return (
     <>
@@ -74,17 +74,17 @@ export default function CategoryPage({ params }: CategoryPageProps): JSX.Element
         ]}
       />
 
-      <Section>
+      <Section className="bg-primary-bg">
         <Container>
           {products.length > 0 ? (
             <>
               <div className="mb-8">
-                <p className="text-gray-600">
+                <p className="text-text-secondary text-base md:text-lg">
                   {products.length} Produkt{products.length !== 1 ? 'e' : ''} in der Kategorie &quot;{category.name}&quot;
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 {products.map((product) => (
                   <ProductCard key={product.id} product={product} />
                 ))}
@@ -93,20 +93,20 @@ export default function CategoryPage({ params }: CategoryPageProps): JSX.Element
           ) : (
             <div className="text-center py-16">
               <div className="max-w-md mx-auto">
-                <div className="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                <div className="w-16 h-16 bg-surface border border-border-divider rounded-sm flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-text-secondary" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-text-primary mb-2">
                   Keine Produkte gefunden
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-text-secondary mb-4">
                   In dieser Kategorie sind derzeit keine Produkte verfügbar.
                 </p>
                 <a
                   href="/produkte"
-                  className="text-blue-600 hover:text-blue-800 font-medium"
+                  className="text-accent-green hover:text-accent-green/80 font-medium transition-colors duration-150"
                 >
                   Zurück zur Produktübersicht
                 </a>

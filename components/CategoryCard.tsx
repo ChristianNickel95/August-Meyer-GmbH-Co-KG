@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Category } from '@/lib/products';
@@ -10,8 +10,15 @@ interface CategoryCardProps {
 }
 
 export function CategoryCard({ category }: CategoryCardProps): JSX.Element {
+  const router = useRouter();
+
+  const handleClick = (): void => {
+    // Navigiere direkt zur Kategorie-Seite
+    router.push(`/produkte/${category.slug}`);
+  };
+
   return (
-    <Link href={`/produkte?kategorie=${category.id}`} className="block h-full">
+    <div onClick={handleClick} className="block h-full cursor-pointer">
       <Card className="h-full flex flex-col bg-[#13294b] border border-white/8 hover:border-[#00ffb3] transition-all duration-150 group">
         {/* Bild-Bereich (oben) */}
         <div className="aspect-[3/2] bg-gradient-to-br from-[#13294b] via-[#0e1f3d] to-[#13294b] flex items-center justify-center overflow-hidden">
@@ -41,7 +48,7 @@ export function CategoryCard({ category }: CategoryCardProps): JSX.Element {
           </div>
         </div>
       </Card>
-    </Link>
+    </div>
   );
 }
 

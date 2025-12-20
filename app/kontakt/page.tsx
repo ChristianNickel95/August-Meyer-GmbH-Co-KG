@@ -55,12 +55,12 @@ export default function ContactPage(): JSX.Element {
         ]}
       />
 
-      <Section className="bg-[#0b1521] py-12 md:py-16">
+      <Section className="bg-[#0b1a33] py-12 md:py-16">
         <Container className="py-0">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
             {/* Left: Contact Information */}
             <div className="space-y-6">
-              <Card className="bg-[#1B2B3C] border border-[#2A3F55] rounded-xl">
+              <Card className="bg-[#13294b] border border-white/8 rounded-sm">
                 <CardHeader className="p-6">
                   <CardTitle className="text-white">Unser Unternehmen</CardTitle>
                 </CardHeader>
@@ -77,7 +77,7 @@ export default function ContactPage(): JSX.Element {
                     <p className="text-text-secondary">Tel. 0 27 73 / 50 80</p>
                     <p className="text-text-secondary">Fax 0 27 73 / 71 48 5</p>
                     <p className="text-text-secondary">
-                      <a href="mailto:info@august-meyer.de" className="hover:text-white transition-colors text-[#2F6BA8]">
+                      <a href="mailto:info@august-meyer.de" className="hover:text-white transition-colors text-[#00ffb3]">
                         info@august-meyer.de
                       </a>
                     </p>
@@ -91,7 +91,7 @@ export default function ContactPage(): JSX.Element {
                 </CardContent>
               </Card>
 
-              <Card className="bg-[#1B2B3C] border border-[#2A3F55] rounded-xl">
+              <Card className="bg-[#13294b] border border-white/8 rounded-sm">
                 <CardHeader className="p-6">
                   <CardTitle className="text-white">Ihre Ansprechpartner</CardTitle>
                 </CardHeader>
@@ -111,40 +111,44 @@ export default function ContactPage(): JSX.Element {
                 </CardContent>
               </Card>
 
-              <Card className="bg-[#1B2B3C] border border-[#2A3F55] rounded-xl">
+              <Card className="bg-[#13294b] border border-white/8 rounded-sm">
                 <CardHeader className="p-6">
                   <CardTitle className="text-white">Warum August Meyer?</CardTitle>
                 </CardHeader>
                 <CardContent className="p-6 pt-0">
                   <ul className="space-y-3">
                     <li className="flex items-start">
-                      <div className="w-5 h-5 bg-[#2F6BA8] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      <div className="w-5 h-5 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00ffb3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                          <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
+                          <path d="m9 11 3 3L22 4"/>
                         </svg>
                       </div>
                       <span className="text-text-secondary">Seit 1863 in der Herstellung von Putzlappen tätig</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="w-5 h-5 bg-[#2F6BA8] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      <div className="w-5 h-5 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00ffb3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                          <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
+                          <path d="m9 11 3 3L22 4"/>
                         </svg>
                       </div>
                       <span className="text-text-secondary">Maßgeschneiderte Lösungen für Ihre Anforderungen</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="w-5 h-5 bg-[#2F6BA8] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      <div className="w-5 h-5 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00ffb3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                          <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
+                          <path d="m9 11 3 3L22 4"/>
                         </svg>
                       </div>
                       <span className="text-text-secondary">Persönliche Beratung und Support</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="w-5 h-5 bg-[#2F6BA8] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      <div className="w-5 h-5 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00ffb3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                          <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
+                          <path d="m9 11 3 3L22 4"/>
                         </svg>
                       </div>
                       <span className="text-text-secondary">Schnelle Lieferung und zuverlässiger Service</span>
