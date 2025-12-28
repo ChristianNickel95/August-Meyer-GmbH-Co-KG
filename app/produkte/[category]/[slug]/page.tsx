@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getProductBySlug, getCategoryBySlug, getAllProducts } from '@/lib/products';
+import { getProductBySlug, getCategoryBySlug, getCategoryById, getCategorySlugById, getAllProducts } from '@/lib/products';
 import { JsonLd } from '@/components/JsonLd';
 import { ProductDetailClient } from './ProductDetailClient';
 
@@ -39,6 +39,9 @@ export default function ProductPage({ params }: ProductPageProps): JSX.Element {
   }
 
   const category = getCategoryBySlug(params.category);
+  // Kategorie auch über ID finden, falls der Slug nicht passt
+  const categoryById = getCategoryById(product.category);
+  const categoryToUse = category || categoryById;
   const allProducts = getAllProducts();
   
   // Alle Varianten aus derselben Unterkategorie finden (inklusive aktuelles Produkt)
@@ -49,6 +52,9 @@ export default function ProductPage({ params }: ProductPageProps): JSX.Element {
     // Falls keine subcategory vorhanden, alle Produkte aus derselben category nehmen
     return p.category === product.category;
   });
+  
+  // Den richtigen Slug für die Kategorieseite verwenden
+  const categorySlug = categoryToUse?.slug || product.category;
 
   return (
     <>
@@ -59,7 +65,7 @@ export default function ProductPage({ params }: ProductPageProps): JSX.Element {
           name: product.name,
           description: product.description,
           category: product.categoryName,
-          url: `https://www.august-meyer.de/produkte/${product.category}/${product.slug}`,
+          url: `https://www.august-meyer.de/produkte/${getCategorySlugById(product.category)}/${product.slug}`,
           brand: {
             '@type': 'Brand',
             name: 'August Meyer'
@@ -87,8 +93,8 @@ export default function ProductPage({ params }: ProductPageProps): JSX.Element {
             <span>/</span>
             <Link href="/produkte" className="hover:text-white transition-colors">Produkte</Link>
             <span>/</span>
-            <Link href={`/produkte/${product.category}`} className="hover:text-white transition-colors">
-              {category?.name || product.categoryName}
+            <Link href={`/produkte/${categorySlug}`} className="hover:text-white transition-colors">
+              {categoryToUse?.name || product.categoryName}
             </Link>
             <span>/</span>
             <span className="text-white">{product.name}</span>

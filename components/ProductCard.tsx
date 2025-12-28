@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Product } from '@/lib/products';
+import { Product, getCategorySlugById } from '@/lib/products';
 import { AddProductToCartButton } from './AddProductToCartButton';
 
 interface ProductCardProps {
@@ -19,9 +19,9 @@ export function ProductCard({ product }: ProductCardProps): JSX.Element {
             <Image 
               src={product.image} 
               alt={product.name}
-              width={200}
-              height={144}
-              className={`w-full h-full object-contain p-4 ${
+              width={300}
+              height={256}
+              className={`w-full h-full object-contain p-1 md:p-2 scale-150 ${
                 product.id === 'vliestuecher-bunt' 
                   ? 'brightness-75 opacity-90' 
                   : product.id === 'vliestuecher-hellbunt'
@@ -78,7 +78,7 @@ export function ProductCard({ product }: ProductCardProps): JSX.Element {
         />
         
         <Button asChild variant="outline" size="sm" className="w-full justify-center">
-            <Link href={`/produkte/${product.category}/${product.slug}`}>
+            <Link href={`/produkte/${getCategorySlugById(product.category)}/${product.slug}`}>
               Details anzeigen
             </Link>
           </Button>

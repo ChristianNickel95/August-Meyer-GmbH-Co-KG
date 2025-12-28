@@ -4,7 +4,7 @@ import { PageHeader } from '@/components/PageHeader';
 import { Container } from '@/components/Container';
 import { Section } from '@/components/Section';
 import { ProductCard } from '@/components/ProductCard';
-import { getCategoryBySlug, getProductsByCategory } from '@/lib/products';
+import { getCategoryBySlug, getProductsByCategory, getCategorySlugById } from '@/lib/products';
 import { JsonLd } from '@/components/JsonLd';
 
 interface CategoryPageProps {
@@ -58,7 +58,7 @@ export default function CategoryPage({ params }: CategoryPageProps): JSX.Element
               '@type': 'Product',
               name: product.name,
               description: product.shortDescription,
-              url: `https://www.august-meyer.de/produkte/${product.category}/${product.slug}`
+              url: `https://www.august-meyer.de/produkte/${getCategorySlugById(product.category)}/${product.slug}`
             }
           }))
         }}

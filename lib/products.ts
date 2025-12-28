@@ -91,6 +91,15 @@ export function getCategoryBySlug(slug: string): Category | undefined {
   return getAllCategories().find(category => category.slug === slug);
 }
 
+export function getCategoryById(id: string): Category | undefined {
+  return getAllCategories().find(category => category.id === id);
+}
+
+export function getCategorySlugById(id: string): string {
+  const category = getCategoryById(id);
+  return category?.slug || id;
+}
+
 export function getFeaturedProducts(count: number = 3): Product[] {
   return getAllProducts().slice(0, count);
 }

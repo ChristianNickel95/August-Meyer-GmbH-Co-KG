@@ -294,6 +294,18 @@ export default function ProductsPage(): JSX.Element {
               Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen Service und individuelle Beratung. Unser erfahrenes Team steht Ihnen bei allen Fragen zur Verfügung und entwickelt gemeinsam mit Ihnen maßgeschneiderte Lösungen für Ihre Reinigungsanforderungen.
             </p>
           </div>
+
+          {/* Lagerbild */}
+          <div className="mt-10 md:mt-12 rounded-sm overflow-hidden border border-white/8">
+            <div className="relative w-full h-64 md:h-80 lg:h-96">
+              <img
+                src="/images/Gebäude und Sonstiges/Lagerhalle_Herosection_Produkte.png"
+                alt="Lagerhalle mit Produkten - August Meyer"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0b1a33]/20 to-[#0b1a33]/40" />
+            </div>
+          </div>
                   
           {/* Kategorie-Karten */}
           <div className="mt-10 md:mt-12 grid gap-4 grid-auto-fit-categories items-stretch">

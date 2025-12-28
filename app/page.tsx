@@ -41,22 +41,22 @@ export default function HomePage(): JSX.Element {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/images/Hero_Section_Startseite_AM_cleaning-cloths.jpg)',
+            backgroundImage: 'url(/images/Gebäude%20und%20Sonstiges/Gebäude%20mit%20LKWrechts_Herosection.png)',
           }}
         />
-        {/* Overlay für Lesbarkeit - behält Farbton bei */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0D1C2E]/90 via-[#122536]/85 to-[#1B2B3C]/90" />
+        {/* Overlay für Lesbarkeit - behält Farbton bei, aber Bild bleibt präsenter */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0D1C2E]/70 via-[#122536]/65 to-[#1B2B3C]/70" />
         
         <div className="relative z-10 max-w-4xl px-6 md:px-10 lg:px-12 xl:px-16 pt-20 md:pt-24 pb-14 md:pb-16 text-left">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white mb-4">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white mb-4 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
             August Meyer
           </h1>
           
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-white mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-white mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]">
             Ihr zuverlässiger Partner für Industrieputzlappen und Betriebshygiene
           </h2>
           
-          <p className="mt-4 text-base md:text-lg text-text-secondary max-w-2xl leading-relaxed">
+          <p className="mt-4 text-base md:text-lg text-white max-w-2xl leading-relaxed drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)]">
             Als traditionsreiches Familienunternehmen stehen wir seit über 150 Jahren für höchste Qualität und Zuverlässigkeit. Unsere Produkte werden nach strengen Qualitätsstandards hergestellt und erfüllen die Anforderungen modernster Produktionsprozesse. Profitieren Sie von unserer langjährigen Erfahrung und unserem umfassenden Know-how im Vertrieb von Reinigungstextilien.
           </p>
           

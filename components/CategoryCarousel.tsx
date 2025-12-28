@@ -111,34 +111,9 @@ export function CategoryCarousel(): JSX.Element {
     const mapping = categoryMapping[key];
     const originalCategory = allCategories.find(cat => cat.id === mapping.id);
     
-    // Produktanzahl berechnen und Link-Slug bestimmen
-    let productCount = 0;
-    let linkSlug = mapping.slug; // Standard: eigener Slug
-    
-    if (mapping.id === 'putzpapierrollen') {
-      // Putzpapierrollen ist eine Unterkategorie von Putzpapier
-      productCount = calculateProductCount('putzpapier', 'putzpapierrollen');
-      linkSlug = 'putzpapier/putzpapierrollen'; // Link zur Unterkategorie
-    } else if (mapping.id === 'putztuch-einzelblatt') {
-      // Putztuch im Einzelblatt ist eine Unterkategorie von Putzpapier
-      productCount = calculateProductCount('putzpapier', 'putztuch-einzelblatt');
-      linkSlug = 'putzpapier/putztuch-im-einzelblatt'; // Link zur Unterkategorie
-    } else if (mapping.id === 'falthandtuecher-handtuchrollen') {
-      // Kombiniert: Papierhandtücher + Handtuchrollen
-      const papierhandtuecherCount = calculateProductCount('hygienepapiere', 'papierhandtuecher');
-      const handtuchrollenCount = calculateProductCount('hygienepapiere', 'handtuchrollen');
-      productCount = papierhandtuecherCount + handtuchrollenCount;
-      linkSlug = 'hygienepapiere'; // Link zur Hauptkategorie
-    } else if (mapping.id === 'toilettenpapier-kuechenrollen') {
-      // Kombiniert: Toilettenpapier + Küchenrollen (aus Sonstiges)
-      const toilettenpapierCount = calculateProductCount('hygienepapiere', 'toilettenpapier');
-      const kuechenrollenCount = calculateProductCount('sonstiges'); // Küchenrollen sind in Sonstiges
-      productCount = toilettenpapierCount + kuechenrollenCount;
-      linkSlug = 'hygienepapiere'; // Link zur Hauptkategorie (Toilettenpapier)
-    } else {
-      // Standard: Alle Varianten der Kategorie
-      productCount = calculateProductCount(mapping.id);
-    }
+    // Produktanzahl berechnen
+    // Die calculateProductCount Funktion zählt alle Varianten der Produkte mit der entsprechenden category ID
+    const productCount = calculateProductCount(mapping.id);
     
     return {
       id: mapping.id,

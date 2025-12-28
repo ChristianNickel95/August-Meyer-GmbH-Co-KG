@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import { AddProductToCartButton } from '@/components/AddProductToCartButton';
 import { LeadForm } from '@/components/LeadForm';
-import { Product } from '@/lib/products';
+import { Product, getCategorySlugById } from '@/lib/products';
 import { useCart } from '@/components/CartContext';
 import { clsx } from 'clsx';
 import { getPackagingInfo } from '@/lib/packaging';
@@ -96,14 +96,14 @@ export function ProductDetailClient({ product, categoryName, variants }: Product
         {/* Linke Spalte: Produkt-Content */}
         <div className="space-y-6 lg:space-y-8">
           {/* 1. Produktbild / Platzhalter */}
-          <div className="rounded-2xl border border-[#1F2937] bg-[#111827] p-6 flex items-center justify-center h-64 md:h-80 relative overflow-hidden">
+          <div className="rounded-sm border border-white/8 bg-[#13294b] p-4 md:p-6 flex items-center justify-center h-64 md:h-80 relative overflow-hidden">
             {selectedVariant.image ? (
               <Image 
                 src={selectedVariant.image} 
                 alt={selectedVariant.name}
-                width={400}
-                height={320}
-                className={`w-full h-full object-contain ${
+                width={500}
+                height={400}
+                className={`w-full h-full object-contain scale-150 ${
                   selectedVariant.id === 'vliestuecher-bunt' 
                     ? 'brightness-75 opacity-90' 
                     : selectedVariant.id === 'vliestuecher-hellbunt'
@@ -270,7 +270,7 @@ export function ProductDetailClient({ product, categoryName, variants }: Product
                   >
                     {/* Klickbarer Bereich für Navigation */}
                     <Link
-                      href={`/produkte/${variantProduct.category}/${variantProduct.slug}`}
+                      href={`/produkte/${getCategorySlugById(variantProduct.category)}/${variantProduct.slug}`}
                       className="flex flex-col gap-2 flex-1"
                     >
                       <div className="flex items-start justify-between gap-2">
