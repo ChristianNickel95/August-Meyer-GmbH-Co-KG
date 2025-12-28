@@ -134,14 +134,14 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       if (!emailResults.customerEmail.success) {
         emailErrors.push(`Kunden-E-Mail: ${emailResults.customerEmail.error || 'Unbekannter Fehler'}`);
         console.error('❌ Failed to send customer confirmation email:', emailResults.customerEmail.error);
-      } else if (useTestMode && emailResults.customerEmail.filePath) {
+      } else if (useTestMode && 'filePath' in emailResults.customerEmail && emailResults.customerEmail.filePath) {
         console.log('✅ Kunden-E-Mail gespeichert:', emailResults.customerEmail.filePath);
       }
       
       if (!emailResults.adminEmail.success) {
         emailErrors.push(`Admin-E-Mail: ${emailResults.adminEmail.error || 'Unbekannter Fehler'}`);
         console.error('❌ Failed to send admin notification email:', emailResults.adminEmail.error);
-      } else if (useTestMode && emailResults.adminEmail.filePath) {
+      } else if (useTestMode && 'filePath' in emailResults.adminEmail && emailResults.adminEmail.filePath) {
         console.log('✅ Admin-E-Mail gespeichert:', emailResults.adminEmail.filePath);
       }
       

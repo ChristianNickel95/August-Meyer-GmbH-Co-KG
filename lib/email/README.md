@@ -76,7 +76,11 @@ NEXT_PUBLIC_SITE_URL=https://www.august-meyer.de
 
 ---
 
-### Option 3: Resend (kostenlos bis 3.000 E-Mails/Monat)
+### Option 3: Resend (kostenlos bis 3.000 E-Mails/Monat) ⭐ Empfohlen
+
+**Wichtig:** Resend sendet automatisch **beide E-Mails**:
+- ✅ **Bestätigungs-E-Mail an den Kunden** (an die E-Mail-Adresse aus dem Formular)
+- ✅ **Benachrichtigungs-E-Mail an August-Meyer** (an `MAIL_TO_ADMIN`)
 
 ```bash
 # Resend API Key (von https://resend.com/api-keys)
@@ -85,7 +89,7 @@ RESEND_API_KEY=re_xxxxxxxxxxxxx
 # Absender-E-Mail-Adresse (muss in Resend verifiziert sein)
 MAIL_FROM=August Meyer <no-reply@august-meyer.de>
 
-# Empfänger für Admin-Benachrichtigungen
+# Empfänger für Admin-Benachrichtigungen (wird automatisch benachrichtigt)
 MAIL_TO_ADMIN=info@august-meyer.de
 
 # Öffentliche URL der Website (für Links in E-Mails)
@@ -106,26 +110,48 @@ NEXT_PUBLIC_SITE_URL=https://www.august-meyer.de
 ### 1. Resend Account erstellen
 
 1. Gehe zu https://resend.com
-2. Erstelle einen Account
-3. Gehe zu "API Keys" und erstelle einen neuen API Key
-4. Kopiere den API Key in `RESEND_API_KEY`
+2. Erstelle einen kostenlosen Account (3.000 E-Mails/Monat kostenlos)
+3. Gehe zu "API Keys" → "Create API Key"
+4. Kopiere den API Key in `RESEND_API_KEY` in deiner `.env.local`
 
 ### 2. Domain verifizieren (für Produktion)
 
+**Für Produktion (empfohlen):**
 1. In Resend: "Domains" → "Add Domain"
 2. Füge deine Domain hinzu (z.B. `august-meyer.de`)
-3. Folge den DNS-Anweisungen zur Verifizierung
-4. Verwende die verifizierte Domain in `MAIL_FROM`
+3. Folge den DNS-Anweisungen zur Verifizierung (TXT und MX Records)
+4. Verwende die verifizierte Domain in `MAIL_FROM`:
+   ```bash
+   MAIL_FROM=August Meyer <no-reply@august-meyer.de>
+   ```
 
-### 3. Test-Domain (für Entwicklung)
+### 3. Test-Domain (für Entwicklung/Testing)
 
-Resend bietet eine Test-Domain (`onboarding.resend.dev`), die ohne Verifizierung funktioniert:
+**Für schnelles Testen ohne Domain-Verifizierung:**
+Resend bietet eine Test-Domain (`onboarding.resend.dev`), die sofort funktioniert:
 
 ```bash
 MAIL_FROM=August Meyer <onboarding@resend.dev>
 ```
 
-**Hinweis:** E-Mails von der Test-Domain landen möglicherweise im Spam-Ordner.
+**Wichtig:** 
+- ✅ E-Mails werden **beide gesendet** (Kunde + Admin)
+- ⚠️ E-Mails von der Test-Domain landen möglicherweise im Spam-Ordner
+- ✅ Für Produktion sollte die eigene Domain verifiziert werden
+
+### 4. Was wird automatisch gesendet?
+
+Bei jeder Anfrage über das Kontaktformular werden **automatisch 2 E-Mails** versendet:
+
+1. **Kunden-Bestätigung** → Geht an die E-Mail-Adresse des Kunden
+   - Bestätigt den Erhalt der Anfrage
+   - Enthält Zusammenfassung der Anfrage
+   - Professionelles Design
+
+2. **Admin-Benachrichtigung** → Geht an `MAIL_TO_ADMIN`
+   - Enthält alle Kontaktdaten des Kunden
+   - Enthält alle Produktanfragen
+   - `Reply-To` ist auf Kunden-E-Mail gesetzt (direktes Antworten möglich)
 
 ### 4. Hetzner SMTP (für später - wenn Hosting bei Hetzner)
 

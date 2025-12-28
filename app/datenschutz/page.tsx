@@ -181,7 +181,7 @@ export default function DatenschutzPage(): JSX.Element {
                 <div className="bg-[#0D1C2E] border border-[#2A3F55] p-4 rounded-lg">
                   <p className="text-text-secondary">August Meyer GmbH & Co. KG</p>
                   <p className="text-text-secondary">Datenschutzbeauftragter</p>
-                  <p className="text-text-secondary">E-Mail: datenschutz@august-meyer.de</p>
+                  <p className="text-text-secondary">E-Mail: info@august-meyer.de</p>
                 </div>
               </CardContent>
             </Card>
