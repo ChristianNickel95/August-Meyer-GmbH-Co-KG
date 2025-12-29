@@ -6,3 +6,14 @@ tsconfig.tsbuildinfo
 .env.local
 .env.production
 .env*.local
+
+# Deployment documentation (contains sensitive data like FTP credentials)
+DEPLOYMENT*.md
+lib/email/HETZNER-SMTP-SETUP.md
+lib/email/RESEND-DOMAIN-SETUP.md
+lib/email/DSGVO.md
+DEPLOYMENT-READY.md
+DEPLOYMENT-CHECKLIST.md
+DEPLOYMENT-SCHRITTE.md
+DEPLOYMENT-TEST.md
+DEPLOYMENT-SFTP.md

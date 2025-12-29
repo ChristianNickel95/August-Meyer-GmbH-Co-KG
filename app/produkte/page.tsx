@@ -299,7 +299,7 @@ export default function ProductsPage(): JSX.Element {
           <div className="mt-10 md:mt-12 rounded-sm overflow-hidden border border-white/8">
             <div className="relative w-full h-64 md:h-80 lg:h-96">
               <img
-                src="/images/Geb%C3%A4ude%20und%20Sonstiges/Lagerhalle_Herosection_Produkte.png"
+                src="/images/Gebäude und Sonstiges/Lagerhalle_Herosection_Produkte.png"
                 alt="Lagerhalle mit Produkten - August Meyer"
                 className="w-full h-full object-cover"
               />
