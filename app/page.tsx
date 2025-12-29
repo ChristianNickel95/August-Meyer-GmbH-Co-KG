@@ -41,7 +41,7 @@ export default function HomePage(): JSX.Element {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/images/Gebäude%20und%20Sonstiges/Gebäude%20mit%20LKWrechts_Herosection.png)',
+            backgroundImage: 'url(/images/Geb%C3%A4ude%20und%20Sonstiges/Geb%C3%A4ude%20mit%20LKWrechts_Herosection.png)',
           }}
         />
         {/* Overlay für Lesbarkeit - behält Farbton bei, aber Bild bleibt präsenter */}
