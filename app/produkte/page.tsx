@@ -276,27 +276,27 @@ export default function ProductsPage(): JSX.Element {
         }}
       />
 
-      <main className="min-h-screen w-full bg-[#0b1a33] text-white">
-        <section className="w-full bg-gradient-to-br from-[#0D1C2E] via-[#122536] to-[#1B2B3C]">
+      <main className="min-h-screen w-full bg-background text-foreground">
+        <section className="w-full bg-gradient-to-br from-muted via-background to-muted dark:from-[#0D1C2E] dark:via-[#122536] dark:to-[#1B2B3C]">
           <div className="w-full px-4 md:px-6 lg:px-8 xl:px-12 py-12 md:py-16">
           {/* Einleitung */}
           <div>
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Unsere Produkte
             </h1>
-            <p className="text-base md:text-lg text-text-secondary leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               August Meyer ist ein traditionsreiches Familienunternehmen, das sich auf den Vertrieb von hochwertigen Industrieputzlappen und Reinigungstextilien spezialisiert hat. Als zuverlässiger Partner beliefern wir Kunden in ganz Deutschland mit einem umfassenden Produktsortiment an Reinigungsprodukten.
             </p>
-            <p className="text-base md:text-lg text-text-secondary leading-relaxed mt-4">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mt-4">
               Unser Erfolg basiert auf drei wichtigen Säulen: der sorgfältigen Auswahl unserer Lieferanten, der Qualität unserer Produkte und unserem zuverlässigen Lieferservice. Wir arbeiten eng mit ausgewählten Herstellern zusammen, um Ihnen stets die beste Qualität zu fairen Preisen anbieten zu können.
             </p>
-            <p className="text-base md:text-lg text-text-secondary leading-relaxed mt-4">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mt-4">
               Als mittelständisches Unternehmen legen wir besonderen Wert auf persönlichen Service und individuelle Beratung. Unser erfahrenes Team steht Ihnen bei allen Fragen zur Verfügung und entwickelt gemeinsam mit Ihnen maßgeschneiderte Lösungen für Ihre Reinigungsanforderungen.
             </p>
           </div>
 
           {/* Lagerbild */}
-          <div className="mt-10 md:mt-12 rounded-sm overflow-hidden border border-white/8">
+          <div className="mt-10 md:mt-12 rounded-[2px] dark:rounded-sm overflow-hidden border border-border">
             <div className="relative w-full h-64 md:h-80 lg:h-96">
               <img
                 src="/images/Gebäude und Sonstiges/Lagerhalle_Herosection_Produkte.png"
@@ -336,7 +336,7 @@ export default function ProductsPage(): JSX.Element {
               return (
                 <div
                   key={cat.id}
-                  className="flex flex-col h-full bg-[#13294b] border border-white/8 hover:border-[#00ffb3] transition-all duration-150 cursor-pointer rounded-sm px-4 py-3"
+                  className="flex flex-col h-full bg-card border border-border hover:border-primary transition-all duration-150 cursor-pointer rounded-[2px] dark:rounded-sm px-4 py-3"
                   onClick={() => {
                     const targetCategory = categories.find(c => c.id === cat.id || c.slug === cat.slug.split('/')[0]);
                     if (targetCategory) {
@@ -345,12 +345,12 @@ export default function ProductsPage(): JSX.Element {
                   }}
                 >
                   {/* Titel */}
-                  <h3 className="text-base sm:text-lg font-semibold text-white leading-tight tracking-tight mb-1">
+                  <h3 className="text-base sm:text-lg font-semibold text-card-foreground leading-tight tracking-tight mb-1">
                     {cat.name}
                   </h3>
                   
                   {/* Kurzbeschreibung */}
-                  <p className="text-sm text-[#c7d2e0] leading-relaxed flex-1">
+                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">
                     {cat.description}
                   </p>
                 </div>
@@ -359,12 +359,12 @@ export default function ProductsPage(): JSX.Element {
                 </div>
                 
           {/* Filterbereich "Nach Anwendung filtern" */}
-          <section className="mt-10 md:mt-12 rounded-sm border border-[#2A3F55] bg-[#101A27] px-4 md:px-6 py-5 md:py-6">
+          <section className="mt-10 md:mt-12 rounded-[2px] dark:rounded-sm border border-border bg-card px-4 md:px-6 py-5 md:py-6 dark:border-[#2A3F55] dark:bg-[#101A27]">
             <div>
-              <h3 className="text-base font-semibold text-white mb-1">
+              <h3 className="text-base font-semibold text-card-foreground mb-1 dark:text-white">
                 Nach Anwendung filtern
               </h3>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-muted-foreground dark:text-gray-400">
                 Finden Sie das passende Produkt für Ihre Anforderungen.
                     </p>
                   </div>
@@ -391,14 +391,14 @@ export default function ProductsPage(): JSX.Element {
                   {/* Kategorie-Header */}
                   <button
                     onClick={() => toggleCategory(category.id)}
-                    className="flex w-full items-center justify-between rounded-sm bg-[#0D1C2E] px-4 py-2.5 md:py-3 border border-[#1F2F40] hover:border-[#2A3F55] transition-colors"
+                    className="flex w-full items-center justify-between rounded-[2px] dark:rounded-sm bg-card px-4 py-2.5 md:py-3 border border-border hover:border-primary transition-colors dark:bg-[#0D1C2E] dark:border-[#1F2F40] dark:hover:border-[#2A3F55]"
                   >
                     <div className="flex items-center gap-2 flex-wrap">
-                      <h3 className="text-lg md:text-xl font-semibold text-white">
+                      <h3 className="text-lg md:text-xl font-semibold text-card-foreground dark:text-white">
                         {category.name}
                       </h3>
                       <div className="ml-3 flex items-center gap-2 flex-wrap">
-                        <span className="rounded-sm bg-white/5 px-3 py-1 text-xs md:text-sm text-gray-200 font-medium">
+                        <span className="rounded-[2px] dark:rounded-sm bg-muted px-3 py-1 text-xs md:text-sm text-muted-foreground font-medium dark:bg-white/5 dark:text-gray-200">
                           {(() => {
                             // Für Kategorien mit Unterkategorien: Varianten zählen
                             if (category.subcategories && category.subcategories.length > 0) {
@@ -417,23 +417,23 @@ export default function ProductsPage(): JSX.Element {
                             return `${totalVariants} ${totalVariants === 1 ? 'Artikel' : 'Artikel'}`;
                           })()}
                         </span>
-                        <span className="text-[10px] md:text-xs text-gray-400 italic">
+                        <span className="text-[10px] md:text-xs text-muted-foreground italic dark:text-gray-400">
                           + weitere auf Anfrage
                         </span>
                       </div>
                     </div>
                     {isExpanded ? (
-                      <ChevronUp className="h-4 w-4 text-gray-400 flex-shrink-0 transition-transform" />
+                      <ChevronUp className="h-4 w-4 text-muted-foreground flex-shrink-0 transition-transform dark:text-gray-400" />
                     ) : (
-                      <ChevronDown className="h-4 w-4 text-gray-400 flex-shrink-0 transition-transform" />
+                      <ChevronDown className="h-4 w-4 text-muted-foreground flex-shrink-0 transition-transform dark:text-gray-400" />
                     )}
                   </button>
 
                   {/* Kategorie-Inhalt (Produkte oder Unterkategorien) */}
                   {isExpanded && (
-                    <div className="mt-3 rounded-sm border border-[#2A3F55] bg-[#101A27] px-4 md:px-6 py-4 md:py-5">
+                    <div className="mt-3 rounded-[2px] dark:rounded-sm border border-border bg-muted px-4 md:px-6 py-4 md:py-5 dark:border-[#2A3F55] dark:bg-[#101A27]">
                       {category.description && (
-                        <p className="text-sm text-text-secondary leading-relaxed mb-4">{category.description}</p>
+                        <p className="text-sm text-muted-foreground leading-relaxed mb-4 dark:text-text-secondary">{category.description}</p>
                       )}
                       
 
@@ -446,17 +446,17 @@ export default function ProductsPage(): JSX.Element {
                             const variantCount = subcategoryProducts.reduce((sum, product) => sum + (product.variants?.length || 0), 0);
                             
                             return (
-                              <div key={subcategory.id} className="border border-[#2A3F55] rounded-sm p-4 sm:p-5 bg-[#182537]">
+                              <div key={subcategory.id} className="border border-border rounded-[2px] dark:rounded-sm p-4 sm:p-5 bg-card dark:border-[#2A3F55] dark:bg-[#182537]">
                                 <div className="flex items-center justify-between mb-3">
-                                  <h3 className="text-base sm:text-lg font-semibold text-white">
+                                  <h3 className="text-base sm:text-lg font-semibold text-card-foreground dark:text-white">
                                     {subcategory.name}
                                   </h3>
-                                  <span className="text-xs sm:text-sm text-text-secondary bg-[#2F6BA8]/20 border border-[#2F6BA8]/30 px-2 py-0.5 rounded-sm">
+                                  <span className="text-xs sm:text-sm text-muted-foreground bg-primary/20 border border-primary/30 px-2 py-0.5 rounded-[2px] dark:rounded-sm dark:text-text-secondary dark:bg-[#2F6BA8]/20 dark:border-[#2F6BA8]/30">
                                     {variantCount} {variantCount === 1 ? 'Artikel' : 'Artikel'}
                                   </span>
                                 </div>
                                 {subcategory.description && (
-                                  <p className="text-text-secondary mb-2 text-xs line-clamp-1">{subcategory.description}</p>
+                                  <p className="text-muted-foreground mb-2 text-xs line-clamp-1 dark:text-text-secondary">{subcategory.description}</p>
                                 )}
                                 
                                 {subcategoryProducts.length > 0 ? (
@@ -501,7 +501,7 @@ export default function ProductsPage(): JSX.Element {
                   
           {visibleCategories.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-text-secondary text-base mb-4">
+              <p className="text-muted-foreground text-base mb-4 dark:text-text-secondary">
                 Keine Produkte gefunden, die den ausgewählten Filtern entsprechen.
               </p>
               <Button
@@ -512,7 +512,6 @@ export default function ProductsPage(): JSX.Element {
                   setSelectedProperties([]);
                   setSearchQuery('');
                 }}
-                className="border-[#2A3F55] text-gray-100 hover:bg-[#1D2A3A]"
               >
                 Filter zurücksetzen
               </Button>

@@ -3,10 +3,11 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
-import { Menu, X, Search } from 'lucide-react';
+import { Menu, X, Search, Sun, Moon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Logo } from '@/components/Logo';
+import { useTheme } from '@/components/ThemeProvider';
 
 export function Navbar(): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,6 +15,7 @@ export function Navbar(): JSX.Element {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
+  const { theme, toggleTheme } = useTheme();
 
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
@@ -55,17 +57,17 @@ export function Navbar(): JSX.Element {
   }, [pathname]);
 
   return (
-    <nav className="relative w-full bg-[#0b1a33] border-b border-white/8 h-20 md:h-24" role="navigation" aria-label="Hauptnavigation">
+    <nav className="relative w-full bg-card border-b border-border h-20 md:h-24 dark:bg-[#0b1a33] dark:border-white/8" role="navigation" aria-label="Hauptnavigation">
       {/* Innerer Container für Inhalt - full-width Hintergrund, zentrierter Inhalt */}
       <div className="w-full mx-auto flex h-20 md:h-24 items-center justify-between px-6 md:px-10 lg:px-12">
         {/* Links: Branding als Link */}
         <div className="flex items-center gap-6 md:gap-8 xl:gap-10">
           {/* Branding-Block als Link zur Startseite */}
           <Link href="/" className="flex flex-col leading-tight hover:opacity-90 transition-opacity duration-300 flex-shrink-0">
-            <span className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-white">
+            <span className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-foreground">
               August Meyer
             </span>
-            <span className="text-[10px] md:text-xs text-[#c7d2e0]">
+            <span className="text-[10px] md:text-xs text-muted-foreground">
               GmbH &amp; Co. KG
             </span>
           </Link>
@@ -78,9 +80,9 @@ export function Navbar(): JSX.Element {
                 placeholder="Produkte suchen..."
                 value={searchQuery}
                 onChange={handleSearchChange}
-                className="w-40 lg:w-48 xl:w-64 pl-10 pr-4 py-2 text-sm bg-[#13294b] border-white/8 text-white placeholder:text-[#c7d2e0] focus:border-[#00ffb3] focus:ring-[#00ffb3]"
+                className="w-40 lg:w-48 xl:w-64 pl-10 pr-4 py-2 text-sm bg-background border-border text-foreground placeholder:text-muted-foreground focus:border-primary focus:ring-primary dark:bg-[#13294b] dark:border-white/8 dark:text-white dark:placeholder:text-[#c7d2e0] dark:focus:border-[#00ffb3] dark:focus:ring-[#00ffb3]"
               />
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-neutral-400" />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground dark:text-neutral-400" />
             </div>
           </form>
 
@@ -89,17 +91,30 @@ export function Navbar(): JSX.Element {
         {/* Rechts: Produkte, Kontakt, Impressum + Button + Hamburger-Menü */}
         <div className="flex items-center justify-end gap-4 lg:gap-6">
           {/* Navigation Links "Produkte", "Kontakt" und "Impressum" - Desktop (ab xl) */}
-          <div className="hidden xl:flex items-center gap-6 text-base text-white">
-            <Link href="/produkte" className="text-base text-white hover:text-[#00ffb3] font-medium transition-colors duration-150">
+          <div className="hidden xl:flex items-center gap-6 text-base text-foreground">
+            <Link href="/produkte" className="text-base text-foreground hover:text-primary font-medium transition-colors duration-150 border-b-2 border-transparent hover:border-primary dark:text-white dark:hover:text-[#00ffb3] dark:hover:border-[#00ffb3]">
               Produkte
             </Link>
-            <Link href="/kontakt" className="hover:text-[#00ffb3] font-medium transition-colors duration-150">
+            <Link href="/kontakt" className="text-foreground hover:text-primary font-medium transition-colors duration-150 border-b-2 border-transparent hover:border-primary dark:text-white dark:hover:text-[#00ffb3] dark:hover:border-[#00ffb3]">
               Kontakt
             </Link>
-            <Link href="/impressum" className="text-[#c7d2e0] hover:text-white font-medium transition-colors duration-150">
+            <Link href="/impressum" className="text-muted-foreground hover:text-foreground font-medium transition-colors duration-150 border-b-2 border-transparent hover:border-primary dark:text-[#c7d2e0] dark:hover:text-white dark:hover:border-[#00ffb3]">
               Impressum
             </Link>
           </div>
+
+          {/* Theme Toggle Button */}
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-[2px] dark:rounded-sm text-foreground hover:text-primary hover:bg-muted focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-150 dark:text-white dark:hover:text-[#00ffb3] dark:hover:bg-white/8 dark:focus:ring-[#00ffb3]"
+            aria-label={theme === 'dark' ? 'Zu Light Mode wechseln' : 'Zu Dark Mode wechseln'}
+          >
+            {theme === 'dark' ? (
+              <Sun className="h-5 w-5" />
+            ) : (
+              <Moon className="h-5 w-5" />
+            )}
+          </button>
 
           {/* Button - Desktop/Tablet */}
           <div className="hidden md:flex">
@@ -111,7 +126,7 @@ export function Navbar(): JSX.Element {
           {/* Mobile/Tablet: Burger Menu Button - zeigt sich wenn Produkte-Button versteckt wird */}
           <div className="xl:hidden">
           <button
-              className="p-2 rounded-sm text-white hover:text-[#00ffb3] hover:bg-white/8 focus:outline-none focus:ring-2 focus:ring-[#00ffb3] transition-colors duration-150"
+              className="p-2 rounded-[2px] dark:rounded-sm text-foreground hover:text-primary hover:bg-muted focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-150 dark:text-white dark:hover:text-[#00ffb3] dark:hover:bg-white/8 dark:focus:ring-[#00ffb3]"
             onClick={toggleMenu}
             aria-expanded={isMenuOpen}
             aria-label="Menü öffnen"
@@ -132,7 +147,7 @@ export function Navbar(): JSX.Element {
             aria-hidden="true"
           />
           {/* Dropdown Menu Box - zeigt sich wenn Produkte-Button versteckt wird */}
-          <div className="xl:hidden absolute top-full right-4 mt-2 w-80 max-w-[85vw] bg-[#0b1a33] border border-white/8 rounded-sm shadow-2xl z-50 overflow-hidden">
+          <div className="xl:hidden absolute top-full right-4 mt-2 w-80 max-w-[85vw] bg-card border border-border rounded-[2px] dark:rounded-sm shadow-2xl z-50 overflow-hidden dark:bg-[#0b1a33] dark:border-white/8">
             <div className="w-full px-6 py-4 space-y-2">
               {/* Mobile Search (nur wenn nicht bereits sichtbar) */}
               <form onSubmit={handleSearch} className="mb-4 md:hidden">
@@ -142,29 +157,29 @@ export function Navbar(): JSX.Element {
                     placeholder="Produkte suchen..."
                     value={searchQuery}
                     onChange={handleSearchChange}
-                    className="w-full pl-10 pr-4 py-2 text-sm bg-[#13294b] border-white/8 text-white placeholder:text-[#c7d2e0] focus:border-[#00ffb3] focus:ring-[#00ffb3]"
+                    className="w-full pl-10 pr-4 py-2 text-sm bg-background border-border text-foreground placeholder:text-muted-foreground focus:border-primary focus:ring-primary dark:bg-[#13294b] dark:border-white/8 dark:text-white dark:placeholder:text-[#c7d2e0] dark:focus:border-[#00ffb3] dark:focus:ring-[#00ffb3]"
                   />
-                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-neutral-400" />
+                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground dark:text-neutral-400" />
                 </div>
               </form>
               
               <Link
                 href="/produkte"
-                className="block px-4 py-3 text-white hover:text-[#00ffb3] hover:bg-white/8 rounded-sm font-medium transition-colors duration-150"
+                className="block px-4 py-3 text-foreground hover:text-primary hover:bg-muted rounded-[2px] dark:rounded-sm font-medium transition-colors duration-150 dark:text-white dark:hover:text-[#00ffb3] dark:hover:bg-white/8"
                 onClick={closeMenu}
               >
                 Produkte
               </Link>
               <Link
                 href="/kontakt"
-                className="block px-4 py-3 text-white hover:text-[#00ffb3] hover:bg-white/8 rounded-sm font-medium transition-colors duration-150"
+                className="block px-4 py-3 text-foreground hover:text-primary hover:bg-muted rounded-[2px] dark:rounded-sm font-medium transition-colors duration-150 dark:text-white dark:hover:text-[#00ffb3] dark:hover:bg-white/8"
                 onClick={closeMenu}
               >
                 Kontakt
               </Link>
               <Link
                 href="/impressum"
-                className="block px-4 py-3 text-[#c7d2e0] hover:text-white hover:bg-white/8 rounded-sm font-medium transition-colors duration-150"
+                className="block px-4 py-3 text-muted-foreground hover:text-foreground hover:bg-muted rounded-[2px] dark:rounded-sm font-medium transition-colors duration-150 dark:text-[#c7d2e0] dark:hover:text-white dark:hover:bg-white/8"
                 onClick={closeMenu}
               >
                 Impressum

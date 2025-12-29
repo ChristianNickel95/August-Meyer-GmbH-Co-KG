@@ -55,103 +55,103 @@ export default function ContactPage(): JSX.Element {
         ]}
       />
 
-      <Section className="bg-[#0b1a33] py-12 md:py-16">
+      <Section className="bg-background py-12 md:py-16 dark:bg-[#0b1a33]">
         <Container className="py-0">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
             {/* Left: Contact Information */}
             <div className="space-y-6">
-              <Card className="bg-[#13294b] border border-white/8 rounded-sm">
+              <Card className="rounded-[2px] dark:rounded-sm">
                 <CardHeader className="p-6">
-                  <CardTitle className="text-white">Unser Unternehmen</CardTitle>
+                  <CardTitle>Unser Unternehmen</CardTitle>
                 </CardHeader>
                 <CardContent className="p-6 pt-0 space-y-4">
                   <div>
-                    <h4 className="font-semibold text-white mb-2">August Meyer GmbH & Co. KG</h4>
-                    <p className="text-text-secondary">Seibertstr. 5</p>
-                    <p className="text-text-secondary">35708 Haiger</p>
-                    <p className="text-text-secondary">Deutschland</p>
+                    <h4 className="font-semibold text-card-foreground mb-2">August Meyer GmbH & Co. KG</h4>
+                    <p className="text-muted-foreground">Seibertstr. 5</p>
+                    <p className="text-muted-foreground">35708 Haiger</p>
+                    <p className="text-muted-foreground">Deutschland</p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-white mb-2">Kontaktdaten</h4>
-                    <p className="text-text-secondary">Tel. 0 27 73 / 50 80</p>
-                    <p className="text-text-secondary">Fax 0 27 73 / 71 48 5</p>
-                    <p className="text-text-secondary">
-                      <a href="mailto:info@august-meyer.de" className="hover:text-white transition-colors text-[#00ffb3]">
+                    <h4 className="font-semibold text-card-foreground mb-2">Kontaktdaten</h4>
+                    <p className="text-muted-foreground">Tel. 0 27 73 / 50 80</p>
+                    <p className="text-muted-foreground">Fax 0 27 73 / 71 48 5</p>
+                    <p className="text-muted-foreground">
+                      <a href="mailto:info@august-meyer.de" className="hover:text-foreground transition-colors text-primary">
                         info@august-meyer.de
                       </a>
                     </p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-white mb-2">Geschäftszeiten</h4>
-                    <p className="text-text-secondary">Montag – Donnerstag: 08:00 – 15:30</p>
-                    <p className="text-text-secondary">Freitag: 08:00 – 14:30</p>
+                    <h4 className="font-semibold text-card-foreground mb-2">Geschäftszeiten</h4>
+                    <p className="text-muted-foreground">Montag – Donnerstag: 08:00 – 15:30</p>
+                    <p className="text-muted-foreground">Freitag: 08:00 – 14:30</p>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="bg-[#13294b] border border-white/8 rounded-sm">
+              <Card className="rounded-[2px] dark:rounded-sm">
                 <CardHeader className="p-6">
-                  <CardTitle className="text-white">Ihre Ansprechpartner</CardTitle>
+                  <CardTitle>Ihre Ansprechpartner</CardTitle>
                 </CardHeader>
                 <CardContent className="p-6 pt-0 space-y-4">
                   <div>
-                    <h4 className="font-semibold text-white mb-1">Andreas Meyer-Nechterchen</h4>
-                    <p className="text-text-secondary text-sm">Geschäftsführung</p>
+                    <h4 className="font-semibold text-card-foreground mb-1">Andreas Meyer-Nechterchen</h4>
+                    <p className="text-muted-foreground text-sm">Geschäftsführung</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white mb-1">Stefan Moritz</h4>
-                    <p className="text-text-secondary text-sm">Geschäftsführung</p>
+                    <h4 className="font-semibold text-card-foreground mb-1">Stefan Moritz</h4>
+                    <p className="text-muted-foreground text-sm">Geschäftsführung</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white mb-1">Bettina Urban</h4>
-                    <p className="text-text-secondary text-sm">Sekretariat</p>
+                    <h4 className="font-semibold text-card-foreground mb-1">Bettina Urban</h4>
+                    <p className="text-muted-foreground text-sm">Sekretariat</p>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="bg-[#13294b] border border-white/8 rounded-sm">
+              <Card className="rounded-[2px] dark:rounded-sm">
                 <CardHeader className="p-6">
-                  <CardTitle className="text-white">Warum August Meyer?</CardTitle>
+                  <CardTitle>Warum August Meyer?</CardTitle>
                 </CardHeader>
                 <CardContent className="p-6 pt-0">
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="w-5 h-5 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00ffb3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
                           <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
                           <path d="m9 11 3 3L22 4"/>
                         </svg>
                       </div>
-                      <span className="text-text-secondary">Seit 1863 in der Herstellung von Putzlappen tätig</span>
+                      <span className="text-muted-foreground">Seit 1863 in der Herstellung von Putzlappen tätig</span>
                     </li>
                     <li className="flex items-start">
                       <div className="w-5 h-5 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00ffb3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
                           <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
                           <path d="m9 11 3 3L22 4"/>
                         </svg>
                       </div>
-                      <span className="text-text-secondary">Maßgeschneiderte Lösungen für Ihre Anforderungen</span>
+                      <span className="text-muted-foreground">Maßgeschneiderte Lösungen für Ihre Anforderungen</span>
                     </li>
                     <li className="flex items-start">
                       <div className="w-5 h-5 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00ffb3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
                           <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
                           <path d="m9 11 3 3L22 4"/>
                         </svg>
                       </div>
-                      <span className="text-text-secondary">Persönliche Beratung und Support</span>
+                      <span className="text-muted-foreground">Persönliche Beratung und Support</span>
                     </li>
                     <li className="flex items-start">
                       <div className="w-5 h-5 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00ffb3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
                           <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
                           <path d="m9 11 3 3L22 4"/>
                         </svg>
                       </div>
-                      <span className="text-text-secondary">Schnelle Lieferung und zuverlässiger Service</span>
+                      <span className="text-muted-foreground">Schnelle Lieferung und zuverlässiger Service</span>
                     </li>
                   </ul>
                 </CardContent>

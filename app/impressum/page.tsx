@@ -25,65 +25,65 @@ export default function ImpressumPage(): JSX.Element {
         ]}
       />
 
-      <Section className="bg-[#0D1C2E] py-12 md:py-16">
+      <Section className="bg-background py-12 md:py-16 dark:bg-[#0D1C2E]">
         <Container className="py-0">
           <div className="max-w-4xl mx-auto space-y-8">
-            <Card className="bg-[#1B2B3C] border border-[#2A3F55] rounded-xl">
+            <Card className="rounded-[2px] dark:rounded-xl dark:bg-[#1B2B3C] dark:border-[#2A3F55]">
               <CardHeader className="p-6">
-                <CardTitle className="text-white">Angaben gemäß § 5 TMG</CardTitle>
+                <CardTitle>Angaben gemäß § 5 TMG</CardTitle>
               </CardHeader>
               <CardContent className="p-6 pt-0 space-y-4">
                 <div>
-                  <h4 className="font-semibold text-white mb-2">Unternehmen</h4>
-                  <p className="text-text-secondary">August Meyer GmbH & Co. KG</p>
-                  <p className="text-text-secondary">Seibertstr. 5</p>
-                  <p className="text-text-secondary">35708 Haiger</p>
-                  <p className="text-text-secondary">Deutschland</p>
+                  <h4 className="font-semibold text-card-foreground mb-2">Unternehmen</h4>
+                  <p className="text-muted-foreground">August Meyer GmbH & Co. KG</p>
+                  <p className="text-muted-foreground">Seibertstr. 5</p>
+                  <p className="text-muted-foreground">35708 Haiger</p>
+                  <p className="text-muted-foreground">Deutschland</p>
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-white mb-2">Kontakt</h4>
-                  <p className="text-text-secondary">Tel.: 02773 / 5080</p>
-                  <p className="text-text-secondary">Fax: 02773 / 71485</p>
-                  <p className="text-text-secondary">
-                    <a href="mailto:info@august-meyer.de" className="text-[#6FE0FF] hover:text-[#6FE0FF]/80 transition-colors">
+                  <h4 className="font-semibold text-card-foreground mb-2">Kontakt</h4>
+                  <p className="text-muted-foreground">Tel.: 02773 / 5080</p>
+                  <p className="text-muted-foreground">Fax: 02773 / 71485</p>
+                  <p className="text-muted-foreground">
+                    <a href="mailto:info@august-meyer.de" className="text-primary hover:text-primary/80 transition-colors">
                       info@august-meyer.de
                     </a>
                   </p>
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-white mb-2">Umsatzsteuer-ID</h4>
-                  <p className="text-text-secondary">Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:</p>
-                  <p className="text-text-secondary">DE111796861</p>
+                  <h4 className="font-semibold text-card-foreground mb-2">Umsatzsteuer-ID</h4>
+                  <p className="text-muted-foreground">Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:</p>
+                  <p className="text-muted-foreground">DE111796861</p>
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-white mb-2">Steuer-Nr.</h4>
-                  <p className="text-text-secondary">00934630062</p>
+                  <h4 className="font-semibold text-card-foreground mb-2">Steuer-Nr.</h4>
+                  <p className="text-muted-foreground">00934630062</p>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="bg-[#1B2B3C] border border-[#2A3F55] rounded-xl">
+            <Card className="rounded-[2px] dark:rounded-xl dark:bg-[#1B2B3C] dark:border-[#2A3F55]">
               <CardHeader className="p-6">
-                <CardTitle className="text-white">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</CardTitle>
+                <CardTitle>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</CardTitle>
               </CardHeader>
               <CardContent className="p-6 pt-0">
-                <p className="text-text-secondary">August Meyer GmbH & Co. KG</p>
-                <p className="text-text-secondary">Seibertstr. 5</p>
-                <p className="text-text-secondary">35708 Haiger</p>
+                <p className="text-muted-foreground">August Meyer GmbH & Co. KG</p>
+                <p className="text-muted-foreground">Seibertstr. 5</p>
+                <p className="text-muted-foreground">35708 Haiger</p>
               </CardContent>
             </Card>
 
-            <Card className="bg-[#1B2B3C] border border-[#2A3F55] rounded-xl">
+            <Card className="rounded-[2px] dark:rounded-xl dark:bg-[#1B2B3C] dark:border-[#2A3F55]">
               <CardHeader className="p-6">
-                <CardTitle className="text-white">Haftungsausschluss</CardTitle>
+                <CardTitle>Haftungsausschluss</CardTitle>
               </CardHeader>
               <CardContent className="p-6 pt-0 space-y-4">
                 <div>
-                  <h4 className="font-semibold text-white mb-2">Haftung für Inhalte</h4>
-                  <p className="text-text-secondary">
+                  <h4 className="font-semibold text-card-foreground mb-2">Haftung für Inhalte</h4>
+                  <p className="text-muted-foreground">
                     Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, 
                     Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. 
                     Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten 
@@ -92,8 +92,8 @@ export default function ImpressumPage(): JSX.Element {
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-white mb-2">Haftung für Links</h4>
-                  <p className="text-text-secondary">
+                  <h4 className="font-semibold text-card-foreground mb-2">Haftung für Links</h4>
+                  <p className="text-muted-foreground">
                     Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen 
                     Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. 
                     Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der 
@@ -102,8 +102,8 @@ export default function ImpressumPage(): JSX.Element {
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-white mb-2">Urheberrecht</h4>
-                  <p className="text-text-secondary">
+                  <h4 className="font-semibold text-card-foreground mb-2">Urheberrecht</h4>
+                  <p className="text-muted-foreground">
                     Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen 
                     dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art 
                     der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen 

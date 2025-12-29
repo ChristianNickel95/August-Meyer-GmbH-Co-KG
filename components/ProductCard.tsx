@@ -10,11 +10,11 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps): JSX.Element {
   return (
-    <article className="flex h-full flex-col rounded-sm bg-[#13294b] border border-white/8 shadow-sm overflow-hidden hover:border-[#00ffb3] hover:shadow-[0_0_8px_rgba(0,255,179,0.2)] transition-all duration-150">
+    <article className="flex h-full flex-col rounded-[2px] dark:rounded-sm bg-card border border-border shadow-sm overflow-hidden hover:border-primary hover:shadow-[0_0_8px_rgba(0,230,168,0.2)] dark:hover:shadow-[0_0_8px_rgba(0,255,179,0.2)] transition-all duration-150">
       {/* Oberer Bereich: Platzhalterbild + Text */}
       <div className="flex flex-col">
         {/* Bild / Icon-Bereich */}
-        <div className="h-32 md:h-36 w-full bg-gradient-to-b from-[#13294b] to-[#0b1a33] flex items-center justify-center relative overflow-hidden">
+        <div className="h-32 md:h-36 w-full bg-gradient-to-b from-muted to-background dark:from-[#13294b] dark:to-[#0b1a33] flex items-center justify-center relative overflow-hidden">
           {product.image ? (
             <Image 
               src={product.image} 
@@ -31,8 +31,8 @@ export function ProductCard({ product }: ProductCardProps): JSX.Element {
               unoptimized={product.image.toLowerCase().includes('.svg')}
             />
           ) : (
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#00ffb3]/20 border border-[#00ffb3]/30 rounded-sm flex items-center justify-center">
-              <span className="text-[#00ffb3] font-semibold text-lg sm:text-xl">{product.name.charAt(0)}</span>
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 border border-primary/30 rounded-[2px] dark:rounded-sm flex items-center justify-center">
+              <span className="text-primary font-semibold text-lg sm:text-xl">{product.name.charAt(0)}</span>
         </div>
           )}
       </div>
@@ -40,11 +40,11 @@ export function ProductCard({ product }: ProductCardProps): JSX.Element {
         {/* Textbereich */}
         <div className="flex flex-col px-4 md:px-5 pt-4 pb-3">
           <div className="min-h-[3.5rem] md:min-h-[3.75rem] flex items-start">
-            <h4 className="text-base md:text-lg font-semibold text-white leading-snug line-clamp-2">
+            <h4 className="text-base md:text-lg font-semibold text-card-foreground leading-snug line-clamp-2">
               {product.name}
             </h4>
           </div>
-          <p className="mt-2 text-sm text-[#c7d2e0] min-h-[3rem]">
+          <p className="mt-2 text-sm text-muted-foreground min-h-[3rem]">
           {product.shortDescription}
           </p>
           </div>

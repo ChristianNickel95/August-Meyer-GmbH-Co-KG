@@ -8,17 +8,17 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-[#00ffb3] text-black hover:bg-[#00ffb3]/90 active:bg-[#00ffb3]/80 focus-visible:ring-[#00ffb3] shadow-sm hover:shadow-[0_0_8px_rgba(0,255,179,0.4)]",
-        sustainability: "bg-[#00ffb3] text-black hover:bg-[#00ffb3]/90 active:bg-[#00ffb3]/80 focus-visible:ring-[#00ffb3] shadow-sm hover:shadow-[0_0_8px_rgba(0,255,179,0.4)]",
-        outline: "border border-white/8 bg-transparent text-white hover:bg-[#00ffb3] hover:border-[#00ffb3] hover:text-black active:bg-[#00ffb3]/90 focus-visible:ring-[#00ffb3] transition-all duration-150",
-        ghost: "text-white hover:bg-white/8 active:bg-white/12 focus-visible:ring-[#00ffb3]",
-        link: "text-white underline-offset-4 hover:text-[#00ffb3] hover:underline focus-visible:ring-[#00ffb3]",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/80 focus-visible:ring-ring shadow-sm hover:shadow-[0_0_8px_rgba(0,230,168,0.3)] dark:hover:shadow-[0_0_8px_rgba(0,255,179,0.4)] rounded-[2px] dark:rounded-sm",
+        sustainability: "bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/80 focus-visible:ring-ring shadow-sm hover:shadow-[0_0_8px_rgba(0,230,168,0.3)] dark:hover:shadow-[0_0_8px_rgba(0,255,179,0.4)] rounded-[2px] dark:rounded-sm bg-gradient-to-r from-[#00E6A8] to-[#7CFFDD] dark:from-[#00ffb3] dark:to-[#00ffb3]",
+        outline: "border border-border bg-transparent text-foreground hover:bg-primary hover:border-primary hover:text-primary-foreground active:bg-primary/90 focus-visible:ring-ring transition-all duration-150 rounded-[2px] dark:rounded-sm",
+        ghost: "text-foreground hover:bg-muted active:bg-muted/80 focus-visible:ring-ring rounded-[2px] dark:rounded-sm",
+        link: "text-foreground underline-offset-4 hover:text-primary hover:underline focus-visible:ring-ring",
       },
       size: {
-        default: "h-11 px-6 py-2.5 text-base rounded-sm",
-        sm: "h-9 px-4 py-2 text-sm rounded-sm",
-        lg: "h-14 px-8 py-3.5 text-lg rounded-sm",
-        icon: "h-11 w-11 rounded-sm",
+        default: "h-11 px-6 py-2.5 text-base rounded-[2px] dark:rounded-sm",
+        sm: "h-9 px-4 py-2 text-sm rounded-[2px] dark:rounded-sm",
+        lg: "h-14 px-8 py-3.5 text-lg rounded-[2px] dark:rounded-sm",
+        icon: "h-11 w-11 rounded-[2px] dark:rounded-sm",
       },
     },
     defaultVariants: {

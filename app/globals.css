@@ -3,36 +3,114 @@
 @tailwind utilities;
 
 @layer base {
+  /* Light Mode (Default) - Industrial Clean, Siemens-inspired */
   :root {
-    /* Siemens-Inspired Industrial Dark Blue Color System */
-    /* Primary Background: #0b1a33 bis #0e1f3d (Dark Blue) */
-    --primary-bg: 11 26 51;
-    --primary-bg-alt: 14 31 61;
-    /* Secondary Background: #13294b */
-    --secondary-bg: 19 41 75;
-    /* Surface / Card Backgrounds: leicht aufgehelltes Dark Blue */
-    --surface: 19 41 75;
-    --surface-light: 25 50 85;
-    /* Text Primary: #ffffff */
+    /* Background & Surface Colors */
+    --background: 244 247 251; /* #F4F7FB - Light cool background */
+    --foreground: 11 26 51; /* #0B1A33 - Dark navy for headings */
+    
+    /* Card Colors */
+    --card: 255 255 255; /* #FFFFFF - Pure white cards */
+    --card-foreground: 11 26 51; /* #0B1A33 - Dark text on cards */
+    
+    /* Popover */
+    --popover: 255 255 255;
+    --popover-foreground: 11 26 51;
+    
+    /* Primary (Mint/Green Accent) - Slightly softer than dark mode */
+    --primary: 0 230 168; /* #00E6A8 - Mint green, less neon */
+    --primary-foreground: 11 26 51; /* Dark navy text on primary */
+    
+    /* Secondary */
+    --secondary: 243 244 246; /* Light gray */
+    --secondary-foreground: 11 26 51;
+    
+    /* Muted */
+    --muted: 238 243 249; /* #EEF3F9 - Very light blue-gray */
+    --muted-foreground: 82 102 122; /* #52667A - Medium gray text */
+    
+    /* Accent */
+    --accent: 0 230 168; /* Same as primary */
+    --accent-foreground: 11 26 51;
+    
+    /* Destructive */
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
+    
+    /* Borders & Inputs */
+    --border: 216 226 240; /* #D8E2F0 - Light blue-gray border */
+    --input: 216 226 240;
+    --ring: 0 230 168; /* Mint ring for focus */
+    
+    /* Border radius - Industrial square look */
+    --radius: 0.125rem; /* 2px max */
+    
+    /* Legacy/Additional Colors */
+    --text-primary: 11 26 51; /* #0B1A33 */
+    --text-secondary: 36 59 83; /* #243B53 - Body text */
+    --accent-green: 0 230 168;
+    
+    /* Neutral Palette for Light Mode */
+    --neutral-50: 255 255 255;
+    --neutral-100: 249 250 251;
+    --neutral-200: 238 243 249;
+    --neutral-300: 216 226 240;
+    --neutral-400: 148 163 184;
+    --neutral-500: 100 116 139;
+    --neutral-600: 82 102 122;
+    --neutral-700: 36 59 83;
+    --neutral-800: 19 41 75;
+    --neutral-900: 11 26 51;
+  }
+
+  /* Dark Mode - Existing Design */
+  .dark {
+    /* Background & Surface Colors */
+    --background: 11 26 51; /* #0b1a33 - Dark blue */
+    --foreground: 255 255 255; /* White text */
+    
+    /* Card Colors */
+    --card: 19 41 75; /* #13294b - Dark blue card */
+    --card-foreground: 255 255 255;
+    
+    /* Popover */
+    --popover: 19 41 75;
+    --popover-foreground: 255 255 255;
+    
+    /* Primary (Siemens Green) */
+    --primary: 0 255 179; /* #00ffb3 - Bright green */
+    --primary-foreground: 0 0 0;
+    
+    /* Secondary */
+    --secondary: 19 41 75;
+    --secondary-foreground: 255 255 255;
+    
+    /* Muted */
+    --muted: 255 255 255 / 0.08;
+    --muted-foreground: 199 210 224; /* #c7d2e0 */
+    
+    /* Accent */
+    --accent: 0 255 179;
+    --accent-foreground: 0 0 0;
+    
+    /* Destructive */
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
+    
+    /* Borders & Inputs */
+    --border: 255 255 255 / 0.08;
+    --input: 255 255 255 / 0.08;
+    --ring: 0 255 179;
+    
+    /* Border radius - Same industrial look */
+    --radius: 0.125rem;
+    
+    /* Legacy/Additional Colors */
     --text-primary: 255 255 255;
-    /* Text Secondary: #c7d2e0 */
-    --text-secondary: 199 210 224;
-    /* Accent / Interaction Color: Siemens-Grün #00ffb3 */
+    --text-secondary: 199 210 224; /* #c7d2e0 */
     --accent-green: 0 255 179;
-    /* Borders / Divider: rgba(255,255,255,0.08) */
-    --border-divider: 255 255 255 / 0.08;
-
-    /* Legacy compatibility - mapped to new system */
-    --dark-bg: 11 26 51;
-    --dark-panel: 19 41 75;
-    --dark-border: 255 255 255 / 0.08;
-    --steel-blue: 0 255 179;
-    --sustainability-green: 0 255 179;
-    --light-gray: 255 255 255;
-    --footer-dark: 11 26 51;
-    --logo-border: 255 255 255 / 0.08;
-
-    /* Industrial Neutral Palette - Dark Blue Theme */
+    
+    /* Neutral Palette for Dark Mode */
     --neutral-50: 255 255 255;
     --neutral-100: 199 210 224;
     --neutral-200: 148 163 184;
@@ -43,38 +121,6 @@
     --neutral-700: 30 41 59;
     --neutral-800: 19 41 75;
     --neutral-900: 11 26 51;
-
-    /* System Colors - Dark Blue Theme */
-    --background: 11 26 51;
-    --foreground: 255 255 255;
-    --card: 19 41 75;
-    --card-foreground: 255 255 255;
-    --popover: 19 41 75;
-    --popover-foreground: 255 255 255;
-    
-    /* Primary = Siemens Green (for CTAs, interactions) */
-    --primary: 0 255 179;
-    --primary-foreground: 0 0 0;
-    
-    /* Secondary = Dark Blue Surface */
-    --secondary: 19 41 75;
-    --secondary-foreground: 255 255 255;
-    
-    --muted: 255 255 255 / 0.08;
-    --muted-foreground: 199 210 224;
-    
-    --accent: 0 255 179;
-    --accent-foreground: 0 0 0;
-    
-    --destructive: 239 68 68;
-    --destructive-foreground: 255 255 255;
-    
-    --border: 255 255 255 / 0.08;
-    --input: 255 255 255 / 0.08;
-    --ring: 0 255 179;
-    
-    /* Border radius: 2-4px (industriell, keine stark abgerundeten Ecken) */
-    --radius: 0.125rem; /* 2px */
   }
 }
 
@@ -84,16 +130,17 @@
   }
   
   body {
-    @apply bg-[#0b1a33] text-white antialiased overflow-x-hidden;
+    @apply bg-background text-foreground antialiased overflow-x-hidden;
     font-feature-settings: "kern" 1, "liga" 1;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  /* Refined Typography Scale - Dark Blue Theme */
+  /* Refined Typography Scale */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold tracking-tight text-white;
+    @apply font-semibold tracking-tight text-foreground;
     letter-spacing: -0.02em;
   }
   
@@ -125,8 +172,17 @@
   }
   
   p {
-    @apply text-base md:text-lg text-[#c7d2e0];
+    @apply text-base md:text-lg text-muted-foreground;
     line-height: 1.75;
+  }
+  
+  /* Light mode: body text is darker for readability */
+  :root p {
+    color: rgb(36 59 83); /* #243B53 */
+  }
+  
+  .dark p {
+    color: rgb(199 210 224); /* #c7d2e0 */
   }
   
   /* Improved Link Styling */

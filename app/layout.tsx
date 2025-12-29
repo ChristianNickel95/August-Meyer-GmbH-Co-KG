@@ -8,6 +8,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { CartProvider } from '@/components/CartContext';
 import { Cart } from '@/components/Cart';
 import { FloatingContactButton } from '@/components/FloatingContactButton';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -74,44 +75,46 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="de">
+    <html lang="de" suppressHydrationWarning>
       <body className={inter.className}>
-        <JsonLd
-          data={{
-            '@context': 'https://schema.org',
-            '@type': 'Organization',
-            name: 'August Meyer GmbH & Co. KG',
-            url: 'https://www.august-meyer.de',
-            logo: 'https://www.august-meyer.de/logo.png',
-            description: 'Putzlappen aus recycelten Alttextilien, Putztuchreinigung, Putzpapier und Hygienepapiere',
-            address: {
-              '@type': 'PostalAddress',
-              streetAddress: 'Seibertstr. 5',
-              addressLocality: 'Haiger',
-              postalCode: '35708',
-              addressCountry: 'DE'
-            },
-            contactPoint: {
-              '@type': 'ContactPoint',
-              telephone: '+49-2773-5080',
-              contactType: 'customer service',
-              areaServed: 'DE',
-              availableLanguage: 'German'
-            }
-          }}
-        />
-        <CartProvider>
-        <div className="min-h-screen flex flex-col bg-[#0b1a33]">
-          <Navbar />
-            <SearchResultsBadge />
-          <main className="flex-1">
-            {children}
-          </main>
-          <Footer />
-            <Cart />
-            <FloatingContactButton />
-        </div>
-        </CartProvider>
+        <ThemeProvider>
+          <JsonLd
+            data={{
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'August Meyer GmbH & Co. KG',
+              url: 'https://www.august-meyer.de',
+              logo: 'https://www.august-meyer.de/logo.png',
+              description: 'Putzlappen aus recycelten Alttextilien, Putztuchreinigung, Putzpapier und Hygienepapiere',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Seibertstr. 5',
+                addressLocality: 'Haiger',
+                postalCode: '35708',
+                addressCountry: 'DE'
+              },
+              contactPoint: {
+                '@type': 'ContactPoint',
+                telephone: '+49-2773-5080',
+                contactType: 'customer service',
+                areaServed: 'DE',
+                availableLanguage: 'German'
+              }
+            }}
+          />
+          <CartProvider>
+            <div className="min-h-screen flex flex-col bg-background">
+              <Navbar />
+              <SearchResultsBadge />
+              <main className="flex-1">
+                {children}
+              </main>
+              <Footer />
+              <Cart />
+              <FloatingContactButton />
+            </div>
+          </CartProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
