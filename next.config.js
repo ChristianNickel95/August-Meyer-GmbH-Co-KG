@@ -1,7 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['localhost'],
+    // Für lokale Bilder aus /public/ ist keine Konfiguration nötig
+    // remotePatterns wird nur für externe Bildquellen benötigt
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+      },
+    ],
   },
   webpack: (config, { isServer }) => {
     // Transformer.js benötigt WebAssembly Support
